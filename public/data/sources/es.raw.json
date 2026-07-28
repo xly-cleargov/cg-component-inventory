@@ -301,7 +301,7 @@
       "designMeta": {
         "source": "code",
         "library": "Community modules (Tailwind)",
-        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=18-4123",
         "notes": "Custom React dropdown — Tailwind utilities",
         "enrichedAt": "2026-07-28T16:45:00.000Z"
       },
@@ -2081,7 +2081,7 @@
       "designMeta": {
         "source": "code",
         "library": "Community modules (Tailwind)",
-        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=14-4115",
         "notes": "Fixed bottom snackbar notification",
         "enrichedAt": "2026-07-28T16:45:00.000Z"
       },
@@ -2209,7 +2209,7 @@
       "designMeta": {
         "source": "code",
         "library": "Community Design System (Tailwind)",
-        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=9-3651",
         "notes": "Tailwind utility classes in PillButton.tsx — not token-driven",
         "enrichedAt": "2026-07-28T16:45:00.000Z"
       },
@@ -2351,7 +2351,7 @@
       "designMeta": {
         "source": "code",
         "library": "Community modules (Tailwind)",
-        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=15-4092",
         "notes": "Auto-growing textarea with Tailwind form classes",
         "enrichedAt": "2026-07-28T16:45:00.000Z"
       },

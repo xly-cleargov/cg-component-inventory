@@ -14,6 +14,8 @@ This folder holds the cross-app component catalog for ClearGov (ES, DS, CG).
 | `catalog.json` | Normalized catalog with gaps — **loaded by the Angular app** |
 | `design-enrichment/enrichment.json` | Curated Figma/code design specs merged into raw sources at build time |
 | `cg-figma-components.json` | CG `cg-*` → Figma COMPONENTS page node ids (design links in UI) |
+| `ds-figma-components.json` | DS `dx-*` / Gravity → Figma component page node ids |
+| `es-figma-components.json` | ES `es-*` → Community Design System frame/page node ids |
 | `ds-gravity-components.json` | Gravity Figma components for DS that are not DevExtreme widgets (e.g. Avatar) |
 
 **Family aliases:** Some apps name the same UI pattern differently (e.g. CG `cg-tab` → `tabs`, DS `dx-switch` → `switch`). `scripts/family-aliases.mjs` merges these into one family; category differences surface as `taxonomy` gaps on the detail page.

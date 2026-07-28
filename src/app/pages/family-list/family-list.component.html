@@ -10,7 +10,7 @@
     }
   </select>
   <fieldset class="presence-checks">
-    <legend>Present in</legend>
+    <legend>Present in <span class="legend-hint">(mutually inclusive)</span></legend>
     @for (app of apps; track app) {
       <label class="presence-check">
         <input type="checkbox" [(ngModel)]="presenceApps[app]" (ngModelChange)="refreshFilters()" />
@@ -18,6 +18,11 @@
       </label>
     }
   </fieldset>
+  <select [(ngModel)]="figmaFilter" (ngModelChange)="refreshFilters()">
+    <option value="">Any Figma coverage</option>
+    <option value="has">Has Figma designs</option>
+    <option value="missing">No Figma designs</option>
+  </select>
   <select [(ngModel)]="gapFilter" (ngModelChange)="refreshFilters()">
     <option value="">All families</option>
     <option value="any">Has gaps</option>

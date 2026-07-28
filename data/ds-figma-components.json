@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "fileKey": "cErW0lkFuaZarQkuRr6bS8",
+  "fileName": "Gravity-design-foundations",
+  "baseUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations",
+  "fallbackUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+  "notes": "Maps ds/dx-* source ids to Gravity Figma component page node ids. Sourced from DesignSystem-POC component specs.",
+  "components": {
+    "dx-button": "928:9570",
+    "dx-text-box": "1105:9354",
+    "dx-popup": "1312:9524",
+    "dx-check-box": "1067:9397",
+    "dx-select-box": "1411:9854",
+    "dx-tabs": "923:9311",
+    "dx-notify": "1126:9450",
+    "dx-switch": "1090:9355",
+    "gravity-avatar": "1100:9354"
+  }
+}

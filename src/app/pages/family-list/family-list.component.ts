@@ -24,6 +24,7 @@ export class FamilyListComponent {
   presenceApps: Record<AppCode, boolean> = { cg: false, ds: false, es: false };
   gapFilter = '';
   designFilter = '';
+  figmaFilter = '';
 
   families$ = this.buildFamilies$();
 
@@ -45,6 +46,8 @@ export class FamilyListComponent {
           if (this.gapFilter === 'blocker' && !(f.gaps?.some((g) => g.severity === 'blocker'))) return false;
           if (this.designFilter === 'documented' && !this.catalog.hasDesignData(f)) return false;
           if (this.designFilter === 'missing' && this.catalog.hasDesignData(f)) return false;
+          if (this.figmaFilter === 'has' && !this.catalog.hasFigmaDesign(f)) return false;
+          if (this.figmaFilter === 'missing' && this.catalog.hasFigmaDesign(f)) return false;
           if (!q) return true;
           return f.label.toLowerCase().includes(q) || f.id.includes(q);
         });

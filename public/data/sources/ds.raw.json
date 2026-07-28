@@ -26719,7 +26719,7 @@
       "designMeta": {
         "source": "figma",
         "library": "Gravity design foundations",
-        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=928-9570",
         "notes": "Semantic tokens from Gravity Figma library; DevExtreme dx-button applies theme",
         "enrichedAt": "2026-07-28T16:45:00.000Z"
       }
@@ -27289,7 +27289,7 @@
       "designMeta": {
         "source": "figma",
         "library": "Gravity design foundations",
-        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1067-9397",
         "notes": "DevExtreme dx-check-box with Gravity checkbox tokens",
         "enrichedAt": "2026-07-28T16:45:00.000Z"
       }
@@ -33873,7 +33873,7 @@
       "designMeta": {
         "source": "mixed",
         "library": "DevExtreme notify + Gravity feedback tokens",
-        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1126-9450",
         "notes": "DevExtreme toast/notify helper",
         "enrichedAt": "2026-07-28T16:45:00.000Z"
       }
@@ -35278,7 +35278,7 @@
       "designMeta": {
         "source": "mixed",
         "library": "DevExtreme + Gravity design foundations",
-        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1312-9524",
         "notes": "dx-popup overlay; Gravity surface/overlay tokens for scrim",
         "enrichedAt": "2026-07-28T16:45:00.000Z"
       }
@@ -36458,7 +36458,7 @@
       "designMeta": {
         "source": "figma",
         "library": "Gravity design foundations",
-        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1411-9854",
         "notes": "DevExtreme select/dropdown with Gravity input tokens",
         "enrichedAt": "2026-07-28T16:45:00.000Z"
       }
@@ -37341,7 +37341,7 @@
       "designMeta": {
         "source": "figma",
         "library": "Gravity design foundations",
-        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1090-9355",
         "notes": "DevExtreme dx-switch with Gravity toggle tokens",
         "enrichedAt": "2026-07-28T16:45:00.000Z"
       }
@@ -38106,7 +38106,7 @@
       "designMeta": {
         "source": "figma",
         "library": "Gravity design foundations",
-        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=923-9311",
         "notes": "DevExtreme dx-tabs with Gravity tab tokens",
         "enrichedAt": "2026-07-28T16:45:00.000Z"
       }
@@ -39750,7 +39750,7 @@
       "designMeta": {
         "source": "figma",
         "library": "Gravity design foundations",
-        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1105-9354",
         "notes": "DevExtreme dx-text-box with Gravity semantic input tokens",
         "enrichedAt": "2026-07-28T16:45:00.000Z"
       }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-    "generatedAt": "2026-07-28T17:33:28.015Z",
+    "generatedAt": "2026-07-28T18:18:45.621Z",
     "sources": {
       "cg": {
         "repoOrPackage": "https://github.com/ClearGovInc/cleargov-shared",
@@ -5690,7 +5690,7 @@
           "designMeta": {
             "source": "figma",
             "library": "Gravity design foundations",
-            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=928-9570",
             "notes": "Semantic tokens from Gravity Figma library; DevExtreme dx-button applies theme",
             "enrichedAt": "2026-07-28T16:45:00.000Z"
           }
@@ -5810,7 +5810,7 @@
           "designMeta": {
             "source": "code",
             "library": "Community Design System (Tailwind)",
-            "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+            "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=9-3651",
             "notes": "Tailwind utility classes in PillButton.tsx — not token-driven",
             "enrichedAt": "2026-07-28T16:45:00.000Z"
           },
@@ -8287,7 +8287,7 @@
           "designMeta": {
             "source": "figma",
             "library": "Gravity design foundations",
-            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1067-9397",
             "notes": "DevExtreme dx-check-box with Gravity checkbox tokens",
             "enrichedAt": "2026-07-28T16:45:00.000Z"
           }
@@ -32648,7 +32648,7 @@
           "designMeta": {
             "source": "mixed",
             "library": "DevExtreme + Gravity design foundations",
-            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1312-9524",
             "notes": "dx-popup overlay; Gravity surface/overlay tokens for scrim",
             "enrichedAt": "2026-07-28T16:45:00.000Z"
           }
@@ -39909,7 +39909,7 @@
           "designMeta": {
             "source": "figma",
             "library": "Gravity design foundations",
-            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1411-9854",
             "notes": "DevExtreme select/dropdown with Gravity input tokens",
             "enrichedAt": "2026-07-28T16:45:00.000Z"
           }
@@ -39996,7 +39996,7 @@
           "designMeta": {
             "source": "code",
             "library": "Community modules (Tailwind)",
-            "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+            "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=18-4123",
             "notes": "Custom React dropdown — Tailwind utilities",
             "enrichedAt": "2026-07-28T16:45:00.000Z"
           },
@@ -43428,7 +43428,7 @@
           "designMeta": {
             "source": "figma",
             "library": "Gravity design foundations",
-            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1090-9355",
             "notes": "DevExtreme dx-switch with Gravity toggle tokens",
             "enrichedAt": "2026-07-28T16:45:00.000Z"
           }
@@ -45326,7 +45326,7 @@
           "designMeta": {
             "source": "figma",
             "library": "Gravity design foundations",
-            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=923-9311",
             "notes": "DevExtreme dx-tabs with Gravity tab tokens",
             "enrichedAt": "2026-07-28T16:45:00.000Z"
           }
@@ -47799,7 +47799,7 @@
           "designMeta": {
             "source": "figma",
             "library": "Gravity design foundations",
-            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1105-9354",
             "notes": "DevExtreme dx-text-box with Gravity semantic input tokens",
             "enrichedAt": "2026-07-28T16:45:00.000Z"
           }
@@ -47895,7 +47895,7 @@
           "designMeta": {
             "source": "code",
             "library": "Community modules (Tailwind)",
-            "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+            "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=15-4092",
             "notes": "Auto-growing textarea with Tailwind form classes",
             "enrichedAt": "2026-07-28T16:45:00.000Z"
           },
@@ -49247,7 +49247,7 @@
           "designMeta": {
             "source": "mixed",
             "library": "DevExtreme notify + Gravity feedback tokens",
-            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+            "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1126-9450",
             "notes": "DevExtreme toast/notify helper",
             "enrichedAt": "2026-07-28T16:45:00.000Z"
           }
@@ -49329,7 +49329,7 @@
           "designMeta": {
             "source": "code",
             "library": "Community modules (Tailwind)",
-            "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+            "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=14-4115",
             "notes": "Fixed bottom snackbar notification",
             "enrichedAt": "2026-07-28T16:45:00.000Z"
           },

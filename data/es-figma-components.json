@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "fileKey": "lyDU3cSfPqsdONVBLi6f1T",
+  "fileName": "Community-Design-System",
+  "baseUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System",
+  "fallbackUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+  "notes": "Maps es-* source ids to Community Design System frame/page node ids.",
+  "components": {
+    "es-pill-button": "9:3651",
+    "es-regular-text-input": "15:4092",
+    "es-drop-down": "18:4123",
+    "es-login-popup": "1:2",
+    "es-notification-snackbar": "14:4115"
+  }
+}

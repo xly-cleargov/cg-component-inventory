@@ -82,10 +82,6 @@ export class FamilyDetailComponent {
     return this.catalog.resolveFigmaUrl(app, impl, meta);
   }
 
-  isComponentFigmaNode(impl: Implementation): boolean {
-    return this.catalog.isComponentFigmaNode(impl);
-  }
-
   private download(filename: string, content: string, type: string): void {
     const blob = new Blob([content], { type });
     const url = URL.createObjectURL(blob);

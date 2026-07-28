@@ -7,7 +7,7 @@ import { readFileSync, writeFileSync, mkdirSync, cpSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { applyDesignEnrichment } from './apply-design-enrichment.mjs';
-import { applyCgFigmaLinks } from './apply-cg-figma-links.mjs';
+import { applyFigmaLinks } from './apply-figma-links.mjs';
 import { hasTangibleDesign } from './design-extract.mjs';
 import { pickImplementation } from './family-aliases.mjs';
 
@@ -239,7 +239,7 @@ function syncToPublic() {
 
 if (!syncOnly) {
   applyDesignEnrichment({ writeRaw: true });
-  applyCgFigmaLinks({ writeRaw: true });
+  applyFigmaLinks({ writeRaw: true });
   buildCatalog();
 }
 syncToPublic();

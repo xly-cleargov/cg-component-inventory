@@ -157,14 +157,34 @@ export class CatalogService {
     return !CatalogService.FIGMA_FILE_ROOT_NODES.has(nodeId);
   }
 
-  /** Component-specific Figma node URL only — no design-system file fallback. */
-  resolveFigmaUrl(_app: AppCode, impl: Implementation, _meta?: CatalogMeta): string | undefined {
+  /** Component-specific Figma node URL, or general design-system page when Figma-backed design exists. */
+  resolveFigmaUrl(app: AppCode, impl: Implementation, meta?: CatalogMeta): string | undefined {
     const url = impl.designMeta?.figmaUrl;
-    return url && this.isComponentFigmaNodeUrl(url) ? url : undefined;
+    if (url && this.isComponentFigmaNodeUrl(url)) return url;
+    if (this.hasFigmaBackedDesign(impl)) {
+      return meta?.sources?.[app]?.figmaUrl ?? url;
+    }
+    return undefined;
   }
 
-  isComponentFigmaNode(impl: Implementation): boolean {
-    return this.isComponentFigmaNodeUrl(impl.designMeta?.figmaUrl);
+  /** Curated or Figma-sourced design with a link (component page or general design file). */
+  hasFigmaBackedDesign(impl: Implementation): boolean {
+    const meta = impl.designMeta;
+    if (!meta?.figmaUrl) return false;
+    if (meta.enrichedAt) return true;
+    if (meta.source === 'figma' || meta.source === 'mixed') return true;
+    return false;
+  }
+
+  /** True when any present app has a Figma design link (component page or general design file). */
+  hasFigmaDesign(family: ComponentFamily): boolean {
+    return APP_CODES.some((app) => {
+      const impl = family.implementations[app];
+      if (!impl) return false;
+      const url = impl.designMeta?.figmaUrl;
+      if (url && this.isComponentFigmaNodeUrl(url)) return true;
+      return this.hasFigmaBackedDesign(impl);
+    });
   }
 
   designCoverage(family: ComponentFamily): { documented: number; present: number } {
