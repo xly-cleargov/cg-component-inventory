@@ -8,6 +8,7 @@ import { join, dirname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execSync } from 'node:child_process';
 import { extractDesignFromStyles, extractDesignFromTailwind, hasDesignData, hasTangibleDesign } from './design-extract.mjs';
+import { extractCgComponentDesign, resetCgDesignContextCache } from './cg-design-extract.mjs';
 import { familyIdFromCg, resolveFamilyId } from './family-aliases.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -110,6 +111,7 @@ function designMetaFromCode(notes, figmaUrl) {
 
 function extractCg() {
   const cfg = SOURCES.cg;
+  resetCgDesignContextCache();
   const components = [];
 
   for (const folder of readdirSync(cfg.scanRoot)) {
@@ -124,7 +126,11 @@ function extractCg() {
     const content = readFileSync(main, 'utf8');
     const selector = parseSelector(content) ?? `cg-${folder}`;
     const { props, events } = parseAngularInputsOutputs(content);
-    const autoDesign = extractDesignFromStyles(main);
+    const autoDesign = extractCgComponentDesign({
+      tsFilePath: main,
+      folder,
+      cgRepoRoot: cfg.repo,
+    });
 
     components.push({
       id: selector,
@@ -137,7 +143,11 @@ function extractCg() {
       api: { props, events, slots: [], methods: [], services: [] },
       design: autoDesign,
       ...(hasDesignData(autoDesign)
-        ? { designMeta: designMetaFromCode('Auto-extracted from component stylesheet') }
+        ? {
+            designMeta: designMetaFromCode(
+              'Auto-extracted from cleargov-shared (component SCSS, global partials, SCSS variables, utility classes)',
+            ),
+          }
         : {}),
       a11y: { role: null, labelProps: [], notes: '' },
       migrateHint: folder === 'grid' ? 'keep' : 'unknown',

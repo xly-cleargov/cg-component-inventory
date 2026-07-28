@@ -1,8 +1,8 @@
-<h1>Component Families</h1>
+<h1>Components</h1>
 <p class="lead">Cross-app inventory comparing ClearGov 1.0, Disclosure Studio, and Engagement Studio.</p>
 
 <div class="toolbar">
-  <input type="search" placeholder="Search families..." [(ngModel)]="search" (ngModelChange)="refreshFilters()" />
+  <input type="search" placeholder="Search components..." [(ngModel)]="search" (ngModelChange)="refreshFilters()" />
   <select [(ngModel)]="categoryFilter" (ngModelChange)="refreshFilters()">
     <option value="">All categories</option>
     @for (cat of categories; track cat[0]) {
@@ -24,7 +24,7 @@
     <option value="missing">No Figma designs</option>
   </select>
   <select [(ngModel)]="gapFilter" (ngModelChange)="refreshFilters()">
-    <option value="">All families</option>
+    <option value="">All components</option>
     <option value="any">Has gaps</option>
     <option value="blocker">Has blockers</option>
   </select>
@@ -39,7 +39,7 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Family</th>
+        <th>Component</th>
         <th>Category</th>
         <th>CG</th>
         <th>DS</th>

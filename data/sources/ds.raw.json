@@ -1,6 +1,6 @@
 {
   "source": "ds",
-  "extractedAt": "2026-07-28T17:29:58.567Z",
+  "extractedAt": "2026-07-28T20:33:57.412Z",
   "origin": {
     "repoOrPackage": "https://github.com/igmtechnology/gravity-reporting-next-ui",
     "ref": "fb3fc5a",
@@ -564,6 +564,187 @@
       "notes": "Reporting domain component"
     },
     {
+      "id": "ds-app-add-endpoints",
+      "displayName": "AddEndpoints",
+      "category": "layout",
+      "framework": "angular",
+      "packageOrPath": "src/app/common/components/workflow/workflow-builder/add-endpoints/add-endpoints.component.ts",
+      "selectorOrExport": "app-add-endpoints",
+      "usage": {
+        "instanceCount": 1,
+        "fileCount": 1,
+        "samplePaths": [
+          "app/common/components/workflow/workflow-builder/workflow-builder.component.html"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "visible",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "nodes",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "firstStepId",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "lastStepId",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "visibleChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "firstStepIdChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "lastStepIdChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "margin-bottom",
+            "value": "15px",
+            "tokenRef": null
+          },
+          {
+            "name": "margin",
+            "value": "0",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "id": "ds-app-add-status-email-exclusion",
+      "displayName": "AddStatusEmailExclusion",
+      "category": "layout",
+      "framework": "angular",
+      "packageOrPath": "src/app/common/components/workflow/workflow-builder/add-status-email-exclusion/add-status-email-exclusion.component.ts",
+      "selectorOrExport": "app-add-status-email-exclusion",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [
+          {
+            "name": "blacklist",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "users",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "blacklistChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "configChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "margin-bottom",
+            "value": "15px",
+            "tokenRef": null
+          },
+          {
+            "name": "margin",
+            "value": "0",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
       "id": "ds-app-add-status-rules",
       "displayName": "AddStatusRules",
       "category": "layout",
@@ -741,6 +922,98 @@
       "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
     },
     {
+      "id": "ds-app-add-status-step",
+      "displayName": "AddStatusStep",
+      "category": "layout",
+      "framework": "angular",
+      "packageOrPath": "src/app/common/components/workflow/workflow-builder/add-status-step/add-status-step.component.ts",
+      "selectorOrExport": "app-add-status-step",
+      "usage": {
+        "instanceCount": 1,
+        "fileCount": 1,
+        "samplePaths": [
+          "app/common/components/workflow/workflow-builder/add-status-workflow/add-status-workflow.component.html"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "name",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "description",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "color",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "set",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "configChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "margin-bottom",
+            "value": "15px",
+            "tokenRef": null
+          },
+          {
+            "name": "margin",
+            "value": "0",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
       "id": "ds-app-add-status-workflow",
       "displayName": "AddStatusWorkflow",
       "category": "layout",
@@ -888,6 +1161,252 @@
             "tokenRef": null
           }
         ],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "id": "ds-app-add-transition-conditions",
+      "displayName": "AddTransitionConditions",
+      "category": "layout",
+      "framework": "angular",
+      "packageOrPath": "src/app/common/components/workflow/workflow-builder/add-transition-conditions/add-transition-conditions.component.ts",
+      "selectorOrExport": "app-add-transition-conditions",
+      "usage": {
+        "instanceCount": 1,
+        "fileCount": 1,
+        "samplePaths": [
+          "app/common/components/workflow/workflow-builder/add-transition-workflow/add-transition-workflow.component.html"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "set",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "conditionsChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "margin-bottom",
+            "value": "15px",
+            "tokenRef": null
+          },
+          {
+            "name": "margin",
+            "value": "0",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "id": "ds-app-add-transition-form",
+      "displayName": "AddTransitionForm",
+      "category": "layout",
+      "framework": "angular",
+      "packageOrPath": "src/app/common/components/workflow/workflow-builder/add-transition-form/add-transition-form.component.ts",
+      "selectorOrExport": "app-add-transition-form",
+      "usage": {
+        "instanceCount": 1,
+        "fileCount": 1,
+        "samplePaths": [
+          "app/common/components/workflow/workflow-builder/add-transition-workflow/add-transition-workflow.component.html"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "updating",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "set",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "set",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "sourceStep",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "targetStep",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "name",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "description",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "color",
+            "type": "unknown",
+            "default": "WORKFLOW_EDGE_DEFAULT_COLOR",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "lineStyle",
+            "type": "unknown",
+            "default": "'solid'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "thickness",
+            "type": "unknown",
+            "default": "2",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "disabled",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "sourceStepChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "targetStepChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "nameChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "descriptionChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "colorChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "lineStyleChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "thicknessChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "margin-bottom",
+            "value": "15px",
+            "tokenRef": null
+          },
+          {
+            "name": "margin",
+            "value": "0",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
         "states": []
       },
       "designMeta": {
@@ -6547,6 +7066,67 @@
       "notes": "Shared app shell / common UI component"
     },
     {
+      "id": "ds-app-mdfm",
+      "displayName": "MddsRoot",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/mdds/components/root/mdds-root.component.ts",
+      "selectorOrExport": "app-mdfm",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "height",
+            "value": "100vh",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "0",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "min-content",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
       "id": "ds-app-module-management",
       "displayName": "ModuleManagement",
       "category": "other",
@@ -10506,6 +11086,69 @@
       "notes": "Settings / admin page shell"
     },
     {
+      "id": "ds-app-select-workflow",
+      "displayName": "SelectWorkflow",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "src/app/common/components/workflow/workflow-templates/select-workflow/select-workflow.component.ts",
+      "selectorOrExport": "app-select-workflow",
+      "usage": {
+        "instanceCount": 1,
+        "fileCount": 1,
+        "samplePaths": [
+          "app/reporting/components/workflow-dashboard/workflow-dashboard.component.html"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "reportId",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "updated",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "gap",
+            "value": "10px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
       "id": "ds-app-settings",
       "displayName": "Settings",
       "category": "other",
@@ -11299,11 +11942,21 @@
       },
       "design": {
         "colors": [],
-        "spacing": [],
+        "spacing": [
+          {
+            "name": "height",
+            "value": "100%",
+            "tokenRef": null
+          }
+        ],
         "radius": [],
         "typography": [],
         "elevation": [],
         "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
       },
       "a11y": {
         "role": null,
@@ -13722,6 +14375,88 @@
       "notes": "Report section block (domain-specific editor/preview pair)"
     },
     {
+      "id": "ds-edit-block-excel",
+      "displayName": "EditBlockExcel",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/edit/blocks/excel/excel.component.ts",
+      "selectorOrExport": "edit-block-excel",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "section",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "block",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "reportChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "width",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "0 6px 12px 0",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
       "id": "ds-edit-block-group-container",
       "displayName": "EditBlockGroupContainer",
       "category": "other",
@@ -14164,6 +14899,88 @@
       "notes": "Report section block (domain-specific editor/preview pair)"
     },
     {
+      "id": "ds-edit-block-mdfm",
+      "displayName": "EditBlockMdfm",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/edit/blocks/mdfm/mdfm.component.ts",
+      "selectorOrExport": "edit-block-mdfm",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "section",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "block",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "reportChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "padding",
+            "value": "0 6px 12px 0",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "100%",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
       "id": "ds-edit-block-paragraph",
       "displayName": "EditBlockParagraph",
       "category": "other",
@@ -14387,6 +15204,93 @@
           {
             "name": "height",
             "value": "92%",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "id": "ds-edit-block-title",
+      "displayName": "EditBlockHeading",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/edit/blocks/heading/heading.component.ts",
+      "selectorOrExport": "edit-block-title",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "section",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "block",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "reportChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "onConfirmSave",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "onUpdateReport",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "width",
+            "value": "100%",
             "tokenRef": null
           }
         ],
@@ -14901,6 +15805,226 @@
       "notes": "Reporting domain component"
     },
     {
+      "id": "ds-edit-field-excel",
+      "displayName": "EditFieldExcel",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/edit/fields/excel/excel.component.ts",
+      "selectorOrExport": "edit-field-excel",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "readOnly",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "showLock",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "section",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "field",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "value",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "canDelete",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "reportChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "onClear",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "width",
+            "value": "100%",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "id": "ds-edit-field-image",
+      "displayName": "EditFieldImage",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/edit/fields/image/image.component.ts",
+      "selectorOrExport": "edit-field-image",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "readOnly",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "showLock",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "section",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "field",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "value",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "reportChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "gap",
+            "value": "12px",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "unset",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
       "id": "ds-edit-field-mdfm",
       "displayName": "EditFieldMdfm",
       "category": "other",
@@ -15036,6 +16160,112 @@
             "tokenRef": null
           }
         ],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "id": "ds-edit-field-paragraph",
+      "displayName": "EditFieldParagraph",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/edit/fields/paragraph/paragraph.component.ts",
+      "selectorOrExport": "edit-field-paragraph",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "readOnly",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "showLock",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "section",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "field",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "value",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "reportChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "gap",
+            "value": "4px",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "100%",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
         "elevation": [],
         "states": []
       },
@@ -15295,6 +16525,107 @@
       "notes": "Report section block (domain-specific editor/preview pair)"
     },
     {
+      "id": "ds-edit-field-text",
+      "displayName": "EditFieldText",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/edit/fields/text/text.component.ts",
+      "selectorOrExport": "edit-field-text",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "readOnly",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "showLock",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "section",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "field",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "value",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "reportChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "gap",
+            "value": "4px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
       "id": "ds-edit-general-page",
       "displayName": "EditGeneralPage",
       "category": "other",
@@ -15364,6 +16695,99 @@
           {
             "name": "gap",
             "value": "12px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "id": "ds-edit-pdf",
+      "displayName": "EditPdf",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/edit/pdf/pdf.component.ts",
+      "selectorOrExport": "edit-pdf",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "section",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "field",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "templates",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "showLock",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "reportChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "padding",
+            "value": "16px",
             "tokenRef": null
           }
         ],
@@ -16241,6 +17665,93 @@
       "notes": "Reporting domain component"
     },
     {
+      "id": "ds-include-in-toc",
+      "displayName": "IncludeInToc",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/edit/blocks/include-in-toc/include-in-toc.component.ts",
+      "selectorOrExport": "include-in-toc",
+      "usage": {
+        "instanceCount": 2,
+        "fileCount": 2,
+        "samplePaths": [
+          "app/reporting/components/sections/edit/blocks/common/block-settings/block-settings.component.html",
+          "app/reporting/components/sections/edit/blocks/image/image.component.html"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "block",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "onConfirmSave",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "reportChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "width",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "0 0 0 8px",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "unset",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
       "id": "ds-label-meta",
       "displayName": "MddsMetaLabel",
       "category": "other",
@@ -16536,6 +18047,67 @@
       "notes": "Shared app shell / common UI component"
     },
     {
+      "id": "ds-manage-state",
+      "displayName": "StateManage",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/mdds/components/manage-state/state-manage.component.ts",
+      "selectorOrExport": "manage-state",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "margin-top",
+            "value": "20px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "@double-spacing",
+            "tokenRef": null
+          },
+          {
+            "name": "gap",
+            "value": "@regular-spacing",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "@regular-spacing",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
       "id": "ds-mdds-adj-data-set-viewer",
       "displayName": "AdjDataSetViewer",
       "category": "other",
@@ -16627,6 +18199,200 @@
             "tokenRef": null
           }
         ],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "id": "ds-mdds-adjustments-by-je",
+      "displayName": "MddsAdjustmentsByJe",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/mdds/components/adjustments-by-je/adjustments-by-je.component.ts",
+      "selectorOrExport": "mdds-adjustments-by-je",
+      "usage": {
+        "instanceCount": 1,
+        "fileCount": 1,
+        "samplePaths": [
+          "app/mdds/components/adjustments/adjustments.component.html"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "set",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "set",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "cube",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "readonly",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "set",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "set",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "onPosted",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "onShowIntersection",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "height",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "gap",
+            "value": "10px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "id": "ds-mdds-adjustments-by-tree",
+      "displayName": "MddsAdjustmentsByTree",
+      "category": "data",
+      "framework": "angular",
+      "packageOrPath": "src/app/mdds/components/adjustments-by-tree/adjustments-by-tree.component.ts",
+      "selectorOrExport": "mdds-adjustments-by-tree",
+      "usage": {
+        "instanceCount": 1,
+        "fileCount": 1,
+        "samplePaths": [
+          "app/mdds/components/adjustments/adjustments.component.html"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "cube",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "readonly",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "set",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "set",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "gap",
+            "value": "10px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
         "elevation": [],
         "states": []
       },
@@ -20239,6 +22005,92 @@
       "notes": "MDDS domain component"
     },
     {
+      "id": "ds-mdds-point-import-wizard",
+      "displayName": "PointImportWizard",
+      "category": "layout",
+      "framework": "angular",
+      "packageOrPath": "src/app/mdds/components/point-import-wizard/point-import-wizard.component.ts",
+      "selectorOrExport": "mdds-point-import-wizard",
+      "usage": {
+        "instanceCount": 3,
+        "fileCount": 3,
+        "samplePaths": [
+          "app/reporting/components/html-editor/html-editor.component.html",
+          "app/reporting/components/spreadsheet/spreadsheet.component.html",
+          "app/reporting/components/text-editor/text-editor.component.html"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "customizable",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "multiSelectEnabled",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "initialData",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "onFinish",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "height",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "height",
+            "value": "100% !important",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
       "id": "ds-mdds-relationships",
       "displayName": "MddsRelationships",
       "category": "other",
@@ -20949,6 +22801,82 @@
       "migrateHint": "adapt",
       "confidence": "high",
       "notes": "Reusable DS UI primitive"
+    },
+    {
+      "id": "ds-mdds-sheet-import-wizard",
+      "displayName": "SheetImportWizard",
+      "category": "layout",
+      "framework": "angular",
+      "packageOrPath": "src/app/mdds/components/sheet-import-wizard/sheet-import-wizard.component.ts",
+      "selectorOrExport": "mdds-sheet-import-wizard",
+      "usage": {
+        "instanceCount": 1,
+        "fileCount": 1,
+        "samplePaths": [
+          "app/reporting/components/spreadsheet/spreadsheet.component.html"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "initialData",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "saving",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "onFinish",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "height",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "height",
+            "value": "100% !important",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
     },
     {
       "id": "ds-mdds-table-items",
@@ -22550,6 +24478,479 @@
       "migrateHint": "adapt",
       "confidence": "low",
       "notes": "Reporting feature page shell"
+    },
+    {
+      "id": "ds-preview-block-chart",
+      "displayName": "PreviewBlockChart",
+      "category": "media",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/preview/blocks/chart/chart.component.ts",
+      "selectorOrExport": "preview-block-chart",
+      "usage": {
+        "instanceCount": 1,
+        "fileCount": 1,
+        "samplePaths": [
+          "app/reporting/components/sections/edit/blocks/chart/chart.component.html"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "section",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "block",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "changeDetector",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "width",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "height",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "min-height",
+            "value": "250px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "id": "ds-preview-block-excel",
+      "displayName": "PreviewBlockExcel",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/preview/blocks/excel/excel.component.ts",
+      "selectorOrExport": "preview-block-excel",
+      "usage": {
+        "instanceCount": 1,
+        "fileCount": 1,
+        "samplePaths": [
+          "app/reporting/components/sections/edit/blocks/table-edit/table-edit.component.html"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "block",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "changeDetector",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "width",
+            "value": "100%",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "id": "ds-preview-block-group-container",
+      "displayName": "PreviewBlockGroupContainer",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/preview/blocks/group-container/group-container.component.ts",
+      "selectorOrExport": "preview-block-group-container",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [
+          {
+            "name": "block",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "section",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "width",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "gap",
+            "value": "15px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "id": "ds-preview-block-image",
+      "displayName": "PreviewBlockImage",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/preview/blocks/image/image.component.ts",
+      "selectorOrExport": "preview-block-image",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "section",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "block",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "changeDetector",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "width",
+            "value": "30vw",
+            "tokenRef": null
+          },
+          {
+            "name": "max-height",
+            "value": "400px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "id": "ds-preview-block-mdfm",
+      "displayName": "PreviewBlockMdfm",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/preview/blocks/mdfm/mdfm.component.ts",
+      "selectorOrExport": "preview-block-mdfm",
+      "usage": {
+        "instanceCount": 1,
+        "fileCount": 1,
+        "samplePaths": [
+          "app/reporting/components/sections/edit/blocks/mdfm/mdfm.component.html"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "block",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "changeDetector",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "margin",
+            "value": "12px 0",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "id": "ds-preview-block-paragraph",
+      "displayName": "PreviewBlockParagraph",
+      "category": "other",
+      "framework": "angular",
+      "packageOrPath": "src/app/reporting/components/sections/preview/blocks/paragraph/paragraph.component.ts",
+      "selectorOrExport": "preview-block-paragraph",
+      "usage": {
+        "instanceCount": 0,
+        "fileCount": 0,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [
+          {
+            "name": "report",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "section",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "block",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "changeDetector",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "margin",
+            "value": "24px",
+            "tokenRef": null
+          },
+          {
+            "name": "margin",
+            "value": "12px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
     },
     {
       "id": "ds-preview-content-blocks-standard",
@@ -42234,8 +44635,13 @@
     "ds-alt-text-popup": "alt-text-popup",
     "ds-app-access-denied": "empty-state",
     "ds-app-activity-log": "activity-log",
+    "ds-app-add-endpoints": "add-endpoints",
+    "ds-app-add-status-email-exclusion": "add-status-email-exclusion",
     "ds-app-add-status-rules": "add-status-rules",
+    "ds-app-add-status-step": "add-status-step",
     "ds-app-add-status-workflow": "add-status-workflow",
+    "ds-app-add-transition-conditions": "add-transition-conditions",
+    "ds-app-add-transition-form": "add-transition-form",
     "ds-app-add-transition-workflow": "add-transition-workflow",
     "ds-app-adjustment-upload": "adjustment-upload",
     "ds-app-adjustments": "adjustments",
@@ -42265,6 +44671,7 @@
     "ds-app-log-details": "log-details",
     "ds-app-logs": "logs",
     "ds-app-maintenance": "empty-state",
+    "ds-app-mdfm": "mdfm",
     "ds-app-module-management": "module-management",
     "ds-app-navigation-sidebar": "navigation-sidebar",
     "ds-app-nested-object": "nested-object",
@@ -42285,6 +44692,7 @@
     "ds-app-run-notifications": "run-notifications",
     "ds-app-running-task": "running-task",
     "ds-app-security": "security",
+    "ds-app-select-workflow": "select-workflow",
     "ds-app-settings": "settings",
     "ds-app-table-edit": "table",
     "ds-app-table-toolbar": "table-header-toolbar",
@@ -42302,24 +44710,36 @@
     "ds-ck-text-editor": "rich-text-editor",
     "ds-dimensions-selector": "dimensions-selector",
     "ds-edit-block-chart": "edit-block-chart",
+    "ds-edit-block-excel": "edit-block-excel",
     "ds-edit-block-group-container": "edit-block-group-container",
     "ds-edit-block-image": "edit-block-image",
+    "ds-edit-block-mdfm": "edit-block-mdfm",
     "ds-edit-block-paragraph": "edit-block-paragraph",
     "ds-edit-block-table": "edit-block-table",
+    "ds-edit-block-title": "edit-block-title",
     "ds-edit-content-blocks": "edit-content-blocks",
     "ds-edit-cover-page": "edit-cover-page",
     "ds-edit-divider-page": "edit-divider-page",
+    "ds-edit-field-excel": "edit-field-excel",
+    "ds-edit-field-image": "edit-field-image",
     "ds-edit-field-mdfm": "edit-field-mdfm",
+    "ds-edit-field-paragraph": "edit-field-paragraph",
     "ds-edit-field-table": "edit-field-table",
+    "ds-edit-field-text": "edit-field-text",
     "ds-edit-general-page": "edit-general-page",
+    "ds-edit-pdf": "edit-pdf",
     "ds-edit-toc": "edit-toc",
     "ds-file": "drop-uploader",
     "ds-graphics-toolbar": "toolbar",
     "ds-html-editor": "rich-text-editor",
+    "ds-include-in-toc": "include-in-toc",
     "ds-label-meta": "label-meta",
     "ds-link-navigation": "link-navigation",
     "ds-loading": "loader",
+    "ds-manage-state": "manage-state",
     "ds-mdds-adj-data-set-viewer": "adj-data-set-viewer",
+    "ds-mdds-adjustments-by-je": "adjustments-by-je",
+    "ds-mdds-adjustments-by-tree": "adjustments-by-tree",
     "ds-mdds-adjustments-grid": "adjustments-grid",
     "ds-mdds-autocomplete": "type-ahead",
     "ds-mdds-caption": "typography",
@@ -42339,10 +44759,12 @@
     "ds-mdds-item-editor": "item-editor",
     "ds-mdds-meta": "meta",
     "ds-mdds-pivot": "pivot",
+    "ds-mdds-point-import-wizard": "point-import-wizard",
     "ds-mdds-relationships": "relationships",
     "ds-mdds-rule-conflict": "rule-conflict",
     "ds-mdds-rules": "rules",
     "ds-mdds-search-input": "input",
+    "ds-mdds-sheet-import-wizard": "sheet-import-wizard",
     "ds-mdds-table-items": "table-items",
     "ds-mdds-tree": "tree",
     "ds-mdds-workflow": "workflow",
@@ -42351,6 +44773,12 @@
     "ds-navigation-rail": "vertical-menu",
     "ds-position": "position",
     "ds-preview": "preview",
+    "ds-preview-block-chart": "preview-block-chart",
+    "ds-preview-block-excel": "preview-block-excel",
+    "ds-preview-block-group-container": "preview-block-group-container",
+    "ds-preview-block-image": "preview-block-image",
+    "ds-preview-block-mdfm": "preview-block-mdfm",
+    "ds-preview-block-paragraph": "preview-block-paragraph",
     "ds-preview-content-blocks-standard": "preview-content-blocks-standard",
     "ds-preview-cover-page-standard": "preview-cover-page-standard",
     "ds-preview-divider-page-standard": "preview-divider-page-standard",
@@ -42375,7 +44803,7 @@
     "dx-check-box": "checkbox",
     "dx-color-box": "color-picker",
     "dx-context-menu": "menu",
-    "dx-data-grid": "data-grid",
+    "dx-data-grid": "cg-table",
     "dx-date-box": "date-picker",
     "dx-drawer": "drawer",
     "dx-drop-down-box": "dx-drop-down-box",
@@ -42389,7 +44817,7 @@
     "dx-lookup": "dx-lookup",
     "dx-notify": "toast",
     "dx-number-box": "input-number",
-    "dx-pivot-grid": "data-grid",
+    "dx-pivot-grid": "cg-table",
     "dx-popover": "popover",
     "dx-popup": "modal",
     "dx-progress-bar": "progress",
@@ -42405,7 +44833,7 @@
     "dx-text-box": "input",
     "dx-toolbar": "dx-toolbar",
     "dx-tooltip": "tooltip",
-    "dx-tree-list": "data-grid",
+    "dx-tree-list": "cg-table",
     "dx-tree-view": "tree",
     "dx-validation-group": "dx-validation-group",
     "dx-validator": "dx-validator",
@@ -42413,7 +44841,7 @@
   },
   "_stats": {
     "dx": 41,
-    "custom": 140,
+    "custom": 167,
     "gravity": 1
   }
 }

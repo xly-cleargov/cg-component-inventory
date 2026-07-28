@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-07-28T17:29:59.194Z",
+  "generatedAt": "2026-07-28T20:33:57.995Z",
   "figma": {
     "cg": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=5344-1363&p=f&t=kdMedCVWjFszF8po-0",
     "ds": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
@@ -393,6 +393,20 @@
       "notes": "Reporting domain component"
     },
     {
+      "familyId": "app-add-endpoints",
+      "source": "ds",
+      "sourceId": "ds-app-add-endpoints",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "familyId": "app-add-status-email-exclusion",
+      "source": "ds",
+      "sourceId": "ds-app-add-status-email-exclusion",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
       "familyId": "app-add-status-rules",
       "source": "ds",
       "sourceId": "ds-app-add-status-rules",
@@ -400,9 +414,30 @@
       "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
     },
     {
+      "familyId": "app-add-status-step",
+      "source": "ds",
+      "sourceId": "ds-app-add-status-step",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
       "familyId": "app-add-status-workflow",
       "source": "ds",
       "sourceId": "ds-app-add-status-workflow",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "familyId": "app-add-transition-conditions",
+      "source": "ds",
+      "sourceId": "ds-app-add-transition-conditions",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "familyId": "app-add-transition-form",
+      "source": "ds",
+      "sourceId": "ds-app-add-transition-form",
       "confidence": "low",
       "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
     },
@@ -610,6 +645,13 @@
       "notes": "Shared app shell / common UI component"
     },
     {
+      "familyId": "app-mdfm",
+      "source": "ds",
+      "sourceId": "ds-app-mdfm",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
       "familyId": "app-module-management",
       "source": "ds",
       "sourceId": "ds-app-module-management",
@@ -750,6 +792,13 @@
       "notes": "Settings / admin page shell"
     },
     {
+      "familyId": "app-select-workflow",
+      "source": "ds",
+      "sourceId": "ds-app-select-workflow",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
       "familyId": "app-settings",
       "source": "ds",
       "sourceId": "ds-app-settings",
@@ -869,6 +918,13 @@
       "notes": "Report section block (domain-specific editor/preview pair)"
     },
     {
+      "familyId": "edit-block-excel",
+      "source": "ds",
+      "sourceId": "ds-edit-block-excel",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
       "familyId": "edit-block-group-container",
       "source": "ds",
       "sourceId": "ds-edit-block-group-container",
@@ -883,6 +939,13 @@
       "notes": "Report section block (domain-specific editor/preview pair)"
     },
     {
+      "familyId": "edit-block-mdfm",
+      "source": "ds",
+      "sourceId": "ds-edit-block-mdfm",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
       "familyId": "edit-block-paragraph",
       "source": "ds",
       "sourceId": "ds-edit-block-paragraph",
@@ -893,6 +956,13 @@
       "familyId": "edit-block-table",
       "source": "ds",
       "sourceId": "ds-edit-block-table",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "edit-block-title",
+      "source": "ds",
+      "sourceId": "ds-edit-block-title",
       "confidence": "low",
       "notes": "Report section block (domain-specific editor/preview pair)"
     },
@@ -918,9 +988,30 @@
       "notes": "Reporting domain component"
     },
     {
+      "familyId": "edit-field-excel",
+      "source": "ds",
+      "sourceId": "ds-edit-field-excel",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "edit-field-image",
+      "source": "ds",
+      "sourceId": "ds-edit-field-image",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
       "familyId": "edit-field-mdfm",
       "source": "ds",
       "sourceId": "ds-edit-field-mdfm",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "edit-field-paragraph",
+      "source": "ds",
+      "sourceId": "ds-edit-field-paragraph",
       "confidence": "low",
       "notes": "Report section block (domain-specific editor/preview pair)"
     },
@@ -932,9 +1023,23 @@
       "notes": "Report section block (domain-specific editor/preview pair)"
     },
     {
+      "familyId": "edit-field-text",
+      "source": "ds",
+      "sourceId": "ds-edit-field-text",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
       "familyId": "edit-general-page",
       "source": "ds",
       "sourceId": "ds-edit-general-page",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "edit-pdf",
+      "source": "ds",
+      "sourceId": "ds-edit-pdf",
       "confidence": "medium",
       "notes": "Reporting domain component"
     },
@@ -967,6 +1072,13 @@
       "notes": "Reporting domain component"
     },
     {
+      "familyId": "include-in-toc",
+      "source": "ds",
+      "sourceId": "ds-include-in-toc",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
       "familyId": "label-meta",
       "source": "ds",
       "sourceId": "ds-label-meta",
@@ -988,9 +1100,30 @@
       "notes": "Shared app shell / common UI component"
     },
     {
+      "familyId": "manage-state",
+      "source": "ds",
+      "sourceId": "ds-manage-state",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
       "familyId": "mdds-adj-data-set-viewer",
       "source": "ds",
       "sourceId": "ds-mdds-adj-data-set-viewer",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-adjustments-by-je",
+      "source": "ds",
+      "sourceId": "ds-mdds-adjustments-by-je",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-adjustments-by-tree",
+      "source": "ds",
+      "sourceId": "ds-mdds-adjustments-by-tree",
       "confidence": "medium",
       "notes": "MDDS domain component"
     },
@@ -1051,7 +1184,7 @@
       "notes": "MDDS domain component"
     },
     {
-      "familyId": "data-grid",
+      "familyId": "cg-table",
       "source": "ds",
       "sourceId": "ds-mdds-grid",
       "confidence": "high",
@@ -1128,6 +1261,13 @@
       "notes": "MDDS domain component"
     },
     {
+      "familyId": "mdds-point-import-wizard",
+      "source": "ds",
+      "sourceId": "ds-mdds-point-import-wizard",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
       "familyId": "mdds-relationships",
       "source": "ds",
       "sourceId": "ds-mdds-relationships",
@@ -1154,6 +1294,13 @@
       "sourceId": "ds-mdds-search-input",
       "confidence": "high",
       "notes": "Reusable DS UI primitive"
+    },
+    {
+      "familyId": "mdds-sheet-import-wizard",
+      "source": "ds",
+      "sourceId": "ds-mdds-sheet-import-wizard",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
     },
     {
       "familyId": "mdds-table-items",
@@ -1210,6 +1357,48 @@
       "sourceId": "ds-preview",
       "confidence": "low",
       "notes": "Reporting feature page shell"
+    },
+    {
+      "familyId": "preview-block-chart",
+      "source": "ds",
+      "sourceId": "ds-preview-block-chart",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "preview-block-excel",
+      "source": "ds",
+      "sourceId": "ds-preview-block-excel",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "preview-block-group-container",
+      "source": "ds",
+      "sourceId": "ds-preview-block-group-container",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "preview-block-image",
+      "source": "ds",
+      "sourceId": "ds-preview-block-image",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "preview-block-mdfm",
+      "source": "ds",
+      "sourceId": "ds-preview-block-mdfm",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "preview-block-paragraph",
+      "source": "ds",
+      "sourceId": "ds-preview-block-paragraph",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
     },
     {
       "familyId": "preview-content-blocks-standard",
@@ -1380,7 +1569,7 @@
       "notes": ""
     },
     {
-      "familyId": "data-grid",
+      "familyId": "cg-table",
       "source": "ds",
       "sourceId": "dx-data-grid",
       "confidence": "high",
@@ -1478,7 +1667,7 @@
       "notes": ""
     },
     {
-      "familyId": "data-grid",
+      "familyId": "cg-table",
       "source": "ds",
       "sourceId": "dx-pivot-grid",
       "confidence": "high",
@@ -1590,7 +1779,7 @@
       "notes": ""
     },
     {
-      "familyId": "data-grid",
+      "familyId": "cg-table",
       "source": "ds",
       "sourceId": "dx-tree-list",
       "confidence": "high",

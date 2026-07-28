@@ -131,7 +131,11 @@ export class CatalogService {
     if ((design.radius?.length ?? 0) > 0) return true;
     if ((design.typography?.length ?? 0) > 0) return true;
     if ((design.elevation?.length ?? 0) > 0) return true;
-    return (design.spacing ?? []).some((t) => !!t.tokenRef);
+    const spacing = design.spacing ?? [];
+    if (spacing.some((t) => !!t.tokenRef)) return true;
+    return spacing.some(
+      (t) => /^\d/.test(String(t.value)) || String(t.value).endsWith('px') || String(t.value).endsWith('rem'),
+    );
   }
 
   hasDesignValues(design?: ComponentDesign, designMeta?: DesignMeta): boolean {
@@ -212,7 +216,7 @@ export class CatalogService {
           '',
           `Generated: ${catalog.meta.generatedAt}`,
           '',
-          '## Families',
+          '## Components',
           '',
         ];
         for (const family of catalog.families) {

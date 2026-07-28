@@ -157,6 +157,9 @@ export function hasTangibleDesign(design, designMeta) {
   if ((design.elevation?.length ?? 0) > 0) return true;
   const spacing = design.spacing ?? [];
   if (spacing.some((t) => t.tokenRef)) return true;
+  if (spacing.some((t) => /^\d/.test(String(t.value)) || String(t.value).endsWith('px') || String(t.value).endsWith('rem'))) {
+    return true;
+  }
   return false;
 }
 

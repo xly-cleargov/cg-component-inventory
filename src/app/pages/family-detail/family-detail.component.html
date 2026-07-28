@@ -4,7 +4,7 @@
     @let catalogMeta = view.meta;
     <div class="header-row">
       <div>
-        <a routerLink="/" class="back">← Families</a>
+        <a routerLink="/" class="back">← Components</a>
         <h1>{{ family.label }}</h1>
         <p class="meta"><code>{{ family.id }}</code> · {{ family.category }}</p>
       </div>
@@ -26,7 +26,7 @@
                 <a class="figma-url" [href]="url" target="_blank" rel="noopener"><code>{{ url }}</code></a>
               </div>
             }
-            <div class="hint">{{ impl.framework }} · {{ impl.migrateHint ?? 'unknown' }}</div>
+            <div class="hint">{{ impl.framework }}</div>
           } @else {
             <div class="hint">Not present</div>
           }
@@ -199,11 +199,11 @@
           }
         </ul>
       } @else {
-        <p>No gaps recorded for this family.</p>
+        <p>No gaps recorded for this component.</p>
       }
     }
   } @else {
-    <p>Family not found. <a routerLink="/">Back to list</a></p>
+    <p>Component not found. <a routerLink="/">Back to list</a></p>
   }
 } @else {
   <p>Loading...</p>
