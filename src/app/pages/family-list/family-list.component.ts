@@ -24,7 +24,7 @@ export class FamilyListComponent {
   presenceApps: Record<AppCode, boolean> = { cg: false, ds: false, es: false };
   gapFilter = '';
   designFilter = '';
-  figmaFilter = '';
+  figmaFilter = 'has';
 
   families$ = this.buildFamilies$();
 

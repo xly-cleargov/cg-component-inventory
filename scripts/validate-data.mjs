@@ -47,11 +47,30 @@ const rawSchema = {
 };
 const validateRaw = ajv.compile(rawSchema);
 
+const validateFoundations = ajv.compile({
+  type: 'object',
+  required: ['meta', 'sections'],
+  properties: {
+    meta: { type: 'object' },
+    sections: {
+      type: 'object',
+      required: ['colors', 'typography', 'spacing'],
+      properties: {
+        colors: { type: 'object' },
+        typography: { type: 'object' },
+        spacing: { type: 'object' },
+      },
+    },
+  },
+});
+
 let ok = true;
 ok = check('catalog.json', join(dataDir, 'catalog.json'), validateCatalog) && ok;
 for (const src of ['cg', 'ds', 'es']) {
   ok = check(`${src}.raw.json`, join(dataDir, 'sources', `${src}.raw.json`), validateRaw) && ok;
 }
+
+ok = check('foundations.json', join(dataDir, 'foundations.json'), validateFoundations) && ok;
 
 if (!ok) process.exit(1);
 console.log('All data files valid.');

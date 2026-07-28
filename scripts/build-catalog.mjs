@@ -3,11 +3,12 @@
  * Builds catalog.json from raw source inventories + crosswalk, then syncs to public/data/.
  * Pass --sync-only to skip catalog regeneration and only copy data/ → public/data/.
  */
-import { readFileSync, writeFileSync, mkdirSync, cpSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, cpSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { applyDesignEnrichment } from './apply-design-enrichment.mjs';
 import { applyFigmaLinks } from './apply-figma-links.mjs';
+import { buildFoundations } from './build-foundations.mjs';
 import { hasTangibleDesign } from './design-extract.mjs';
 import { pickImplementation, resolveFamilyId } from './family-aliases.mjs';
 
@@ -229,8 +230,11 @@ function syncToPublic() {
   const publicData = join(root, 'public', 'data');
   const publicSources = join(publicData, 'sources');
   mkdirSync(publicSources, { recursive: true });
-  for (const file of ['catalog.json', 'crosswalk.json']) {
-    cpSync(join(dataDir, file), join(publicData, file));
+  for (const file of ['catalog.json', 'crosswalk.json', 'foundations.json']) {
+    const src = join(dataDir, file);
+    if (existsSync(src)) {
+      cpSync(src, join(publicData, file));
+    }
   }
   for (const src of ['cg', 'ds', 'es']) {
     cpSync(join(dataDir, 'sources', `${src}.raw.json`), join(publicSources, `${src}.raw.json`));
@@ -242,5 +246,8 @@ if (!syncOnly) {
   applyDesignEnrichment({ writeRaw: true });
   applyFigmaLinks({ writeRaw: true });
   buildCatalog();
+  buildFoundations();
+} else if (!existsSync(join(dataDir, 'foundations.json'))) {
+  buildFoundations();
 }
 syncToPublic();

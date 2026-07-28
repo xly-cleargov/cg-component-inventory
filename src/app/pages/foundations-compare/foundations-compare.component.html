@@ -1,0 +1,176 @@
+@if (meta$ | async; as meta) {
+  <div class="header-row">
+    <div>
+      <h1>Design foundations</h1>
+      <p class="intro">
+        Compare color palettes, typography, and spacing tokens across ClearGov 1.0, Disclosure Studio (Gravity), and Engagement Studio (Community DS).
+      </p>
+    </div>
+  </div>
+
+  <div class="source-cards">
+    @for (app of apps; track app) {
+      @if (meta.sources[app]; as src) {
+        <div class="source-card">
+          <strong>{{ appLabels[app] }}</strong>
+          <div class="source-meta">{{ src.tokenSource }}</div>
+          @if (src.figmaUrl) {
+            <a class="figma-link" [href]="src.figmaUrl" target="_blank" rel="noopener">Figma foundations ↗</a>
+          }
+        </div>
+      }
+    }
+  </div>
+}
+
+@if (activeSection$ | async; as section) {
+  <div class="toolbar">
+    <nav class="tabs">
+      @for (s of sections; track s) {
+        <a
+          [routerLink]="['/foundations', s]"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >{{ sectionLabels[s] }}</a>
+      }
+    </nav>
+    <label class="filter">
+      <input type="checkbox" (change)="setDiffsOnly($any($event.target).checked)" />
+      Differences only
+    </label>
+    @if (section === 'colors') {
+      @if (colorGroups$ | async; as colorGroups) {
+        <select class="group-filter" (change)="setGroupFilter($any($event.target).value)">
+          <option value="">All color groups</option>
+          @for (g of colorGroups; track g) {
+            <option [value]="g">{{ g }}</option>
+          }
+        </select>
+      }
+    }
+  </div>
+
+  @if (rows$ | async; as rows) {
+    @if (rows.length === 0) {
+      <p class="empty">No rows match — all aligned values for this section.</p>
+    } @else {
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Group</th>
+            <th>Token</th>
+            @for (app of apps; track app) {
+              <th>{{ appLabels[app] }}</th>
+            }
+          </tr>
+        </thead>
+        <tbody>
+          @for (row of rows; track row.id) {
+            <tr [class.diff]="row.diff">
+              <td class="group">{{ row.group }}</td>
+              <td><strong>{{ row.label }}</strong><div class="token-id"><code>{{ row.id }}</code></div></td>
+              @for (app of apps; track app) {
+                <td>
+                  @if (row.apps[app]?.value; as value) {
+                    <div class="cell">
+                      @if (section === 'colors' && foundations.isColorValue(value)) {
+                        <span class="swatch" [style.background-color]="value"></span>
+                      }
+                      @if (section === 'spacing' && foundations.isPxValue(value)) {
+                        <span class="space-bar" [style.width.%]="barWidth(value)"></span>
+                      }
+                      @if (section === 'typography' && foundations.isPxValue(value)) {
+                        <span class="type-preview" [style.font-size]="value">Aa</span>
+                      }
+                      <code class="value">{{ value }}</code>
+                      @if (app === 'cg' && row.apps[app]?.nativeName; as nativeName) {
+                        <span class="native-name">({{ nativeName }})</span>
+                      }
+                      @if (row.apps[app]?.tokenRef; as ref) {
+                        <span class="token-ref">{{ ref }}</span>
+                      }
+                    </div>
+                  } @else {
+                    <span class="missing">—</span>
+                  }
+                </td>
+              }
+            </tr>
+          }
+        </tbody>
+      </table>
+    }
+  }
+
+  @if (section === 'colors' || section === 'typography') {
+    @if (cgOnlyRows$ | async; as cgOnlyRows) {
+      @if (cgOnlyRows.length > 0) {
+        <section class="cg-only-section">
+          <h2>{{ cgOnlySectionTitle(section) }}</h2>
+          <p class="cg-only-intro">{{ cgOnlySectionIntro(section) }}</p>
+          <table class="table cg-only-table">
+            <thead>
+              <tr>
+                @if (section === 'typography') {
+                  <th>Category</th>
+                }
+                <th>Style</th>
+                @for (app of apps; track app) {
+                  <th>{{ appLabels[app] }}</th>
+                }
+              </tr>
+            </thead>
+            <tbody>
+              @for (row of cgOnlyRows; track row.id) {
+                <tr class="cg-only-row">
+                  @if (section === 'typography') {
+                    <td class="group">{{ row.group }}</td>
+                  }
+                  <td>
+                    <strong>{{ row.label }}</strong>
+                    @if (row.apps['cg']?.nativeName; as nativeName) {
+                      <div class="token-id"><code>{{ nativeName }}</code></div>
+                    }
+                  </td>
+                  @for (app of apps; track app) {
+                    <td>
+                      @if (row.apps[app]?.value; as value) {
+                        <div class="cell">
+                          @if (section === 'colors' && foundations.isColorValue(value)) {
+                            <span class="swatch" [style.background-color]="value"></span>
+                            <code class="value">{{ value }}</code>
+                          } @else if (section === 'typography') {
+                            @if (row.apps[app]?.typographyDetail?.size; as size) {
+                              <span class="type-preview" [style.font-size]="size">Aa</span>
+                            }
+                            <code class="value">{{ value }}</code>
+                            @if (row.apps[app]?.typographyDetail; as detail) {
+                              <span class="typo-detail">
+                                @if (detail.size) { <span>size {{ detail.size }}</span> }
+                                @if (detail.lineHeight) { <span>lh {{ detail.lineHeight }}</span> }
+                                @if (detail.weight) { <span>w{{ detail.weight }}</span> }
+                                @if (detail.letterSpacing) { <span>ls {{ detail.letterSpacing }}</span> }
+                              </span>
+                            }
+                          }
+                          @if (app === 'cg' && row.apps[app]?.nativeName; as nativeName) {
+                            <span class="native-name">({{ nativeName }})</span>
+                          }
+                          @if (row.apps[app]?.tokenRef; as ref) {
+                            <span class="token-ref">{{ ref }}</span>
+                          }
+                        </div>
+                      } @else {
+                        <span class="missing">—</span>
+                      }
+                    </td>
+                  }
+                </tr>
+              }
+            </tbody>
+          </table>
+        </section>
+      }
+    }
+  }
+}

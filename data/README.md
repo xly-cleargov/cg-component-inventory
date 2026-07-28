@@ -16,7 +16,10 @@ This folder holds the cross-app component catalog for ClearGov (ES, DS, CG).
 | `cg-figma-components.json` | CG `cg-*` → Figma COMPONENTS page node ids (design links in UI) |
 | `ds-figma-components.json` | DS `dx-*` / Gravity → Gravity Figma component page node ids (table, drawer, date picker, …) |
 | `es-figma-components.json` | ES `es-*` → Community Design System frame/page node ids |
-| `ds-gravity-components.json` | Gravity Figma components for DS that are not DevExtreme widgets (e.g. Avatar) |
+| `foundations-crosswalk.json` | Semantic CG / DS / ES foundation token mapping |
+| `foundations/es.tokens.json` | Curated Community DS scalar tokens for ES column |
+| `foundations/es-palettes.json` | Full ES color ramps (blue/sky, green, red, yellow, …) |
+| `foundations.json` | Built foundation comparison — **loaded by Foundations pages** |
 
 **Family aliases:** Some apps name the same UI pattern differently (e.g. CG `cg-tab` → `tabs`, DS `dx-switch` → `switch`). `scripts/family-aliases.mjs` merges these into one family; category differences surface as `taxonomy` gaps on the detail page.
 
@@ -38,8 +41,10 @@ Use Figma Dev Mode MCP read tools (`get_metadata`, `get_design_context`, `get_va
 
 1. Run extraction against local repo clones: `npm run extract:repos`
 2. Regenerate catalog + crosswalk: `npm run build:catalog` (also applies `design-enrichment/`)
-3. Copy to app assets: `npm run sync:data`
+3. Copy to app assets: `npm run sync:data` (also builds `foundations.json` if missing)
 4. Validate: `npm run validate:data`
+
+Refresh foundations only: `npm run build:foundations && npm run sync:data`
 
 To refresh design enrichment only (without re-extracting repos): `npm run enrich:design`
 

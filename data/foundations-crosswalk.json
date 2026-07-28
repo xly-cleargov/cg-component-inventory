@@ -1,0 +1,428 @@
+{
+  "colors": [
+    {
+      "group": "brand",
+      "id": "primary-default",
+      "label": "Primary",
+      "apps": {
+        "cg": { "tokenRef": "colors.primary.primary", "fallback": "#2F5CB6" },
+        "ds": { "tokenRef": "color.blue.primary.500", "fallback": "#436bf4" },
+        "es": { "tokenRef": "color.sky.500", "fallback": "#2797FA" }
+      }
+    },
+    {
+      "group": "brand",
+      "id": "primary-hover",
+      "label": "Primary hover",
+      "apps": {
+        "cg": { "tokenRef": "colors.primary.primary-light", "fallback": "#9CC6FB" },
+        "ds": { "tokenRef": "color.blue.primary.600", "fallback": "#234ac7" },
+        "es": { "tokenRef": "color.sky.600", "fallback": "#1E7FD4" }
+      }
+    },
+    {
+      "group": "brand",
+      "id": "primary-pressed",
+      "label": "Primary pressed / dark",
+      "apps": {
+        "cg": { "tokenRef": "colors.primary.primary-dark", "fallback": "#013183" },
+        "ds": { "tokenRef": "color.blue.primary.700", "fallback": "#1d3da5" },
+        "es": { "tokenRef": "color.sky.700", "fallback": "#1565A8" }
+      }
+    },
+    {
+      "group": "brand",
+      "id": "accent",
+      "label": "Accent / success green",
+      "apps": {
+        "cg": { "tokenRef": "colors.primary-accent.primary-accent", "fallback": "#248901" },
+        "ds": { "tokenRef": "color.green.primary.500", "fallback": "#4fc482" },
+        "es": { "tokenRef": "color.green.500", "fallback": "#74A943" }
+      }
+    },
+    {
+      "group": "semantic",
+      "id": "danger",
+      "label": "Danger",
+      "apps": {
+        "cg": { "tokenRef": "colors.danger.danger", "fallback": "#DA0102" },
+        "ds": { "tokenRef": "color.red.primary.600", "fallback": "#e10430" },
+        "es": { "tokenRef": "color.red.500", "fallback": "#E53935" }
+      }
+    },
+    {
+      "group": "semantic",
+      "id": "warning",
+      "label": "Warning",
+      "apps": {
+        "cg": { "tokenRef": "colors.warning.warning", "fallback": "#FBD055" },
+        "ds": { "tokenRef": "color.yellow.400", "fallback": "#ffe152" },
+        "es": { "tokenRef": "color.amber.500", "fallback": "#FB8E28" }
+      }
+    },
+    {
+      "group": "semantic",
+      "id": "success",
+      "label": "Success",
+      "apps": {
+        "cg": { "tokenRef": "colors.success.success", "fallback": "#248901" },
+        "ds": { "tokenRef": "color.green.primary.500", "fallback": "#4fc482" },
+        "es": { "tokenRef": "color.green.500", "fallback": "#74A943" }
+      }
+    },
+    {
+      "group": "text",
+      "id": "text-primary",
+      "label": "Text primary",
+      "apps": {
+        "cg": { "tokenRef": "colors.body.color", "fallback": "#2C2C2C" },
+        "ds": { "tokenRef": "color.neutral.primary.800", "fallback": "#1d203f" },
+        "es": { "tokenRef": "color.gray.900", "fallback": "#111827" }
+      }
+    },
+    {
+      "group": "text",
+      "id": "text-secondary",
+      "label": "Text secondary",
+      "apps": {
+        "cg": { "tokenRef": "colors.neutral.neutral-dark", "fallback": "#6F6F6F" },
+        "ds": { "tokenRef": "color.neutral.primary.600", "fallback": "#646890" },
+        "es": { "tokenRef": "color.gray.600", "fallback": "#4B5563" }
+      }
+    },
+    {
+      "group": "surface",
+      "id": "surface-page",
+      "label": "Page background",
+      "apps": {
+        "cg": { "tokenRef": "colors.body.background", "fallback": "#F7FBFF" },
+        "ds": { "tokenRef": "color.neutral.primary.0", "fallback": "#ffffff" },
+        "es": { "tokenRef": "color.gray.50", "fallback": "#F9FAFB" }
+      }
+    },
+    {
+      "group": "surface",
+      "id": "surface-subtle",
+      "label": "Subtle surface",
+      "apps": {
+        "cg": { "tokenRef": "colors.neutral.neutral-lightest", "fallback": "#F6F6F6" },
+        "ds": { "tokenRef": "color.neutral.primary.100", "fallback": "#f6f6f9" },
+        "es": { "tokenRef": "color.gray.100", "fallback": "#F3F4F6" }
+      }
+    },
+    {
+      "group": "surface",
+      "id": "border-default",
+      "label": "Border default",
+      "apps": {
+        "cg": { "tokenRef": "colors.neutral.neutral", "fallback": "#C6C6C6" },
+        "ds": { "tokenRef": "color.neutral.primary.300", "fallback": "#d4d5e3" },
+        "es": { "tokenRef": "color.gray.300", "fallback": "#D1D5DB" }
+      }
+    },
+    {
+      "group": "neutral",
+      "id": "neutral-50",
+      "label": "Neutral 50",
+      "apps": {
+        "cg": { "tokenRef": "colors.neutral.neutral-lightest", "fallback": "#F6F6F6" },
+        "ds": { "tokenRef": "color.neutral.primary.50", "fallback": "#fcfcfd" },
+        "es": { "tokenRef": "color.gray.50", "fallback": "#F9FAFB" }
+      }
+    },
+    {
+      "group": "neutral",
+      "id": "neutral-500",
+      "label": "Neutral 500",
+      "apps": {
+        "cg": { "tokenRef": "colors.neutral.neutral", "fallback": "#C6C6C6" },
+        "ds": { "tokenRef": "color.neutral.primary.500", "fallback": "#8487ae" },
+        "es": { "tokenRef": "color.gray.500", "fallback": "#6B7280" }
+      }
+    },
+    {
+      "group": "neutral",
+      "id": "neutral-900",
+      "label": "Neutral 900",
+      "apps": {
+        "cg": { "tokenRef": "colors.neutral.neutral-darkest", "fallback": "#2C2C2C" },
+        "ds": { "tokenRef": "color.neutral.primary.900", "fallback": "#0d0e1c" },
+        "es": { "tokenRef": "color.gray.900", "fallback": "#111827" }
+      }
+    }
+  ],
+  "typography": [
+    {
+      "group": "family",
+      "id": "font-family-body",
+      "label": "Body font family",
+      "apps": {
+        "cg": { "tokenRef": "typography.font-family", "fallback": "Montserrat" },
+        "ds": { "tokenRef": "font.family.body", "fallback": "Nunito" },
+        "es": { "tokenRef": "fontFamily.sans", "fallback": "Nunito" }
+      }
+    },
+    {
+      "group": "family",
+      "id": "font-family-title",
+      "label": "Title font family",
+      "apps": {
+        "cg": { "tokenRef": "typography.font-family", "fallback": "Montserrat" },
+        "ds": { "tokenRef": "font.family.title", "fallback": "Nunito" },
+        "es": { "tokenRef": "fontFamily.sans", "fallback": "Nunito" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "text-xs",
+      "label": "Extra small (caption)",
+      "apps": {
+        "cg": { "tokenRef": "typography.captions.caption-01.px", "fallback": "10px" },
+        "ds": { "tokenRef": "font.size.2xs", "fallback": "8px" },
+        "es": { "tokenRef": "fontSize.xs", "fallback": "12px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "text-sm",
+      "label": "Small / body compact",
+      "apps": {
+        "cg": { "tokenRef": "typography.body.body-01.px", "fallback": "12px" },
+        "ds": { "tokenRef": "font.size.sm", "fallback": "14px" },
+        "es": { "tokenRef": "fontSize.sm", "fallback": "14px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "text-md",
+      "label": "Medium / body default",
+      "apps": {
+        "cg": { "tokenRef": "typography.body.body-02.px", "fallback": "14px" },
+        "ds": { "tokenRef": "font.size.md", "fallback": "16px" },
+        "es": { "tokenRef": "fontSize.base", "fallback": "16px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "text-lg",
+      "label": "Large",
+      "apps": {
+        "cg": { "tokenRef": "typography.body.body-03.px", "fallback": "16px" },
+        "ds": { "tokenRef": "font.size.lg", "fallback": "18px" },
+        "es": { "tokenRef": "fontSize.lg", "fallback": "18px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "heading-h4",
+      "label": "Heading 4",
+      "apps": {
+        "cg": { "tokenRef": "typography.headers.h4.px", "fallback": "20px" },
+        "ds": { "tokenRef": "font.size.xl", "fallback": "20px" },
+        "es": { "tokenRef": "fontSize.xl", "fallback": "20px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "heading-h2",
+      "label": "Heading 2",
+      "apps": {
+        "cg": { "tokenRef": "typography.headers.h2.px", "fallback": "28px" },
+        "ds": { "tokenRef": "font.size.2xl", "fallback": "24px" },
+        "es": { "tokenRef": "fontSize.2xl", "fallback": "24px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "heading-h1",
+      "label": "Heading 1",
+      "apps": {
+        "cg": { "tokenRef": "typography.headers.h1.px", "fallback": "44px" },
+        "ds": { "tokenRef": "font.size.4xl", "fallback": "32px" },
+        "es": { "tokenRef": "fontSize.4xl", "fallback": "36px" }
+      }
+    },
+    {
+      "group": "weight",
+      "id": "weight-regular",
+      "label": "Regular weight",
+      "apps": {
+        "cg": { "tokenRef": "typography.body.body-01.fontWeight", "fallback": "400" },
+        "ds": { "tokenRef": "font.weight.regular", "fallback": "400" },
+        "es": { "tokenRef": "fontWeight.normal", "fallback": "400" }
+      }
+    },
+    {
+      "group": "weight",
+      "id": "weight-semibold",
+      "label": "Semibold weight",
+      "apps": {
+        "cg": { "tokenRef": "typography.headers.h4.fontWeight", "fallback": "600" },
+        "ds": { "tokenRef": "font.weight.semibold", "fallback": "600" },
+        "es": { "tokenRef": "fontWeight.semibold", "fallback": "600" }
+      }
+    },
+    {
+      "group": "weight",
+      "id": "weight-bold",
+      "label": "Bold weight",
+      "apps": {
+        "cg": { "tokenRef": "typography.headers.h1.fontWeight", "fallback": "900" },
+        "ds": { "tokenRef": "font.weight.bold", "fallback": "700" },
+        "es": { "tokenRef": "fontWeight.bold", "fallback": "700" }
+      }
+    },
+    {
+      "group": "line-height",
+      "id": "line-height-sm",
+      "label": "Line height (sm text)",
+      "apps": {
+        "cg": { "tokenRef": "typography.body.body-01.lineHeightPx", "fallback": "18px" },
+        "ds": { "tokenRef": "font.line-height.sm", "fallback": "16px" },
+        "es": { "tokenRef": "lineHeight.sm", "fallback": "20px" }
+      }
+    },
+    {
+      "group": "line-height",
+      "id": "line-height-md",
+      "label": "Line height (md text)",
+      "apps": {
+        "cg": { "tokenRef": "typography.body.body-02.lineHeightPx", "fallback": "22px" },
+        "ds": { "tokenRef": "font.line-height.lg", "fallback": "20px" },
+        "es": { "tokenRef": "lineHeight.base", "fallback": "24px" }
+      }
+    }
+  ],
+  "spacing": [
+    {
+      "group": "scale",
+      "id": "space-none",
+      "label": "None",
+      "apps": {
+        "cg": { "tokenRef": "spacing.margin.m-00", "fallback": "0px" },
+        "ds": { "tokenRef": "spacing.none", "fallback": "0px" },
+        "es": { "tokenRef": "spacing.0", "fallback": "0px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "space-2xs",
+      "label": "2XS",
+      "apps": {
+        "cg": { "tokenRef": "spacing.margin.m-01", "fallback": "2px" },
+        "ds": { "tokenRef": "spacing.3xs", "fallback": "2px" },
+        "es": { "tokenRef": "spacing.0.5", "fallback": "2px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "space-xs",
+      "label": "XS",
+      "apps": {
+        "cg": { "tokenRef": "spacing.margin.m-02", "fallback": "4px" },
+        "ds": { "tokenRef": "spacing.2xs", "fallback": "4px" },
+        "es": { "tokenRef": "spacing.1", "fallback": "4px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "space-sm",
+      "label": "SM",
+      "apps": {
+        "cg": { "tokenRef": "spacing.margin.m-03", "fallback": "8px" },
+        "ds": { "tokenRef": "spacing.sm", "fallback": "8px" },
+        "es": { "tokenRef": "spacing.2", "fallback": "8px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "space-md",
+      "label": "MD",
+      "apps": {
+        "cg": { "tokenRef": "spacing.margin.m-04", "fallback": "12px" },
+        "ds": { "tokenRef": "spacing.md", "fallback": "12px" },
+        "es": { "tokenRef": "spacing.3", "fallback": "12px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "space-lg",
+      "label": "LG",
+      "apps": {
+        "cg": { "tokenRef": "spacing.margin.m-05", "fallback": "16px" },
+        "ds": { "tokenRef": "spacing.lg", "fallback": "16px" },
+        "es": { "tokenRef": "spacing.4", "fallback": "16px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "space-xl",
+      "label": "XL",
+      "apps": {
+        "cg": { "tokenRef": "spacing.margin.m-06", "fallback": "24px" },
+        "ds": { "tokenRef": "spacing.2xl", "fallback": "24px" },
+        "es": { "tokenRef": "spacing.6", "fallback": "24px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "space-2xl",
+      "label": "2XL",
+      "apps": {
+        "cg": { "tokenRef": "spacing.margin.m-07", "fallback": "32px" },
+        "ds": { "tokenRef": "spacing.3xl", "fallback": "32px" },
+        "es": { "tokenRef": "spacing.8", "fallback": "32px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "space-3xl",
+      "label": "3XL",
+      "apps": {
+        "cg": { "tokenRef": "spacing.margin.m-08", "fallback": "40px" },
+        "ds": { "tokenRef": "spacing.4xl", "fallback": "40px" },
+        "es": { "tokenRef": "spacing.10", "fallback": "40px" }
+      }
+    },
+    {
+      "group": "scale",
+      "id": "space-4xl",
+      "label": "4XL",
+      "apps": {
+        "cg": { "tokenRef": "spacing.margin.m-09", "fallback": "48px" },
+        "ds": { "tokenRef": "spacing.5xl", "fallback": "64px" },
+        "es": { "tokenRef": "spacing.12", "fallback": "48px" }
+      }
+    },
+    {
+      "group": "radius",
+      "id": "radius-sm",
+      "label": "Radius SM",
+      "apps": {
+        "cg": { "tokenRef": "radius.sm", "fallback": "4px" },
+        "ds": { "tokenRef": "radius.sm", "fallback": "4px" },
+        "es": { "tokenRef": "borderRadius.sm", "fallback": "4px" }
+      }
+    },
+    {
+      "group": "radius",
+      "id": "radius-md",
+      "label": "Radius MD",
+      "apps": {
+        "cg": { "tokenRef": "radius.md", "fallback": "8px" },
+        "ds": { "tokenRef": "radius.md", "fallback": "8px" },
+        "es": { "tokenRef": "borderRadius.md", "fallback": "8px" }
+      }
+    },
+    {
+      "group": "radius",
+      "id": "radius-lg",
+      "label": "Radius LG",
+      "apps": {
+        "cg": { "tokenRef": "radius.lg", "fallback": "16px" },
+        "ds": { "tokenRef": "radius.lg", "fallback": "16px" },
+        "es": { "tokenRef": "borderRadius.lg", "fallback": "12px" }
+      }
+    }
+  ]
+}

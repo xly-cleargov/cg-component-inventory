@@ -10,6 +10,7 @@
     "sync:data": "node scripts/build-catalog.mjs --sync-only",
     "extract:repos": "node scripts/extract-from-repos.mjs",
     "build:catalog": "node scripts/extract-from-repos.mjs && node scripts/build-catalog.mjs",
+    "build:foundations": "node scripts/build-foundations.mjs",
     "enrich:design": "node scripts/apply-design-enrichment.mjs && node scripts/build-catalog.mjs --sync-only",
     "validate:data": "node scripts/validate-data.mjs",
     "test": "ng test"

@@ -1,0 +1,3552 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2026-07-28T20:15:57.273Z",
+    "sources": {
+      "cg": {
+        "label": "ClearGov 1.0",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=5344-1363&p=f&t=kdMedCVWjFszF8po-0",
+        "tokenSource": "cleargov-shared/variables-tokens-generated.scss"
+      },
+      "ds": {
+        "label": "Disclosure Studio (Gravity)",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "tokenSource": "DesignSystem-POC/packages/tokens/dist/tokens.flat.json"
+      },
+      "es": {
+        "label": "Engagement Studio (Community DS)",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "tokenSource": "data/foundations/es-palettes.json"
+      }
+    },
+    "notes": "Semantic crosswalk plus auto-generated color ramps (blue, green, red, yellow, teal, orange, pink, purple, neutral) from live token files when sibling repos are present."
+  },
+  "sections": {
+    "colors": {
+      "groups": [
+        {
+          "id": "brand",
+          "label": "Brand",
+          "tokens": [
+            {
+              "id": "primary-default",
+              "label": "Primary",
+              "apps": {
+                "cg": {
+                  "value": "#2F5CB6",
+                  "tokenRef": "colors.primary.primary",
+                  "nativeName": "primary"
+                },
+                "ds": {
+                  "value": "#436bf4",
+                  "tokenRef": "color.blue.primary.500"
+                },
+                "es": {
+                  "value": "#2797FA",
+                  "tokenRef": "color.sky.500"
+                }
+              }
+            },
+            {
+              "id": "primary-hover",
+              "label": "Primary hover",
+              "apps": {
+                "cg": {
+                  "value": "#9CC6FB",
+                  "tokenRef": "colors.primary.primary-light",
+                  "nativeName": "primary-light"
+                },
+                "ds": {
+                  "value": "#234ac7",
+                  "tokenRef": "color.blue.primary.600"
+                },
+                "es": {
+                  "value": "#1E7FD4",
+                  "tokenRef": "color.sky.600"
+                }
+              }
+            },
+            {
+              "id": "primary-pressed",
+              "label": "Primary pressed / dark",
+              "apps": {
+                "cg": {
+                  "value": "#013183",
+                  "tokenRef": "colors.primary.primary-dark",
+                  "nativeName": "primary-dark"
+                },
+                "ds": {
+                  "value": "#1d3da5",
+                  "tokenRef": "color.blue.primary.700"
+                },
+                "es": {
+                  "value": "#1565A8",
+                  "tokenRef": "color.sky.700"
+                }
+              }
+            },
+            {
+              "id": "accent",
+              "label": "Accent / success green",
+              "apps": {
+                "cg": {
+                  "value": "#248901",
+                  "tokenRef": "colors.primary-accent.primary-accent",
+                  "nativeName": "primary-accent"
+                },
+                "ds": {
+                  "value": "#4fc482",
+                  "tokenRef": "color.green.primary.500"
+                },
+                "es": {
+                  "value": "#74A943",
+                  "tokenRef": "color.green.500"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "semantic",
+          "label": "Semantic",
+          "tokens": [
+            {
+              "id": "danger",
+              "label": "Danger",
+              "apps": {
+                "cg": {
+                  "value": "#DA0102",
+                  "tokenRef": "colors.danger.danger",
+                  "nativeName": "danger"
+                },
+                "ds": {
+                  "value": "#e10430",
+                  "tokenRef": "color.red.primary.600"
+                },
+                "es": {
+                  "value": "#E53935",
+                  "tokenRef": "color.red.500"
+                }
+              }
+            },
+            {
+              "id": "warning",
+              "label": "Warning",
+              "apps": {
+                "cg": {
+                  "value": "#FBD055",
+                  "tokenRef": "colors.warning.warning",
+                  "nativeName": "warning"
+                },
+                "ds": {
+                  "value": "#ffe152",
+                  "tokenRef": "color.yellow.400"
+                },
+                "es": {
+                  "value": "#FB8E28",
+                  "tokenRef": "color.amber.500"
+                }
+              }
+            },
+            {
+              "id": "success",
+              "label": "Success",
+              "apps": {
+                "cg": {
+                  "value": "#248901",
+                  "tokenRef": "colors.success.success",
+                  "nativeName": "success"
+                },
+                "ds": {
+                  "value": "#4fc482",
+                  "tokenRef": "color.green.primary.500"
+                },
+                "es": {
+                  "value": "#74A943",
+                  "tokenRef": "color.green.500"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "text",
+          "label": "Text",
+          "tokens": [
+            {
+              "id": "text-primary",
+              "label": "Text primary",
+              "apps": {
+                "cg": {
+                  "value": "#2C2C2C",
+                  "tokenRef": "colors.body.color",
+                  "nativeName": "color"
+                },
+                "ds": {
+                  "value": "#1d203f",
+                  "tokenRef": "color.neutral.primary.800"
+                },
+                "es": {
+                  "value": "#111827",
+                  "tokenRef": "color.gray.900"
+                }
+              }
+            },
+            {
+              "id": "text-secondary",
+              "label": "Text secondary",
+              "apps": {
+                "cg": {
+                  "value": "#6F6F6F",
+                  "tokenRef": "colors.neutral.neutral-dark",
+                  "nativeName": "neutral-dark"
+                },
+                "ds": {
+                  "value": "#646890",
+                  "tokenRef": "color.neutral.primary.600"
+                },
+                "es": {
+                  "value": "#4B5563",
+                  "tokenRef": "color.gray.600"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "surface",
+          "label": "Surface",
+          "tokens": [
+            {
+              "id": "surface-page",
+              "label": "Page background",
+              "apps": {
+                "cg": {
+                  "value": "#F7FBFF",
+                  "tokenRef": "colors.body.background",
+                  "nativeName": "background"
+                },
+                "ds": {
+                  "value": "#ffffff",
+                  "tokenRef": "color.neutral.primary.0"
+                },
+                "es": {
+                  "value": "#F9FAFB",
+                  "tokenRef": "color.gray.50"
+                }
+              }
+            },
+            {
+              "id": "surface-subtle",
+              "label": "Subtle surface",
+              "apps": {
+                "cg": {
+                  "value": "#F6F6F6",
+                  "tokenRef": "colors.neutral.neutral-lightest",
+                  "nativeName": "neutral-lightest"
+                },
+                "ds": {
+                  "value": "#f6f6f9",
+                  "tokenRef": "color.neutral.primary.100"
+                },
+                "es": {
+                  "value": "#F3F4F6",
+                  "tokenRef": "color.gray.100"
+                }
+              }
+            },
+            {
+              "id": "border-default",
+              "label": "Border default",
+              "apps": {
+                "cg": {
+                  "value": "#C6C6C6",
+                  "tokenRef": "colors.neutral.neutral",
+                  "nativeName": "neutral"
+                },
+                "ds": {
+                  "value": "#d4d5e3",
+                  "tokenRef": "color.neutral.primary.300"
+                },
+                "es": {
+                  "value": "#D1D5DB",
+                  "tokenRef": "color.gray.300"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "blue",
+          "label": "Blue palette",
+          "tokens": [
+            {
+              "id": "blue-50",
+              "label": "Blue 50",
+              "apps": {
+                "cg": {
+                  "value": "#F7FBFF",
+                  "tokenRef": "colors.blues.blue-05",
+                  "nativeName": "blue-05"
+                },
+                "ds": {
+                  "value": "#fafbff",
+                  "tokenRef": "color.blue.primary.50"
+                },
+                "es": {
+                  "value": "#EFF8FF",
+                  "tokenRef": "color.sky.50"
+                }
+              }
+            },
+            {
+              "id": "blue-100",
+              "label": "Blue 100",
+              "apps": {
+                "cg": {
+                  "value": "#D0E6FF",
+                  "tokenRef": "colors.blues.blue-10",
+                  "nativeName": "blue-10"
+                },
+                "ds": {
+                  "value": "#ecf0fe",
+                  "tokenRef": "color.blue.primary.100"
+                },
+                "es": {
+                  "value": "#DBEEFF",
+                  "tokenRef": "color.sky.100"
+                }
+              }
+            },
+            {
+              "id": "blue-200",
+              "label": "Blue 200",
+              "apps": {
+                "cg": {
+                  "value": "#B6D6FD",
+                  "tokenRef": "colors.blues.blue-20",
+                  "nativeName": "blue-20"
+                },
+                "ds": {
+                  "value": "#cfd9fc",
+                  "tokenRef": "color.blue.primary.200"
+                },
+                "es": {
+                  "value": "#B8DEFF",
+                  "tokenRef": "color.sky.200"
+                }
+              }
+            },
+            {
+              "id": "blue-300",
+              "label": "Blue 300",
+              "apps": {
+                "cg": {
+                  "value": "#9CC6FB",
+                  "tokenRef": "colors.blues.blue-30",
+                  "nativeName": "blue-30"
+                },
+                "ds": {
+                  "value": "#9fb4f9",
+                  "tokenRef": "color.blue.primary.300"
+                },
+                "es": {
+                  "value": "#7CC4FA",
+                  "tokenRef": "color.sky.300"
+                }
+              }
+            },
+            {
+              "id": "blue-400",
+              "label": "Blue 400",
+              "apps": {
+                "cg": {
+                  "value": "#67A6F6",
+                  "tokenRef": "colors.blues.blue-40",
+                  "nativeName": "blue-40"
+                },
+                "ds": {
+                  "value": "#6e8df7",
+                  "tokenRef": "color.blue.primary.400"
+                },
+                "es": {
+                  "value": "#4DAFF7",
+                  "tokenRef": "color.sky.400"
+                }
+              }
+            },
+            {
+              "id": "blue-500",
+              "label": "Blue 500",
+              "apps": {
+                "cg": {
+                  "value": "#4D96F4",
+                  "tokenRef": "colors.blues.blue-50",
+                  "nativeName": "blue-50"
+                },
+                "ds": {
+                  "value": "#436bf4",
+                  "tokenRef": "color.blue.primary.500"
+                },
+                "es": {
+                  "value": "#2797FA",
+                  "tokenRef": "color.sky.500"
+                }
+              }
+            },
+            {
+              "id": "blue-600",
+              "label": "Blue 600",
+              "apps": {
+                "cg": {
+                  "value": "#3E79D5",
+                  "tokenRef": "colors.blues.blue-60",
+                  "nativeName": "blue-60"
+                },
+                "ds": {
+                  "value": "#234ac7",
+                  "tokenRef": "color.blue.primary.600"
+                },
+                "es": {
+                  "value": "#1E7FD4",
+                  "tokenRef": "color.sky.600"
+                }
+              }
+            },
+            {
+              "id": "blue-700",
+              "label": "Blue 700",
+              "apps": {
+                "cg": {
+                  "value": "#2F5CB6",
+                  "tokenRef": "colors.blues.blue-70",
+                  "nativeName": "blue-70"
+                },
+                "ds": {
+                  "value": "#1d3da5",
+                  "tokenRef": "color.blue.primary.700"
+                },
+                "es": {
+                  "value": "#1565A8",
+                  "tokenRef": "color.sky.700"
+                }
+              }
+            },
+            {
+              "id": "blue-800",
+              "label": "Blue 800",
+              "apps": {
+                "cg": {
+                  "value": "#013183",
+                  "tokenRef": "colors.blues.blue-80",
+                  "nativeName": "blue-80"
+                },
+                "ds": {
+                  "value": "#173082",
+                  "tokenRef": "color.blue.primary.800"
+                },
+                "es": {
+                  "value": "#0F4D7D",
+                  "tokenRef": "color.sky.800"
+                }
+              }
+            },
+            {
+              "id": "blue-900",
+              "label": "Blue 900",
+              "apps": {
+                "cg": {
+                  "value": "#010658",
+                  "tokenRef": "colors.blues.blue-90",
+                  "nativeName": "blue-90"
+                },
+                "ds": {
+                  "value": "#11235f",
+                  "tokenRef": "color.blue.primary.900"
+                },
+                "es": {
+                  "value": "#0A3557",
+                  "tokenRef": "color.sky.900"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "green",
+          "label": "Green palette",
+          "tokens": [
+            {
+              "id": "green-50",
+              "label": "Green 50",
+              "apps": {
+                "cg": {
+                  "value": "#DDF2D6",
+                  "tokenRef": "colors.greens.green-05",
+                  "nativeName": "green-05"
+                },
+                "ds": {
+                  "value": "#fbfefc",
+                  "tokenRef": "color.green.primary.50"
+                },
+                "es": {
+                  "value": "#F3FAEF",
+                  "tokenRef": "color.green.50"
+                }
+              }
+            },
+            {
+              "id": "green-100",
+              "label": "Green 100",
+              "apps": {
+                "cg": {
+                  "value": "#CDEBC2",
+                  "tokenRef": "colors.greens.green-10",
+                  "nativeName": "green-10"
+                },
+                "ds": {
+                  "value": "#f0faf4",
+                  "tokenRef": "color.green.primary.100"
+                },
+                "es": {
+                  "value": "#E4F4DA",
+                  "tokenRef": "color.green.100"
+                }
+              }
+            },
+            {
+              "id": "green-200",
+              "label": "Green 200",
+              "apps": {
+                "cg": {
+                  "value": "#ABDD99",
+                  "tokenRef": "colors.greens.green-20",
+                  "nativeName": "green-20"
+                },
+                "ds": {
+                  "value": "#d9f2e4",
+                  "tokenRef": "color.green.primary.200"
+                },
+                "es": {
+                  "value": "#CAE8B8",
+                  "tokenRef": "color.green.200"
+                }
+              }
+            },
+            {
+              "id": "green-300",
+              "label": "Green 300",
+              "apps": {
+                "cg": {
+                  "value": "#9AD785",
+                  "tokenRef": "colors.greens.green-30",
+                  "nativeName": "green-30"
+                },
+                "ds": {
+                  "value": "#b2e6c9",
+                  "tokenRef": "color.green.primary.300"
+                },
+                "es": {
+                  "value": "#A8D88E",
+                  "tokenRef": "color.green.300"
+                }
+              }
+            },
+            {
+              "id": "green-400",
+              "label": "Green 400",
+              "apps": {
+                "cg": {
+                  "value": "#89D071",
+                  "tokenRef": "colors.greens.green-40",
+                  "nativeName": "green-40"
+                },
+                "ds": {
+                  "value": "#85d6a8",
+                  "tokenRef": "color.green.primary.400"
+                },
+                "es": {
+                  "value": "#8EC872",
+                  "tokenRef": "color.green.400"
+                }
+              }
+            },
+            {
+              "id": "green-500",
+              "label": "Green 500",
+              "apps": {
+                "cg": {
+                  "value": "#79C95D",
+                  "tokenRef": "colors.greens.green-50",
+                  "nativeName": "green-50"
+                },
+                "ds": {
+                  "value": "#4fc482",
+                  "tokenRef": "color.green.primary.500"
+                },
+                "es": {
+                  "value": "#74A943",
+                  "tokenRef": "color.green.500"
+                }
+              }
+            },
+            {
+              "id": "green-600",
+              "label": "Green 600",
+              "apps": {
+                "cg": {
+                  "value": "#57BC34",
+                  "tokenRef": "colors.greens.green-60",
+                  "nativeName": "green-60"
+                },
+                "ds": {
+                  "value": "#3ab06e",
+                  "tokenRef": "color.green.primary.600"
+                },
+                "es": {
+                  "value": "#5E8E36",
+                  "tokenRef": "color.green.600"
+                }
+              }
+            },
+            {
+              "id": "green-700",
+              "label": "Green 700",
+              "apps": {
+                "cg": {
+                  "value": "#3EA21B",
+                  "tokenRef": "colors.greens.green-70",
+                  "nativeName": "green-70"
+                },
+                "ds": {
+                  "value": "#2b8252",
+                  "tokenRef": "color.green.primary.700"
+                },
+                "es": {
+                  "value": "#48722A",
+                  "tokenRef": "color.green.700"
+                }
+              }
+            },
+            {
+              "id": "green-800",
+              "label": "Green 800",
+              "apps": {
+                "cg": {
+                  "value": "#0B7000",
+                  "tokenRef": "colors.greens.green-80",
+                  "nativeName": "green-80"
+                },
+                "ds": {
+                  "value": "#267347",
+                  "tokenRef": "color.green.primary.800"
+                },
+                "es": {
+                  "value": "#34561F",
+                  "tokenRef": "color.green.800"
+                }
+              }
+            },
+            {
+              "id": "green-900",
+              "label": "Green 900",
+              "apps": {
+                "cg": {
+                  "value": "#003D00",
+                  "tokenRef": "colors.greens.green-90",
+                  "nativeName": "green-90"
+                },
+                "ds": {
+                  "value": "#1c5434",
+                  "tokenRef": "color.green.primary.900"
+                },
+                "es": {
+                  "value": "#213914",
+                  "tokenRef": "color.green.900"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "red",
+          "label": "Red palette",
+          "tokens": [
+            {
+              "id": "red-50",
+              "label": "Red 50",
+              "apps": {
+                "cg": {
+                  "value": "#FDE8E8",
+                  "tokenRef": "colors.reds.red-05",
+                  "nativeName": "red-05"
+                },
+                "ds": {
+                  "value": "#fffafb",
+                  "tokenRef": "color.red.primary.50"
+                },
+                "es": {
+                  "value": "#FEF2F2",
+                  "tokenRef": "color.red.50"
+                }
+              }
+            },
+            {
+              "id": "red-100",
+              "label": "Red 100",
+              "apps": {
+                "cg": {
+                  "value": "#FCD1D1",
+                  "tokenRef": "colors.reds.red-10",
+                  "nativeName": "red-10"
+                },
+                "ds": {
+                  "value": "#fff0f3",
+                  "tokenRef": "color.red.primary.100"
+                },
+                "es": {
+                  "value": "#FEE2E2",
+                  "tokenRef": "color.red.100"
+                }
+              }
+            },
+            {
+              "id": "red-200",
+              "label": "Red 200",
+              "apps": {
+                "cg": {
+                  "value": "#F9A3A3",
+                  "tokenRef": "colors.reds.red-20",
+                  "nativeName": "red-20"
+                },
+                "ds": {
+                  "value": "#fed7df",
+                  "tokenRef": "color.red.primary.200"
+                },
+                "es": {
+                  "value": "#FECACA",
+                  "tokenRef": "color.red.200"
+                }
+              }
+            },
+            {
+              "id": "red-300",
+              "label": "Red 300",
+              "apps": {
+                "cg": {
+                  "value": "#F88C8C",
+                  "tokenRef": "colors.reds.red-30",
+                  "nativeName": "red-30"
+                },
+                "ds": {
+                  "value": "#fd9baf",
+                  "tokenRef": "color.red.primary.300"
+                },
+                "es": {
+                  "value": "#FCA5A5",
+                  "tokenRef": "color.red.300"
+                }
+              }
+            },
+            {
+              "id": "red-400",
+              "label": "Red 400",
+              "apps": {
+                "cg": {
+                  "value": "#F55E5E",
+                  "tokenRef": "colors.reds.red-40",
+                  "nativeName": "red-40"
+                },
+                "ds": {
+                  "value": "#fc5e7e",
+                  "tokenRef": "color.red.primary.400"
+                },
+                "es": {
+                  "value": "#F87171",
+                  "tokenRef": "color.red.400"
+                }
+              }
+            },
+            {
+              "id": "red-500",
+              "label": "Red 500",
+              "apps": {
+                "cg": {
+                  "value": "#F00203",
+                  "tokenRef": "colors.reds.red-50",
+                  "nativeName": "red-50"
+                },
+                "ds": {
+                  "value": "#fa1946",
+                  "tokenRef": "color.red.primary.500"
+                },
+                "es": {
+                  "value": "#E53935",
+                  "tokenRef": "color.red.500"
+                }
+              }
+            },
+            {
+              "id": "red-600",
+              "label": "Red 600",
+              "apps": {
+                "cg": {
+                  "value": "#DA0102",
+                  "tokenRef": "colors.reds.red-60",
+                  "nativeName": "red-60"
+                },
+                "ds": {
+                  "value": "#e10430",
+                  "tokenRef": "color.red.primary.600"
+                },
+                "es": {
+                  "value": "#C62828",
+                  "tokenRef": "color.red.600"
+                }
+              }
+            },
+            {
+              "id": "red-700",
+              "label": "Red 700",
+              "apps": {
+                "cg": {
+                  "value": "#C40102",
+                  "tokenRef": "colors.reds.red-70",
+                  "nativeName": "red-70"
+                },
+                "ds": {
+                  "value": "#be0429",
+                  "tokenRef": "color.red.primary.700"
+                },
+                "es": {
+                  "value": "#B71C1C",
+                  "tokenRef": "color.red.700"
+                }
+              }
+            },
+            {
+              "id": "red-800",
+              "label": "Red 800",
+              "apps": {
+                "cg": {
+                  "value": "#820101",
+                  "tokenRef": "colors.reds.red-80",
+                  "nativeName": "red-80"
+                },
+                "ds": {
+                  "value": "#960320",
+                  "tokenRef": "color.red.primary.800"
+                },
+                "es": {
+                  "value": "#8E1414",
+                  "tokenRef": "color.red.800"
+                }
+              }
+            },
+            {
+              "id": "red-900",
+              "label": "Red 900",
+              "apps": {
+                "cg": {
+                  "value": "#570001",
+                  "tokenRef": "colors.reds.red-90",
+                  "nativeName": "red-90"
+                },
+                "ds": {
+                  "value": "#5d1313",
+                  "tokenRef": "color.red.primary.900"
+                },
+                "es": {
+                  "value": "#5C0D0D",
+                  "tokenRef": "color.red.900"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "yellow",
+          "label": "Yellow palette",
+          "tokens": [
+            {
+              "id": "yellow-50",
+              "label": "Yellow 50",
+              "apps": {
+                "cg": {
+                  "value": "#FFFCF5",
+                  "tokenRef": "colors.yellows.yellow-05",
+                  "nativeName": "yellow-05"
+                },
+                "ds": {
+                  "value": "#fffdf5",
+                  "tokenRef": "color.yellow.50"
+                },
+                "es": {
+                  "value": "#FFFBEB",
+                  "tokenRef": "color.yellow.50"
+                }
+              }
+            },
+            {
+              "id": "yellow-100",
+              "label": "Yellow 100",
+              "apps": {
+                "cg": {
+                  "value": "#FFFBEE",
+                  "tokenRef": "colors.yellows.yellow-10",
+                  "nativeName": "yellow-10"
+                },
+                "ds": {
+                  "value": "#fffae0",
+                  "tokenRef": "color.yellow.100"
+                },
+                "es": {
+                  "value": "#FEF3C7",
+                  "tokenRef": "color.yellow.100"
+                }
+              }
+            },
+            {
+              "id": "yellow-200",
+              "label": "Yellow 200",
+              "apps": {
+                "cg": {
+                  "value": "#FEF6DD",
+                  "tokenRef": "colors.yellows.yellow-20",
+                  "nativeName": "yellow-20"
+                },
+                "ds": {
+                  "value": "#fff5c2",
+                  "tokenRef": "color.yellow.200"
+                },
+                "es": {
+                  "value": "#FDE68A",
+                  "tokenRef": "color.yellow.200"
+                }
+              }
+            },
+            {
+              "id": "yellow-300",
+              "label": "Yellow 300",
+              "apps": {
+                "cg": {
+                  "value": "#FDECBB",
+                  "tokenRef": "colors.yellows.yellow-30",
+                  "nativeName": "yellow-30"
+                },
+                "ds": {
+                  "value": "#ffec8f",
+                  "tokenRef": "color.yellow.300"
+                },
+                "es": {
+                  "value": "#FCD34D",
+                  "tokenRef": "color.yellow.300"
+                }
+              }
+            },
+            {
+              "id": "yellow-400",
+              "label": "Yellow 400",
+              "apps": {
+                "cg": {
+                  "value": "#FDE399",
+                  "tokenRef": "colors.yellows.yellow-40",
+                  "nativeName": "yellow-40"
+                },
+                "ds": {
+                  "value": "#ffe152",
+                  "tokenRef": "color.yellow.400"
+                },
+                "es": {
+                  "value": "#FBBF24",
+                  "tokenRef": "color.yellow.400"
+                }
+              }
+            },
+            {
+              "id": "yellow-500",
+              "label": "Yellow 500",
+              "apps": {
+                "cg": {
+                  "value": "#FCD977",
+                  "tokenRef": "colors.yellows.yellow-50",
+                  "nativeName": "yellow-50"
+                },
+                "ds": {
+                  "value": "#ffd914",
+                  "tokenRef": "color.yellow.500"
+                },
+                "es": {
+                  "value": "#F59E0B",
+                  "tokenRef": "color.yellow.500"
+                }
+              }
+            },
+            {
+              "id": "yellow-600",
+              "label": "Yellow 600",
+              "apps": {
+                "cg": {
+                  "value": "#FBD055",
+                  "tokenRef": "colors.yellows.yellow-60",
+                  "nativeName": "yellow-60"
+                },
+                "ds": {
+                  "value": "#ebac00",
+                  "tokenRef": "color.yellow.600"
+                },
+                "es": {
+                  "value": "#D97706",
+                  "tokenRef": "color.yellow.600"
+                }
+              }
+            },
+            {
+              "id": "yellow-700",
+              "label": "Yellow 700",
+              "apps": {
+                "cg": {
+                  "value": "#D1AC44",
+                  "tokenRef": "colors.yellows.yellow-70",
+                  "nativeName": "yellow-70"
+                },
+                "ds": {
+                  "value": "#c28100",
+                  "tokenRef": "color.yellow.700"
+                },
+                "es": {
+                  "value": "#B45309",
+                  "tokenRef": "color.yellow.700"
+                }
+              }
+            },
+            {
+              "id": "yellow-800",
+              "label": "Yellow 800",
+              "apps": {
+                "cg": {
+                  "value": "#7C6523",
+                  "tokenRef": "colors.yellows.yellow-80",
+                  "nativeName": "yellow-80"
+                },
+                "ds": {
+                  "value": "#9e5f00",
+                  "tokenRef": "color.yellow.800"
+                },
+                "es": {
+                  "value": "#92400E",
+                  "tokenRef": "color.yellow.800"
+                }
+              }
+            },
+            {
+              "id": "yellow-900",
+              "label": "Yellow 900",
+              "apps": {
+                "cg": {
+                  "value": "#3E2C00",
+                  "tokenRef": "colors.yellows.yellow-90",
+                  "nativeName": "yellow-90"
+                },
+                "ds": {
+                  "value": "#703900",
+                  "tokenRef": "color.yellow.900"
+                },
+                "es": {
+                  "value": "#78350F",
+                  "tokenRef": "color.yellow.900"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "teal",
+          "label": "Teal palette",
+          "tokens": [
+            {
+              "id": "teal-50",
+              "label": "Teal 50",
+              "apps": {
+                "cg": {
+                  "value": "#F1FFFD",
+                  "tokenRef": "colors.teals.teal-05",
+                  "nativeName": "teal-05"
+                },
+                "ds": {
+                  "value": "#fbfefe",
+                  "tokenRef": "color.teal.50"
+                },
+                "es": {
+                  "value": "#F0FDFA",
+                  "tokenRef": "color.teal.50"
+                }
+              }
+            },
+            {
+              "id": "teal-100",
+              "label": "Teal 100",
+              "apps": {
+                "cg": {
+                  "value": "#EAFFFC",
+                  "tokenRef": "colors.teals.teal-10",
+                  "nativeName": "teal-10"
+                },
+                "ds": {
+                  "value": "#effafa",
+                  "tokenRef": "color.teal.100"
+                },
+                "es": {
+                  "value": "#CCFBF1",
+                  "tokenRef": "color.teal.100"
+                }
+              }
+            },
+            {
+              "id": "teal-200",
+              "label": "Teal 200",
+              "apps": {
+                "cg": {
+                  "value": "#DCFFFA",
+                  "tokenRef": "colors.teals.teal-20",
+                  "nativeName": "teal-20"
+                },
+                "ds": {
+                  "value": "#d8f3f2",
+                  "tokenRef": "color.teal.200"
+                },
+                "es": {
+                  "value": "#99F6E4",
+                  "tokenRef": "color.teal.200"
+                }
+              }
+            },
+            {
+              "id": "teal-300",
+              "label": "Teal 300",
+              "apps": {
+                "cg": {
+                  "value": "#B9EDE5",
+                  "tokenRef": "colors.teals.teal-30",
+                  "nativeName": "teal-30"
+                },
+                "ds": {
+                  "value": "#b7e1dd",
+                  "tokenRef": "color.teal.300"
+                },
+                "es": {
+                  "value": "#5EEAD4",
+                  "tokenRef": "color.teal.300"
+                }
+              }
+            },
+            {
+              "id": "teal-400",
+              "label": "Teal 400",
+              "apps": {
+                "cg": {
+                  "value": "#97E3D9",
+                  "tokenRef": "colors.teals.teal-40",
+                  "nativeName": "teal-40"
+                },
+                "ds": {
+                  "value": "#8dcec8",
+                  "tokenRef": "color.teal.400"
+                },
+                "es": {
+                  "value": "#2DD4BF",
+                  "tokenRef": "color.teal.400"
+                }
+              }
+            },
+            {
+              "id": "teal-500",
+              "label": "Teal 500",
+              "apps": {
+                "cg": {
+                  "value": "#74DACC",
+                  "tokenRef": "colors.teals.teal-50",
+                  "nativeName": "teal-50"
+                },
+                "ds": {
+                  "value": "#5eb5ae",
+                  "tokenRef": "color.teal.500"
+                },
+                "es": {
+                  "value": "#14B8A6",
+                  "tokenRef": "color.teal.500"
+                }
+              }
+            },
+            {
+              "id": "teal-600",
+              "label": "Teal 600",
+              "apps": {
+                "cg": {
+                  "value": "#51D1BF",
+                  "tokenRef": "colors.teals.teal-60",
+                  "nativeName": "teal-60"
+                },
+                "ds": {
+                  "value": "#49a29a",
+                  "tokenRef": "color.teal.600"
+                },
+                "es": {
+                  "value": "#0D9488",
+                  "tokenRef": "color.teal.600"
+                }
+              }
+            },
+            {
+              "id": "teal-700",
+              "label": "Teal 700",
+              "apps": {
+                "cg": {
+                  "value": "#41A799",
+                  "tokenRef": "colors.teals.teal-70",
+                  "nativeName": "teal-70"
+                },
+                "ds": {
+                  "value": "#3d857f",
+                  "tokenRef": "color.teal.700"
+                },
+                "es": {
+                  "value": "#0F766E",
+                  "tokenRef": "color.teal.700"
+                }
+              }
+            },
+            {
+              "id": "teal-800",
+              "label": "Teal 800",
+              "apps": {
+                "cg": {
+                  "value": "#20544C",
+                  "tokenRef": "colors.teals.teal-80",
+                  "nativeName": "teal-80"
+                },
+                "ds": {
+                  "value": "#316863",
+                  "tokenRef": "color.teal.800"
+                },
+                "es": {
+                  "value": "#115E59",
+                  "tokenRef": "color.teal.800"
+                }
+              }
+            },
+            {
+              "id": "teal-900",
+              "label": "Teal 900",
+              "apps": {
+                "cg": {
+                  "value": "#002924",
+                  "tokenRef": "colors.teals.teal-90",
+                  "nativeName": "teal-90"
+                },
+                "ds": {
+                  "value": "#244c49",
+                  "tokenRef": "color.teal.900"
+                },
+                "es": {
+                  "value": "#134E4A",
+                  "tokenRef": "color.teal.900"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "orange",
+          "label": "Orange palette",
+          "tokens": [
+            {
+              "id": "orange-50",
+              "label": "Orange 50",
+              "apps": {
+                "cg": {
+                  "value": "#FFEADD",
+                  "tokenRef": "colors.oranges.orange-05",
+                  "nativeName": "orange-05"
+                },
+                "ds": {
+                  "value": "#fffcfa",
+                  "tokenRef": "color.orange.50"
+                },
+                "es": {
+                  "value": "#FFF7ED",
+                  "tokenRef": "color.orange.50"
+                }
+              }
+            },
+            {
+              "id": "orange-100",
+              "label": "Orange 100",
+              "apps": {
+                "cg": {
+                  "value": "#FFD6BA",
+                  "tokenRef": "colors.oranges.orange-10",
+                  "nativeName": "orange-10"
+                },
+                "ds": {
+                  "value": "#fff0e6",
+                  "tokenRef": "color.orange.100"
+                },
+                "es": {
+                  "value": "#FFEDD5",
+                  "tokenRef": "color.orange.100"
+                }
+              }
+            },
+            {
+              "id": "orange-200",
+              "label": "Orange 200",
+              "apps": {
+                "cg": {
+                  "value": "#FFAD76",
+                  "tokenRef": "colors.oranges.orange-20",
+                  "nativeName": "orange-20"
+                },
+                "ds": {
+                  "value": "#fde2ce",
+                  "tokenRef": "color.orange.200"
+                },
+                "es": {
+                  "value": "#FED7AA",
+                  "tokenRef": "color.orange.200"
+                }
+              }
+            },
+            {
+              "id": "orange-300",
+              "label": "Orange 300",
+              "apps": {
+                "cg": {
+                  "value": "#FF9854",
+                  "tokenRef": "colors.oranges.orange-30",
+                  "nativeName": "orange-30"
+                },
+                "ds": {
+                  "value": "#fcbe92",
+                  "tokenRef": "color.orange.300"
+                },
+                "es": {
+                  "value": "#FDBA74",
+                  "tokenRef": "color.orange.300"
+                }
+              }
+            },
+            {
+              "id": "orange-400",
+              "label": "Orange 400",
+              "apps": {
+                "cg": {
+                  "value": "#FF8431",
+                  "tokenRef": "colors.oranges.orange-40",
+                  "nativeName": "orange-40"
+                },
+                "ds": {
+                  "value": "#f8954f",
+                  "tokenRef": "color.orange.400"
+                },
+                "es": {
+                  "value": "#FB923C",
+                  "tokenRef": "color.orange.400"
+                }
+              }
+            },
+            {
+              "id": "orange-500",
+              "label": "Orange 500",
+              "apps": {
+                "cg": {
+                  "value": "#FF6F0F",
+                  "tokenRef": "colors.oranges.orange-50",
+                  "nativeName": "orange-50"
+                },
+                "ds": {
+                  "value": "#f37820",
+                  "tokenRef": "color.orange.500"
+                },
+                "es": {
+                  "value": "#FB8E28",
+                  "tokenRef": "color.orange.500"
+                }
+              }
+            },
+            {
+              "id": "orange-600",
+              "label": "Orange 600",
+              "apps": {
+                "cg": {
+                  "value": "#EC5E00",
+                  "tokenRef": "colors.oranges.orange-60",
+                  "nativeName": "orange-60"
+                },
+                "ds": {
+                  "value": "#df640c",
+                  "tokenRef": "color.orange.600"
+                },
+                "es": {
+                  "value": "#EA580C",
+                  "tokenRef": "color.orange.600"
+                }
+              }
+            },
+            {
+              "id": "orange-700",
+              "label": "Orange 700",
+              "apps": {
+                "cg": {
+                  "value": "#C95100",
+                  "tokenRef": "colors.oranges.orange-70",
+                  "nativeName": "orange-70"
+                },
+                "ds": {
+                  "value": "#b8520a",
+                  "tokenRef": "color.orange.700"
+                },
+                "es": {
+                  "value": "#C2410C",
+                  "tokenRef": "color.orange.700"
+                }
+              }
+            },
+            {
+              "id": "orange-800",
+              "label": "Orange 800",
+              "apps": {
+                "cg": {
+                  "value": "#863600",
+                  "tokenRef": "colors.oranges.orange-80",
+                  "nativeName": "orange-80"
+                },
+                "ds": {
+                  "value": "#914108",
+                  "tokenRef": "color.orange.800"
+                },
+                "es": {
+                  "value": "#9A3412",
+                  "tokenRef": "color.orange.800"
+                }
+              }
+            },
+            {
+              "id": "orange-900",
+              "label": "Orange 900",
+              "apps": {
+                "cg": {
+                  "value": "#5A2400",
+                  "tokenRef": "colors.oranges.orange-90",
+                  "nativeName": "orange-90"
+                },
+                "ds": {
+                  "value": "#6b3006",
+                  "tokenRef": "color.orange.900"
+                },
+                "es": {
+                  "value": "#7C2D12",
+                  "tokenRef": "color.orange.900"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "pink",
+          "label": "Pink palette",
+          "tokens": [
+            {
+              "id": "pink-50",
+              "label": "Pink 50",
+              "apps": {
+                "cg": {
+                  "value": "#FFE5F2",
+                  "tokenRef": "colors.pinks.pink-05",
+                  "nativeName": "pink-05"
+                },
+                "ds": {
+                  "value": "#fffafb",
+                  "tokenRef": "color.pink.50"
+                },
+                "es": {
+                  "value": "#FDF2F8",
+                  "tokenRef": "color.pink.50"
+                }
+              }
+            },
+            {
+              "id": "pink-100",
+              "label": "Pink 100",
+              "apps": {
+                "cg": {
+                  "value": "#FFCCE6",
+                  "tokenRef": "colors.pinks.pink-10",
+                  "nativeName": "pink-10"
+                },
+                "ds": {
+                  "value": "#fff0f4",
+                  "tokenRef": "color.pink.100"
+                },
+                "es": {
+                  "value": "#FCE7F3",
+                  "tokenRef": "color.pink.100"
+                }
+              }
+            },
+            {
+              "id": "pink-200",
+              "label": "Pink 200",
+              "apps": {
+                "cg": {
+                  "value": "#FF99CC",
+                  "tokenRef": "colors.pinks.pink-20",
+                  "nativeName": "pink-20"
+                },
+                "ds": {
+                  "value": "#fdd3e2",
+                  "tokenRef": "color.pink.200"
+                },
+                "es": {
+                  "value": "#FBCFE8",
+                  "tokenRef": "color.pink.200"
+                }
+              }
+            },
+            {
+              "id": "pink-300",
+              "label": "Pink 300",
+              "apps": {
+                "cg": {
+                  "value": "#FF66B3",
+                  "tokenRef": "colors.pinks.pink-30",
+                  "nativeName": "pink-30"
+                },
+                "ds": {
+                  "value": "#f8a0c3",
+                  "tokenRef": "color.pink.300"
+                },
+                "es": {
+                  "value": "#F9A8D4",
+                  "tokenRef": "color.pink.300"
+                }
+              }
+            },
+            {
+              "id": "pink-400",
+              "label": "Pink 400",
+              "apps": {
+                "cg": {
+                  "value": "#FF3399",
+                  "tokenRef": "colors.pinks.pink-40",
+                  "nativeName": "pink-40"
+                },
+                "ds": {
+                  "value": "#ee6dab",
+                  "tokenRef": "color.pink.400"
+                },
+                "es": {
+                  "value": "#F472B6",
+                  "tokenRef": "color.pink.400"
+                }
+              }
+            },
+            {
+              "id": "pink-500",
+              "label": "Pink 500",
+              "apps": {
+                "cg": {
+                  "value": "#FF0080",
+                  "tokenRef": "colors.pinks.pink-50",
+                  "nativeName": "pink-50"
+                },
+                "ds": {
+                  "value": "#d53f8c",
+                  "tokenRef": "color.pink.500"
+                },
+                "es": {
+                  "value": "#EC4899",
+                  "tokenRef": "color.pink.500"
+                }
+              }
+            },
+            {
+              "id": "pink-600",
+              "label": "Pink 600",
+              "apps": {
+                "cg": {
+                  "value": "#CC0066",
+                  "tokenRef": "colors.pinks.pink-60",
+                  "nativeName": "pink-60"
+                },
+                "ds": {
+                  "value": "#b83280",
+                  "tokenRef": "color.pink.600"
+                },
+                "es": {
+                  "value": "#DB2777",
+                  "tokenRef": "color.pink.600"
+                }
+              }
+            },
+            {
+              "id": "pink-700",
+              "label": "Pink 700",
+              "apps": {
+                "cg": {
+                  "value": "#99004D",
+                  "tokenRef": "colors.pinks.pink-70",
+                  "nativeName": "pink-70"
+                },
+                "ds": {
+                  "value": "#9b2770",
+                  "tokenRef": "color.pink.700"
+                },
+                "es": {
+                  "value": "#BE185D",
+                  "tokenRef": "color.pink.700"
+                }
+              }
+            },
+            {
+              "id": "pink-800",
+              "label": "Pink 800",
+              "apps": {
+                "cg": {
+                  "value": "#660033",
+                  "tokenRef": "colors.pinks.pink-80",
+                  "nativeName": "pink-80"
+                },
+                "ds": {
+                  "value": "#7a1f58",
+                  "tokenRef": "color.pink.800"
+                },
+                "es": {
+                  "value": "#9D174D",
+                  "tokenRef": "color.pink.800"
+                }
+              }
+            },
+            {
+              "id": "pink-900",
+              "label": "Pink 900",
+              "apps": {
+                "cg": {
+                  "value": "#33001A",
+                  "tokenRef": "colors.pinks.pink-90",
+                  "nativeName": "pink-90"
+                },
+                "ds": {
+                  "value": "#551b43",
+                  "tokenRef": "color.pink.900"
+                },
+                "es": {
+                  "value": "#831843",
+                  "tokenRef": "color.pink.900"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "purple",
+          "label": "Purple palette",
+          "tokens": [
+            {
+              "id": "purple-50",
+              "label": "Purple 50",
+              "apps": {
+                "cg": {
+                  "value": "#F5ECFF",
+                  "tokenRef": "colors.purples.purple-05",
+                  "nativeName": "purple-05"
+                },
+                "ds": {
+                  "value": "#fdfbfe",
+                  "tokenRef": "color.purple.50"
+                },
+                "es": {
+                  "value": "#FAF5FF",
+                  "tokenRef": "color.purple.50"
+                }
+              }
+            },
+            {
+              "id": "purple-100",
+              "label": "Purple 100",
+              "apps": {
+                "cg": {
+                  "value": "#EDE1FA",
+                  "tokenRef": "colors.purples.purple-10",
+                  "nativeName": "purple-10"
+                },
+                "ds": {
+                  "value": "#f5effb",
+                  "tokenRef": "color.purple.100"
+                },
+                "es": {
+                  "value": "#F3E8FF",
+                  "tokenRef": "color.purple.100"
+                }
+              }
+            },
+            {
+              "id": "purple-200",
+              "label": "Purple 200",
+              "apps": {
+                "cg": {
+                  "value": "#D9BDF5",
+                  "tokenRef": "colors.purples.purple-20",
+                  "nativeName": "purple-20"
+                },
+                "ds": {
+                  "value": "#ebddf8",
+                  "tokenRef": "color.purple.200"
+                },
+                "es": {
+                  "value": "#E9D5FF",
+                  "tokenRef": "color.purple.200"
+                }
+              }
+            },
+            {
+              "id": "purple-300",
+              "label": "Purple 300",
+              "apps": {
+                "cg": {
+                  "value": "#C9A4F1",
+                  "tokenRef": "colors.purples.purple-30",
+                  "nativeName": "purple-30"
+                },
+                "ds": {
+                  "value": "#ceabed",
+                  "tokenRef": "color.purple.300"
+                },
+                "es": {
+                  "value": "#D8B4FE",
+                  "tokenRef": "color.purple.300"
+                }
+              }
+            },
+            {
+              "id": "purple-400",
+              "label": "Purple 400",
+              "apps": {
+                "cg": {
+                  "value": "#B785ED",
+                  "tokenRef": "colors.purples.purple-40",
+                  "nativeName": "purple-40"
+                },
+                "ds": {
+                  "value": "#b178e2",
+                  "tokenRef": "color.purple.400"
+                },
+                "es": {
+                  "value": "#C084FC",
+                  "tokenRef": "color.purple.400"
+                }
+              }
+            },
+            {
+              "id": "purple-500",
+              "label": "Purple 500",
+              "apps": {
+                "cg": {
+                  "value": "#A567E8",
+                  "tokenRef": "colors.purples.purple-50",
+                  "nativeName": "purple-50"
+                },
+                "ds": {
+                  "value": "#8f3dd6",
+                  "tokenRef": "color.purple.500"
+                },
+                "es": {
+                  "value": "#714FB6",
+                  "tokenRef": "color.purple.500"
+                }
+              }
+            },
+            {
+              "id": "purple-600",
+              "label": "Purple 600",
+              "apps": {
+                "cg": {
+                  "value": "#8853C0",
+                  "tokenRef": "colors.purples.purple-60",
+                  "nativeName": "purple-60"
+                },
+                "ds": {
+                  "value": "#7a29c2",
+                  "tokenRef": "color.purple.600"
+                },
+                "es": {
+                  "value": "#9333EA",
+                  "tokenRef": "color.purple.600"
+                }
+              }
+            },
+            {
+              "id": "purple-700",
+              "label": "Purple 700",
+              "apps": {
+                "cg": {
+                  "value": "#6B4099",
+                  "tokenRef": "colors.purples.purple-70",
+                  "nativeName": "purple-70"
+                },
+                "ds": {
+                  "value": "#651da5",
+                  "tokenRef": "color.purple.700"
+                },
+                "es": {
+                  "value": "#7E22CE",
+                  "tokenRef": "color.purple.700"
+                }
+              }
+            },
+            {
+              "id": "purple-800",
+              "label": "Purple 800",
+              "apps": {
+                "cg": {
+                  "value": "#4D2C71",
+                  "tokenRef": "colors.purples.purple-80",
+                  "nativeName": "purple-80"
+                },
+                "ds": {
+                  "value": "#500d8c",
+                  "tokenRef": "color.purple.800"
+                },
+                "es": {
+                  "value": "#6B21A8",
+                  "tokenRef": "color.purple.800"
+                }
+              }
+            },
+            {
+              "id": "purple-900",
+              "label": "Purple 900",
+              "apps": {
+                "cg": {
+                  "value": "#20073A",
+                  "tokenRef": "colors.purples.purple-90",
+                  "nativeName": "purple-90"
+                },
+                "ds": {
+                  "value": "#3b0a67",
+                  "tokenRef": "color.purple.900"
+                },
+                "es": {
+                  "value": "#581C87",
+                  "tokenRef": "color.purple.900"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "neutral",
+          "label": "Neutral palette",
+          "tokens": [
+            {
+              "id": "neutral-50",
+              "label": "Neutral 50",
+              "apps": {
+                "cg": {
+                  "value": "#F6F6F6",
+                  "tokenRef": "colors.neutral.neutral-lightest",
+                  "nativeName": "neutral-lightest"
+                },
+                "ds": {
+                  "value": "#fcfcfd",
+                  "tokenRef": "color.neutral.primary.50"
+                },
+                "es": {
+                  "value": "#F9FAFB",
+                  "tokenRef": "color.gray.50"
+                }
+              }
+            },
+            {
+              "id": "neutral-500",
+              "label": "Neutral 500",
+              "apps": {
+                "cg": {
+                  "value": "#C6C6C6",
+                  "tokenRef": "colors.neutral.neutral",
+                  "nativeName": "neutral"
+                },
+                "ds": {
+                  "value": "#8487ae",
+                  "tokenRef": "color.neutral.primary.500"
+                },
+                "es": {
+                  "value": "#6B7280",
+                  "tokenRef": "color.gray.500"
+                }
+              }
+            },
+            {
+              "id": "neutral-900",
+              "label": "Neutral 900",
+              "apps": {
+                "cg": {
+                  "value": "#2C2C2C",
+                  "tokenRef": "colors.neutral.neutral-darkest",
+                  "nativeName": "neutral-darkest"
+                },
+                "ds": {
+                  "value": "#0d0e1c",
+                  "tokenRef": "color.neutral.primary.900"
+                },
+                "es": {
+                  "value": "#111827",
+                  "tokenRef": "color.gray.900"
+                }
+              }
+            },
+            {
+              "id": "neutral-0",
+              "label": "Neutral 0",
+              "apps": {
+                "ds": {
+                  "value": "#ffffff",
+                  "tokenRef": "color.neutral.primary.0"
+                },
+                "es": {
+                  "value": "#FFFFFF",
+                  "tokenRef": "color.gray.0"
+                }
+              }
+            },
+            {
+              "id": "neutral-100",
+              "label": "Neutral 100",
+              "apps": {
+                "cg": {
+                  "value": "#EFEFEF",
+                  "tokenRef": "colors.grays.gray-10",
+                  "nativeName": "gray-10"
+                },
+                "ds": {
+                  "value": "#f6f6f9",
+                  "tokenRef": "color.neutral.primary.100"
+                },
+                "es": {
+                  "value": "#F3F4F6",
+                  "tokenRef": "color.gray.100"
+                }
+              }
+            },
+            {
+              "id": "neutral-200",
+              "label": "Neutral 200",
+              "apps": {
+                "cg": {
+                  "value": "#E0E0E0",
+                  "tokenRef": "colors.grays.gray-20",
+                  "nativeName": "gray-20"
+                },
+                "ds": {
+                  "value": "#e9eaf1",
+                  "tokenRef": "color.neutral.primary.200"
+                },
+                "es": {
+                  "value": "#E5E7EB",
+                  "tokenRef": "color.gray.200"
+                }
+              }
+            },
+            {
+              "id": "neutral-300",
+              "label": "Neutral 300",
+              "apps": {
+                "cg": {
+                  "value": "#C6C6C6",
+                  "tokenRef": "colors.grays.gray-30",
+                  "nativeName": "gray-30"
+                },
+                "ds": {
+                  "value": "#d4d5e3",
+                  "tokenRef": "color.neutral.primary.300"
+                },
+                "es": {
+                  "value": "#D1D5DB",
+                  "tokenRef": "color.gray.300"
+                }
+              }
+            },
+            {
+              "id": "neutral-400",
+              "label": "Neutral 400",
+              "apps": {
+                "cg": {
+                  "value": "#A8A8A8",
+                  "tokenRef": "colors.grays.gray-40",
+                  "nativeName": "gray-40"
+                },
+                "ds": {
+                  "value": "#a9abc7",
+                  "tokenRef": "color.neutral.primary.400"
+                },
+                "es": {
+                  "value": "#9CA3AF",
+                  "tokenRef": "color.gray.400"
+                }
+              }
+            },
+            {
+              "id": "neutral-600",
+              "label": "Neutral 600",
+              "apps": {
+                "cg": {
+                  "value": "#6F6F6F",
+                  "tokenRef": "colors.grays.gray-60",
+                  "nativeName": "gray-60"
+                },
+                "ds": {
+                  "value": "#646890",
+                  "tokenRef": "color.neutral.primary.600"
+                },
+                "es": {
+                  "value": "#4B5563",
+                  "tokenRef": "color.gray.600"
+                }
+              }
+            },
+            {
+              "id": "neutral-700",
+              "label": "Neutral 700",
+              "apps": {
+                "cg": {
+                  "value": "#595959",
+                  "tokenRef": "colors.grays.gray-70",
+                  "nativeName": "gray-70"
+                },
+                "ds": {
+                  "value": "#3d4166",
+                  "tokenRef": "color.neutral.primary.700"
+                },
+                "es": {
+                  "value": "#374151",
+                  "tokenRef": "color.gray.700"
+                }
+              }
+            },
+            {
+              "id": "neutral-800",
+              "label": "Neutral 800",
+              "apps": {
+                "cg": {
+                  "value": "#2C2C2C",
+                  "tokenRef": "colors.grays.gray-80",
+                  "nativeName": "gray-80"
+                },
+                "ds": {
+                  "value": "#1d203f",
+                  "tokenRef": "color.neutral.primary.800"
+                },
+                "es": {
+                  "value": "#1F2937",
+                  "tokenRef": "color.gray.800"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "cg-only",
+          "label": "CG-only steps (no DS/ES equivalent)",
+          "tokens": [
+            {
+              "id": "cg-only-blue-07",
+              "label": "blue-07",
+              "apps": {
+                "cg": {
+                  "value": "#E7F3FF",
+                  "tokenRef": "colors.blues.blue-07",
+                  "nativeName": "blue-07"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-blue-15",
+              "label": "blue-15",
+              "apps": {
+                "cg": {
+                  "value": "#BDDAFD",
+                  "tokenRef": "colors.blues.blue-15",
+                  "nativeName": "blue-15"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-blue-75",
+              "label": "blue-75",
+              "apps": {
+                "cg": {
+                  "value": "#013999",
+                  "tokenRef": "colors.blues.blue-75",
+                  "nativeName": "blue-75"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-blue-85",
+              "label": "blue-85",
+              "apps": {
+                "cg": {
+                  "value": "#102377",
+                  "tokenRef": "colors.blues.blue-85",
+                  "nativeName": "blue-85"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-green-03",
+              "label": "green-03",
+              "apps": {
+                "cg": {
+                  "value": "#EEF8EB",
+                  "tokenRef": "colors.greens.green-03",
+                  "nativeName": "green-03"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-green-15",
+              "label": "green-15",
+              "apps": {
+                "cg": {
+                  "value": "#BCE4AE",
+                  "tokenRef": "colors.greens.green-15",
+                  "nativeName": "green-15"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-green-75",
+              "label": "green-75",
+              "apps": {
+                "cg": {
+                  "value": "#248901",
+                  "tokenRef": "colors.greens.green-75",
+                  "nativeName": "green-75"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-green-85",
+              "label": "green-85",
+              "apps": {
+                "cg": {
+                  "value": "#005600",
+                  "tokenRef": "colors.greens.green-85",
+                  "nativeName": "green-85"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-red-15",
+              "label": "red-15",
+              "apps": {
+                "cg": {
+                  "value": "#FABABA",
+                  "tokenRef": "colors.reds.red-15",
+                  "nativeName": "red-15"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-red-75",
+              "label": "red-75",
+              "apps": {
+                "cg": {
+                  "value": "#AE0102",
+                  "tokenRef": "colors.reds.red-75",
+                  "nativeName": "red-75"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-red-85",
+              "label": "red-85",
+              "apps": {
+                "cg": {
+                  "value": "#640304",
+                  "tokenRef": "colors.reds.red-85",
+                  "nativeName": "red-85"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-yellow-15",
+              "label": "yellow-15",
+              "apps": {
+                "cg": {
+                  "value": "#FEF9E7",
+                  "tokenRef": "colors.yellows.yellow-15",
+                  "nativeName": "yellow-15"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-yellow-75",
+              "label": "yellow-75",
+              "apps": {
+                "cg": {
+                  "value": "#A68833",
+                  "tokenRef": "colors.yellows.yellow-75",
+                  "nativeName": "yellow-75"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-yellow-85",
+              "label": "yellow-85",
+              "apps": {
+                "cg": {
+                  "value": "#514112",
+                  "tokenRef": "colors.yellows.yellow-85",
+                  "nativeName": "yellow-85"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-teal-15",
+              "label": "teal-15",
+              "apps": {
+                "cg": {
+                  "value": "#E7FFFB",
+                  "tokenRef": "colors.teals.teal-15",
+                  "nativeName": "teal-15"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-teal-75",
+              "label": "teal-75",
+              "apps": {
+                "cg": {
+                  "value": "#317D73",
+                  "tokenRef": "colors.teals.teal-75",
+                  "nativeName": "teal-75"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-teal-85",
+              "label": "teal-85",
+              "apps": {
+                "cg": {
+                  "value": "#0A3932",
+                  "tokenRef": "colors.teals.teal-85",
+                  "nativeName": "teal-85"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-orange-15",
+              "label": "orange-15",
+              "apps": {
+                "cg": {
+                  "value": "#FFC198",
+                  "tokenRef": "colors.oranges.orange-15",
+                  "nativeName": "orange-15"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-orange-75",
+              "label": "orange-75",
+              "apps": {
+                "cg": {
+                  "value": "#9D3F00",
+                  "tokenRef": "colors.oranges.orange-75",
+                  "nativeName": "orange-75"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-orange-85",
+              "label": "orange-85",
+              "apps": {
+                "cg": {
+                  "value": "#702D00",
+                  "tokenRef": "colors.oranges.orange-85",
+                  "nativeName": "orange-85"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-pink-15",
+              "label": "pink-15",
+              "apps": {
+                "cg": {
+                  "value": "#FFB2D9",
+                  "tokenRef": "colors.pinks.pink-15",
+                  "nativeName": "pink-15"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-pink-75",
+              "label": "pink-75",
+              "apps": {
+                "cg": {
+                  "value": "#800040",
+                  "tokenRef": "colors.pinks.pink-75",
+                  "nativeName": "pink-75"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-pink-85",
+              "label": "pink-85",
+              "apps": {
+                "cg": {
+                  "value": "#4D0026",
+                  "tokenRef": "colors.pinks.pink-85",
+                  "nativeName": "pink-85"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-purple-15",
+              "label": "purple-15",
+              "apps": {
+                "cg": {
+                  "value": "#E9D6FC",
+                  "tokenRef": "colors.purples.purple-15",
+                  "nativeName": "purple-15"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-purple-75",
+              "label": "purple-75",
+              "apps": {
+                "cg": {
+                  "value": "#5F3987",
+                  "tokenRef": "colors.purples.purple-75",
+                  "nativeName": "purple-75"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-purple-85",
+              "label": "purple-85",
+              "apps": {
+                "cg": {
+                  "value": "#2D114A",
+                  "tokenRef": "colors.purples.purple-85",
+                  "nativeName": "purple-85"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-gray-15",
+              "label": "gray-15",
+              "apps": {
+                "cg": {
+                  "value": "#ECECEC",
+                  "tokenRef": "colors.grays.gray-15",
+                  "nativeName": "gray-15"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-gray-75",
+              "label": "gray-75",
+              "apps": {
+                "cg": {
+                  "value": "#434343",
+                  "tokenRef": "colors.grays.gray-75",
+                  "nativeName": "gray-75"
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-only-gray-85",
+              "label": "gray-85",
+              "apps": {
+                "cg": {
+                  "value": "#161616",
+                  "tokenRef": "colors.grays.gray-85",
+                  "nativeName": "gray-85"
+                }
+              },
+              "cgOnly": true
+            }
+          ]
+        }
+      ]
+    },
+    "typography": {
+      "groups": [
+        {
+          "id": "family",
+          "label": "Family",
+          "tokens": [
+            {
+              "id": "font-family-body",
+              "label": "Body font family",
+              "apps": {
+                "cg": {
+                  "value": "Montserrat",
+                  "tokenRef": "typography.font-family"
+                },
+                "ds": {
+                  "value": "Nunito",
+                  "tokenRef": "font.family.body"
+                },
+                "es": {
+                  "value": "Nunito",
+                  "tokenRef": "fontFamily.sans"
+                }
+              }
+            },
+            {
+              "id": "font-family-title",
+              "label": "Title font family",
+              "apps": {
+                "cg": {
+                  "value": "Montserrat",
+                  "tokenRef": "typography.font-family"
+                },
+                "ds": {
+                  "value": "Nunito",
+                  "tokenRef": "font.family.title"
+                },
+                "es": {
+                  "value": "Nunito",
+                  "tokenRef": "fontFamily.sans"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "scale",
+          "label": "Scale",
+          "tokens": [
+            {
+              "id": "text-xs",
+              "label": "Extra small (caption)",
+              "apps": {
+                "cg": {
+                  "value": "10px",
+                  "tokenRef": "typography.captions.caption-01.px"
+                },
+                "ds": {
+                  "value": "8px",
+                  "tokenRef": "font.size.2xs"
+                },
+                "es": {
+                  "value": "12px",
+                  "tokenRef": "fontSize.xs"
+                }
+              }
+            },
+            {
+              "id": "text-sm",
+              "label": "Small / body compact",
+              "apps": {
+                "cg": {
+                  "value": "12px",
+                  "tokenRef": "typography.body.body-01.px"
+                },
+                "ds": {
+                  "value": "14px",
+                  "tokenRef": "font.size.sm"
+                },
+                "es": {
+                  "value": "14px",
+                  "tokenRef": "fontSize.sm"
+                }
+              }
+            },
+            {
+              "id": "text-md",
+              "label": "Medium / body default",
+              "apps": {
+                "cg": {
+                  "value": "14px",
+                  "tokenRef": "typography.body.body-02.px"
+                },
+                "ds": {
+                  "value": "16px",
+                  "tokenRef": "font.size.md"
+                },
+                "es": {
+                  "value": "16px",
+                  "tokenRef": "fontSize.base"
+                }
+              }
+            },
+            {
+              "id": "text-lg",
+              "label": "Large",
+              "apps": {
+                "cg": {
+                  "value": "16px",
+                  "tokenRef": "typography.body.body-03.px"
+                },
+                "ds": {
+                  "value": "18px",
+                  "tokenRef": "font.size.lg"
+                },
+                "es": {
+                  "value": "18px",
+                  "tokenRef": "fontSize.lg"
+                }
+              }
+            },
+            {
+              "id": "heading-h4",
+              "label": "Heading 4",
+              "apps": {
+                "cg": {
+                  "value": "24px",
+                  "tokenRef": "typography.headers.h4.px"
+                },
+                "ds": {
+                  "value": "20px",
+                  "tokenRef": "font.size.xl"
+                },
+                "es": {
+                  "value": "20px",
+                  "tokenRef": "fontSize.xl"
+                }
+              }
+            },
+            {
+              "id": "heading-h2",
+              "label": "Heading 2",
+              "apps": {
+                "cg": {
+                  "value": "36px",
+                  "tokenRef": "typography.headers.h2.px"
+                },
+                "ds": {
+                  "value": "24px",
+                  "tokenRef": "font.size.2xl"
+                },
+                "es": {
+                  "value": "24px",
+                  "tokenRef": "fontSize.2xl"
+                }
+              }
+            },
+            {
+              "id": "heading-h1",
+              "label": "Heading 1",
+              "apps": {
+                "cg": {
+                  "value": "44px",
+                  "tokenRef": "typography.headers.h1.px"
+                },
+                "ds": {
+                  "value": "32px",
+                  "tokenRef": "font.size.4xl"
+                },
+                "es": {
+                  "value": "36px",
+                  "tokenRef": "fontSize.4xl"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "weight",
+          "label": "Weight",
+          "tokens": [
+            {
+              "id": "weight-regular",
+              "label": "Regular weight",
+              "apps": {
+                "cg": {
+                  "value": "400",
+                  "tokenRef": "typography.body.body-01.fontWeight"
+                },
+                "ds": {
+                  "value": "400",
+                  "tokenRef": "font.weight.regular"
+                },
+                "es": {
+                  "value": "400",
+                  "tokenRef": "fontWeight.normal"
+                }
+              }
+            },
+            {
+              "id": "weight-semibold",
+              "label": "Semibold weight",
+              "apps": {
+                "cg": {
+                  "value": "600",
+                  "tokenRef": "typography.headers.h4.fontWeight"
+                },
+                "ds": {
+                  "value": "600",
+                  "tokenRef": "font.weight.semibold"
+                },
+                "es": {
+                  "value": "600",
+                  "tokenRef": "fontWeight.semibold"
+                }
+              }
+            },
+            {
+              "id": "weight-bold",
+              "label": "Bold weight",
+              "apps": {
+                "cg": {
+                  "value": "900",
+                  "tokenRef": "typography.headers.h1.fontWeight"
+                },
+                "ds": {
+                  "value": "700",
+                  "tokenRef": "font.weight.bold"
+                },
+                "es": {
+                  "value": "700",
+                  "tokenRef": "fontWeight.bold"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "line-height",
+          "label": "Line-height",
+          "tokens": [
+            {
+              "id": "line-height-sm",
+              "label": "Line height (sm text)",
+              "apps": {
+                "cg": {
+                  "value": "18px",
+                  "tokenRef": "typography.body.body-01.lineHeightPx"
+                },
+                "ds": {
+                  "value": "16px",
+                  "tokenRef": "font.line-height.sm"
+                },
+                "es": {
+                  "value": "20px",
+                  "tokenRef": "lineHeight.sm"
+                }
+              }
+            },
+            {
+              "id": "line-height-md",
+              "label": "Line height (md text)",
+              "apps": {
+                "cg": {
+                  "value": "22px",
+                  "tokenRef": "typography.body.body-02.lineHeightPx"
+                },
+                "ds": {
+                  "value": "20px",
+                  "tokenRef": "font.line-height.lg"
+                },
+                "es": {
+                  "value": "24px",
+                  "tokenRef": "lineHeight.base"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "Headers",
+          "label": "Headers",
+          "tokens": [
+            {
+              "id": "cg-typo-header-jumbo-01",
+              "label": "Header Jumbo 01",
+              "apps": {
+                "cg": {
+                  "value": "48px · 58px lh · w900 · ls 0px",
+                  "tokenRef": "typography.headers.header-jumbo-01",
+                  "nativeName": "header-jumbo-01",
+                  "typographyDetail": {
+                    "displayName": "Header Jumbo 01",
+                    "size": "48px",
+                    "lineHeight": "58px",
+                    "weight": "900",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "40px · 56px lh · w600",
+                  "tokenRef": "typography.edit.header.5xl",
+                  "typographyDetail": {
+                    "size": "40px",
+                    "lineHeight": "56px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-typo-header-jumbo-02",
+              "label": "Header Jumbo 02",
+              "apps": {
+                "cg": {
+                  "value": "44px · 53px lh · w900 · ls 0px",
+                  "tokenRef": "typography.headers.header-jumbo-02",
+                  "nativeName": "header-jumbo-02",
+                  "typographyDetail": {
+                    "displayName": "Header Jumbo 02",
+                    "size": "44px",
+                    "lineHeight": "53px",
+                    "weight": "900",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "40px · 56px lh · w600",
+                  "tokenRef": "typography.edit.header.5xl",
+                  "typographyDetail": {
+                    "size": "40px",
+                    "lineHeight": "56px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-typo-h1",
+              "label": "Header 01",
+              "apps": {
+                "cg": {
+                  "value": "44px · 53px lh · w900 · ls 0px",
+                  "tokenRef": "typography.headers.h1",
+                  "nativeName": "h1",
+                  "typographyDetail": {
+                    "displayName": "Header 01",
+                    "size": "44px",
+                    "lineHeight": "53px",
+                    "weight": "900",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "40px · 56px lh · w600",
+                  "tokenRef": "typography.edit.header.5xl",
+                  "typographyDetail": {
+                    "size": "40px",
+                    "lineHeight": "56px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-typo-h2",
+              "label": "Header 02",
+              "apps": {
+                "cg": {
+                  "value": "36px · 43px lh · w700 · ls 0px",
+                  "tokenRef": "typography.headers.h2",
+                  "nativeName": "h2",
+                  "typographyDetail": {
+                    "displayName": "Header 02",
+                    "size": "36px",
+                    "lineHeight": "43px",
+                    "weight": "700",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "32px · 56px lh · w600",
+                  "tokenRef": "typography.edit.header.4xl",
+                  "typographyDetail": {
+                    "size": "32px",
+                    "lineHeight": "56px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "es": {
+                  "value": "36px",
+                  "tokenRef": "fontSize.4xl",
+                  "typographyDetail": {
+                    "size": "36px"
+                  }
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-typo-h3",
+              "label": "Header 03",
+              "apps": {
+                "cg": {
+                  "value": "28px · 34px lh · w700 · ls 0px",
+                  "tokenRef": "typography.headers.h3",
+                  "nativeName": "h3",
+                  "typographyDetail": {
+                    "displayName": "Header 03",
+                    "size": "28px",
+                    "lineHeight": "34px",
+                    "weight": "700",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "28px · 36px lh · w600",
+                  "tokenRef": "typography.edit.header.3xl",
+                  "typographyDetail": {
+                    "size": "28px",
+                    "lineHeight": "36px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-typo-h4",
+              "label": "Header 04",
+              "apps": {
+                "cg": {
+                  "value": "24px · 28px lh · w600 · ls 0px",
+                  "tokenRef": "typography.headers.h4",
+                  "nativeName": "h4",
+                  "typographyDetail": {
+                    "displayName": "Header 04",
+                    "size": "24px",
+                    "lineHeight": "28px",
+                    "weight": "600",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "24px · 32px lh · w600",
+                  "tokenRef": "typography.edit.header.2xl",
+                  "typographyDetail": {
+                    "size": "24px",
+                    "lineHeight": "32px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "es": {
+                  "value": "24px",
+                  "tokenRef": "fontSize.2xl",
+                  "typographyDetail": {
+                    "size": "24px"
+                  }
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-typo-h5",
+              "label": "Header 05",
+              "apps": {
+                "cg": {
+                  "value": "20px · 24px lh · w600 · ls 0px",
+                  "tokenRef": "typography.headers.h5",
+                  "nativeName": "h5",
+                  "typographyDetail": {
+                    "displayName": "Header 05",
+                    "size": "20px",
+                    "lineHeight": "24px",
+                    "weight": "600",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "20px · 28px lh · w600",
+                  "tokenRef": "typography.edit.header.xl",
+                  "typographyDetail": {
+                    "size": "20px",
+                    "lineHeight": "28px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "es": {
+                  "value": "20px",
+                  "tokenRef": "fontSize.xl",
+                  "typographyDetail": {
+                    "size": "20px"
+                  }
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-typo-h6",
+              "label": "Header 06",
+              "apps": {
+                "cg": {
+                  "value": "16px · 19px lh · w700 · ls 0px",
+                  "tokenRef": "typography.headers.h6",
+                  "nativeName": "h6",
+                  "typographyDetail": {
+                    "displayName": "Header 06",
+                    "size": "16px",
+                    "lineHeight": "19px",
+                    "weight": "700",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "16px · 20px lh · w600",
+                  "tokenRef": "typography.edit.header.md",
+                  "typographyDetail": {
+                    "size": "16px",
+                    "lineHeight": "20px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "es": {
+                  "value": "16px",
+                  "tokenRef": "fontSize.base",
+                  "typographyDetail": {
+                    "size": "16px"
+                  }
+                }
+              },
+              "cgOnly": true
+            }
+          ]
+        },
+        {
+          "id": "Subheaders",
+          "label": "Subheaders",
+          "tokens": [
+            {
+              "id": "cg-typo-subheader-01",
+              "label": "Subheader 01",
+              "apps": {
+                "cg": {
+                  "value": "14px · 18px lh · w600 · ls 0px",
+                  "tokenRef": "typography.subheaders.subheader-01",
+                  "nativeName": "subheader-01",
+                  "typographyDetail": {
+                    "displayName": "Subheader 01",
+                    "size": "14px",
+                    "lineHeight": "18px",
+                    "weight": "600",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "14px · 16px lh · w600",
+                  "tokenRef": "typography.edit.header.sm",
+                  "typographyDetail": {
+                    "size": "14px",
+                    "lineHeight": "16px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "es": {
+                  "value": "14px",
+                  "tokenRef": "fontSize.sm",
+                  "typographyDetail": {
+                    "size": "14px"
+                  }
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-typo-subheader-02",
+              "label": "Subheader 02",
+              "apps": {
+                "cg": {
+                  "value": "15px · 19px lh · w600 · ls 0px",
+                  "tokenRef": "typography.subheaders.subheader-02",
+                  "nativeName": "subheader-02",
+                  "typographyDetail": {
+                    "displayName": "Subheader 02",
+                    "size": "15px",
+                    "lineHeight": "19px",
+                    "weight": "600",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "14px · 16px lh · w600",
+                  "tokenRef": "typography.edit.header.sm",
+                  "typographyDetail": {
+                    "size": "14px",
+                    "lineHeight": "16px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "es": {
+                  "value": "14px",
+                  "tokenRef": "fontSize.sm",
+                  "typographyDetail": {
+                    "size": "14px"
+                  }
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-typo-subheader-03",
+              "label": "Subheader 03",
+              "apps": {
+                "cg": {
+                  "value": "16px · 21px lh · w600 · ls 0px",
+                  "tokenRef": "typography.subheaders.subheader-03",
+                  "nativeName": "subheader-03",
+                  "typographyDetail": {
+                    "displayName": "Subheader 03",
+                    "size": "16px",
+                    "lineHeight": "21px",
+                    "weight": "600",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "16px · 20px lh · w600",
+                  "tokenRef": "typography.edit.header.md",
+                  "typographyDetail": {
+                    "size": "16px",
+                    "lineHeight": "20px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "es": {
+                  "value": "16px",
+                  "tokenRef": "fontSize.base",
+                  "typographyDetail": {
+                    "size": "16px"
+                  }
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-typo-subheader-04",
+              "label": "Subheader 04",
+              "apps": {
+                "cg": {
+                  "value": "12px · 18px lh · w700 · ls 0px",
+                  "tokenRef": "typography.subheaders.subheader-04",
+                  "nativeName": "subheader-04",
+                  "typographyDetail": {
+                    "displayName": "Subheader 04",
+                    "size": "12px",
+                    "lineHeight": "18px",
+                    "weight": "700",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "12px · 12px lh · w600",
+                  "tokenRef": "typography.edit.header.xs",
+                  "typographyDetail": {
+                    "size": "12px",
+                    "lineHeight": "12px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "es": {
+                  "value": "12px",
+                  "tokenRef": "fontSize.xs",
+                  "typographyDetail": {
+                    "size": "12px"
+                  }
+                }
+              },
+              "cgOnly": true
+            }
+          ]
+        },
+        {
+          "id": "Body",
+          "label": "Body",
+          "tokens": [
+            {
+              "id": "cg-typo-body-01",
+              "label": "Body 01",
+              "apps": {
+                "cg": {
+                  "value": "12px · 18px lh · w400 · ls 0px",
+                  "tokenRef": "typography.body.body-01",
+                  "nativeName": "body-01",
+                  "typographyDetail": {
+                    "displayName": "Body 01",
+                    "size": "12px",
+                    "lineHeight": "18px",
+                    "weight": "400",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "12px · 12px lh · w600",
+                  "tokenRef": "typography.edit.header.xs",
+                  "typographyDetail": {
+                    "size": "12px",
+                    "lineHeight": "12px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "es": {
+                  "value": "12px",
+                  "tokenRef": "fontSize.xs",
+                  "typographyDetail": {
+                    "size": "12px"
+                  }
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-typo-body-02",
+              "label": "Body 02",
+              "apps": {
+                "cg": {
+                  "value": "14px · 22px lh · w400 · ls 0px",
+                  "tokenRef": "typography.body.body-02",
+                  "nativeName": "body-02",
+                  "typographyDetail": {
+                    "displayName": "Body 02",
+                    "size": "14px",
+                    "lineHeight": "22px",
+                    "weight": "400",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "14px · 16px lh · w600",
+                  "tokenRef": "typography.edit.header.sm",
+                  "typographyDetail": {
+                    "size": "14px",
+                    "lineHeight": "16px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "es": {
+                  "value": "14px",
+                  "tokenRef": "fontSize.sm",
+                  "typographyDetail": {
+                    "size": "14px"
+                  }
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-typo-body-03",
+              "label": "Body 03",
+              "apps": {
+                "cg": {
+                  "value": "16px · 24px lh · w400 · ls 0px",
+                  "tokenRef": "typography.body.body-03",
+                  "nativeName": "body-03",
+                  "typographyDetail": {
+                    "displayName": "Body 03",
+                    "size": "16px",
+                    "lineHeight": "24px",
+                    "weight": "400",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "16px · 20px lh · w600",
+                  "tokenRef": "typography.edit.header.md",
+                  "typographyDetail": {
+                    "size": "16px",
+                    "lineHeight": "20px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "es": {
+                  "value": "16px",
+                  "tokenRef": "fontSize.base",
+                  "typographyDetail": {
+                    "size": "16px"
+                  }
+                }
+              },
+              "cgOnly": true
+            }
+          ]
+        },
+        {
+          "id": "Captions",
+          "label": "Captions",
+          "tokens": [
+            {
+              "id": "cg-typo-caption-01",
+              "label": "Caption 01",
+              "apps": {
+                "cg": {
+                  "value": "10px · 16px lh · w400 · ls 0px",
+                  "tokenRef": "typography.captions.caption-01",
+                  "nativeName": "caption-01",
+                  "typographyDetail": {
+                    "displayName": "Caption 01",
+                    "size": "10px",
+                    "lineHeight": "16px",
+                    "weight": "400",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "12px · 12px lh · w600",
+                  "tokenRef": "typography.edit.header.xs",
+                  "typographyDetail": {
+                    "size": "12px",
+                    "lineHeight": "12px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "es": {
+                  "value": "12px",
+                  "tokenRef": "fontSize.xs",
+                  "typographyDetail": {
+                    "size": "12px"
+                  }
+                }
+              },
+              "cgOnly": true
+            },
+            {
+              "id": "cg-typo-caption-02",
+              "label": "Caption 02",
+              "apps": {
+                "cg": {
+                  "value": "12px · 18px lh · w500 · ls 0px",
+                  "tokenRef": "typography.captions.caption-02",
+                  "nativeName": "caption-02",
+                  "typographyDetail": {
+                    "displayName": "Caption 02",
+                    "size": "12px",
+                    "lineHeight": "18px",
+                    "weight": "500",
+                    "letterSpacing": "0px"
+                  }
+                },
+                "ds": {
+                  "value": "12px · 12px lh · w600",
+                  "tokenRef": "typography.edit.header.xs",
+                  "typographyDetail": {
+                    "size": "12px",
+                    "lineHeight": "12px",
+                    "weight": "600",
+                    "letterSpacing": "1px"
+                  }
+                },
+                "es": {
+                  "value": "12px",
+                  "tokenRef": "fontSize.xs",
+                  "typographyDetail": {
+                    "size": "12px"
+                  }
+                }
+              },
+              "cgOnly": true
+            }
+          ]
+        }
+      ]
+    },
+    "spacing": {
+      "groups": [
+        {
+          "id": "scale",
+          "label": "Scale",
+          "tokens": [
+            {
+              "id": "space-none",
+              "label": "None",
+              "apps": {
+                "cg": {
+                  "value": "0px",
+                  "tokenRef": "spacing.margin.m-00"
+                },
+                "ds": {
+                  "value": "0px",
+                  "tokenRef": "spacing.none"
+                },
+                "es": {
+                  "value": "0px",
+                  "tokenRef": "spacing.0"
+                }
+              }
+            },
+            {
+              "id": "space-2xs",
+              "label": "2XS",
+              "apps": {
+                "cg": {
+                  "value": "2px",
+                  "tokenRef": "spacing.margin.m-01"
+                },
+                "ds": {
+                  "value": "2px",
+                  "tokenRef": "spacing.3xs"
+                },
+                "es": {
+                  "value": "2px",
+                  "tokenRef": "spacing.0.5"
+                }
+              }
+            },
+            {
+              "id": "space-xs",
+              "label": "XS",
+              "apps": {
+                "cg": {
+                  "value": "4px",
+                  "tokenRef": "spacing.margin.m-02"
+                },
+                "ds": {
+                  "value": "4px",
+                  "tokenRef": "spacing.2xs"
+                },
+                "es": {
+                  "value": "4px",
+                  "tokenRef": "spacing.1"
+                }
+              }
+            },
+            {
+              "id": "space-sm",
+              "label": "SM",
+              "apps": {
+                "cg": {
+                  "value": "8px",
+                  "tokenRef": "spacing.margin.m-03"
+                },
+                "ds": {
+                  "value": "8px",
+                  "tokenRef": "spacing.sm"
+                },
+                "es": {
+                  "value": "8px",
+                  "tokenRef": "spacing.2"
+                }
+              }
+            },
+            {
+              "id": "space-md",
+              "label": "MD",
+              "apps": {
+                "cg": {
+                  "value": "12px",
+                  "tokenRef": "spacing.margin.m-04"
+                },
+                "ds": {
+                  "value": "12px",
+                  "tokenRef": "spacing.md"
+                },
+                "es": {
+                  "value": "12px",
+                  "tokenRef": "spacing.3"
+                }
+              }
+            },
+            {
+              "id": "space-lg",
+              "label": "LG",
+              "apps": {
+                "cg": {
+                  "value": "16px",
+                  "tokenRef": "spacing.margin.m-05"
+                },
+                "ds": {
+                  "value": "16px",
+                  "tokenRef": "spacing.lg"
+                },
+                "es": {
+                  "value": "16px",
+                  "tokenRef": "spacing.4"
+                }
+              }
+            },
+            {
+              "id": "space-xl",
+              "label": "XL",
+              "apps": {
+                "cg": {
+                  "value": "24px",
+                  "tokenRef": "spacing.margin.m-06"
+                },
+                "ds": {
+                  "value": "24px",
+                  "tokenRef": "spacing.2xl"
+                },
+                "es": {
+                  "value": "24px",
+                  "tokenRef": "spacing.6"
+                }
+              }
+            },
+            {
+              "id": "space-2xl",
+              "label": "2XL",
+              "apps": {
+                "cg": {
+                  "value": "32px",
+                  "tokenRef": "spacing.margin.m-07"
+                },
+                "ds": {
+                  "value": "32px",
+                  "tokenRef": "spacing.3xl"
+                },
+                "es": {
+                  "value": "32px",
+                  "tokenRef": "spacing.8"
+                }
+              }
+            },
+            {
+              "id": "space-3xl",
+              "label": "3XL",
+              "apps": {
+                "cg": {
+                  "value": "40px",
+                  "tokenRef": "spacing.margin.m-08"
+                },
+                "ds": {
+                  "value": "40px",
+                  "tokenRef": "spacing.4xl"
+                },
+                "es": {
+                  "value": "40px",
+                  "tokenRef": "spacing.10"
+                }
+              }
+            },
+            {
+              "id": "space-4xl",
+              "label": "4XL",
+              "apps": {
+                "cg": {
+                  "value": "48px",
+                  "tokenRef": "spacing.margin.m-09"
+                },
+                "ds": {
+                  "value": "64px",
+                  "tokenRef": "spacing.5xl"
+                },
+                "es": {
+                  "value": "48px",
+                  "tokenRef": "spacing.12"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "radius",
+          "label": "Radius",
+          "tokens": [
+            {
+              "id": "radius-sm",
+              "label": "Radius SM",
+              "apps": {
+                "cg": {
+                  "value": "4px",
+                  "tokenRef": "radius.sm"
+                },
+                "ds": {
+                  "value": "4px",
+                  "tokenRef": "radius.sm"
+                },
+                "es": {
+                  "value": "4px",
+                  "tokenRef": "borderRadius.sm"
+                }
+              }
+            },
+            {
+              "id": "radius-md",
+              "label": "Radius MD",
+              "apps": {
+                "cg": {
+                  "value": "8px",
+                  "tokenRef": "radius.md"
+                },
+                "ds": {
+                  "value": "8px",
+                  "tokenRef": "radius.md"
+                },
+                "es": {
+                  "value": "8px",
+                  "tokenRef": "borderRadius.md"
+                }
+              }
+            },
+            {
+              "id": "radius-lg",
+              "label": "Radius LG",
+              "apps": {
+                "cg": {
+                  "value": "16px",
+                  "tokenRef": "radius.lg"
+                },
+                "ds": {
+                  "value": "16px",
+                  "tokenRef": "radius.lg"
+                },
+                "es": {
+                  "value": "12px",
+                  "tokenRef": "borderRadius.lg"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
