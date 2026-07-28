@@ -20,6 +20,7 @@ export const FAMILY_ALIASES = {
   'tooltip-help': 'tooltip',
   'toast-content': 'toast',
   breadcrumbs: 'breadcrumb',
+  'data-grid': 'cg-table',
 };
 
 export function resolveFamilyId(familyId) {

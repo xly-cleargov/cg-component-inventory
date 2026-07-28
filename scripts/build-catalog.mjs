@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 import { applyDesignEnrichment } from './apply-design-enrichment.mjs';
 import { applyFigmaLinks } from './apply-figma-links.mjs';
 import { hasTangibleDesign } from './design-extract.mjs';
-import { pickImplementation } from './family-aliases.mjs';
+import { pickImplementation, resolveFamilyId } from './family-aliases.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
@@ -155,12 +155,13 @@ function buildCatalog() {
 
   const familyMap = new Map();
   for (const m of crosswalk.mappings) {
-    if (!familyMap.has(m.familyId)) {
-      familyMap.set(m.familyId, { id: m.familyId, implementations: {}, gaps: [] });
+    const familyId = resolveFamilyId(m.familyId);
+    if (!familyMap.has(familyId)) {
+      familyMap.set(familyId, { id: familyId, implementations: {}, gaps: [] });
     }
     const comp = sources[m.source].get(m.sourceId);
     if (comp) {
-      const slot = familyMap.get(m.familyId).implementations;
+      const slot = familyMap.get(familyId).implementations;
       slot[m.source] = pickImplementation(slot[m.source], comp, m.source);
     }
   }

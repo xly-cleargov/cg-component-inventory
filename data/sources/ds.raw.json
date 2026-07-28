@@ -26961,7 +26961,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: alignment, items, keyExpr, selectedItemKeys, stylingMode, (onItemClick)"
+      "notes": "DS template bindings: alignment, items, keyExpr, selectedItemKeys, stylingMode, (onItemClick)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=928-9570",
+        "notes": "Figma component page for dx-button-group"
+      }
     },
     {
       "id": "dx-check-box",
@@ -27779,7 +27785,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: applyValueMode, editAlphaChannel, value, (onValueChanged)"
+      "notes": "DS template bindings: applyValueMode, editAlphaChannel, value, (onValueChanged)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=8731-14884",
+        "notes": "Figma component page for dx-color-box"
+      }
     },
     {
       "id": "dx-context-menu",
@@ -28150,7 +28162,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: dataSource, items, keyExpr, position, selectedItem, showEvent, target, visible, width, (onHidden), (onItemClick), (onPositioning)"
+      "notes": "DS template bindings: dataSource, items, keyExpr, position, selectedItem, showEvent, target, visible, width, (onHidden), (onItemClick), (onPositioning)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4846-3044",
+        "notes": "Figma component page for dx-context-menu"
+      }
     },
     {
       "id": "dx-data-grid",
@@ -29029,7 +29047,13 @@
       },
       "migrateHint": "keep",
       "confidence": "high",
-      "notes": "DS template bindings: allowColumnReordering, allowColumnResizing, columnAutoWidth, columnFixing, columnMinWidth, columnResizingMode, columns, dataSource, editing, filterRow, height, hoverStateEnabled, keyExpr, loadPanel, paging, remoteOperations, rowAlternationEnabled, showBorders, showColumnHeaders, summary, width, wordWrapEnabled, (onCellClick), (onCellDblClick), (onCellPrepared), (onContentReady), (onContextMenuPreparing), (onEditCanceled), (onEditingStart), (onEditorPreparing), (onExporting), (onInitNewRow), (onRowClick), (onRowInserting), (onRowPrepared), (onRowRemoving), (onRowUpdating), (onRowValidating), (onSaving), (onSelectionChanged)"
+      "notes": "DS template bindings: allowColumnReordering, allowColumnResizing, columnAutoWidth, columnFixing, columnMinWidth, columnResizingMode, columns, dataSource, editing, filterRow, height, hoverStateEnabled, keyExpr, loadPanel, paging, remoteOperations, rowAlternationEnabled, showBorders, showColumnHeaders, summary, width, wordWrapEnabled, (onCellClick), (onCellDblClick), (onCellPrepared), (onContentReady), (onContextMenuPreparing), (onEditCanceled), (onEditingStart), (onEditorPreparing), (onExporting), (onInitNewRow), (onRowClick), (onRowInserting), (onRowPrepared), (onRowRemoving), (onRowUpdating), (onRowValidating), (onSaving), (onSelectionChanged)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1523-9666",
+        "notes": "Figma component page for dx-data-grid"
+      }
     },
     {
       "id": "dx-date-box",
@@ -29640,7 +29664,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: displayFormat, dropDownOptions, pickerType, placeholder, value, (onValueChanged)"
+      "notes": "DS template bindings: displayFormat, dropDownOptions, pickerType, placeholder, value, (onValueChanged)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4492-362",
+        "notes": "Figma component page for dx-date-box"
+      }
     },
     {
       "id": "dx-drawer",
@@ -29855,7 +29885,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: closeOnOutsideClick, openedStateMode, position, template"
+      "notes": "DS template bindings: closeOnOutsideClick, openedStateMode, position, template",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4387-724",
+        "notes": "Figma component page for dx-drawer"
+      }
     },
     {
       "id": "dx-drop-down-box",
@@ -30374,7 +30410,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: dataSource, disabled, displayExpr, displayValueFormatter, dropDownOptions, i, inputAttr, placeholder, showClearButton, value, valueExpr, (onValueChanged)"
+      "notes": "DS template bindings: dataSource, disabled, displayExpr, displayValueFormatter, dropDownOptions, i, inputAttr, placeholder, showClearButton, value, valueExpr, (onValueChanged)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1411-9854",
+        "notes": "Figma component page for dx-drop-down-box"
+      }
     },
     {
       "id": "dx-drop-down-button",
@@ -30739,7 +30781,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: dataSource, displayExpr, dropDownOptions, hint, icon, items, keyExpr, showArrowIcon, stylingMode, text, (onItemClick)"
+      "notes": "DS template bindings: dataSource, displayExpr, dropDownOptions, hint, icon, items, keyExpr, showArrowIcon, stylingMode, text, (onItemClick)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=928-9570",
+        "notes": "Figma component page for dx-drop-down-button"
+      }
     },
     {
       "id": "dx-file-manager",
@@ -31645,7 +31693,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: accept, allowedFileExtensions, dialogTrigger, disabled, height, maxFileSize, multiple, selectButtonText, showFileList, uploadMethod, uploadMode, uploadUrl, visible, (onBeforeSend), (onUploadAborted), (onUploadError), (onUploaded), (onValueChanged)"
+      "notes": "DS template bindings: accept, allowedFileExtensions, dialogTrigger, disabled, height, maxFileSize, multiple, selectButtonText, showFileList, uploadMethod, uploadMode, uploadUrl, visible, (onBeforeSend), (onUploadAborted), (onUploadError), (onUploaded), (onValueChanged)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4167-3384",
+        "notes": "Figma component page for dx-file-uploader"
+      }
     },
     {
       "id": "dx-form",
@@ -32045,7 +32099,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: colCount, formData, (onFieldDataChanged)"
+      "notes": "DS template bindings: colCount, formData, (onFieldDataChanged)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1105-9354",
+        "notes": "Figma component page for dx-form"
+      }
     },
     {
       "id": "dx-list",
@@ -32654,7 +32714,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: activeStateEnabled, dataSource, displayExpr, focusStateEnabled, grouped, height, hoverStateEnabled, items, keyExpr, pageLoadMode, selectedItemKeys, selectionMode, (onContentReady), (onItemClick), (onOptionChanged), (onSelectionChanged)"
+      "notes": "DS template bindings: activeStateEnabled, dataSource, displayExpr, focusStateEnabled, grouped, height, hoverStateEnabled, items, keyExpr, pageLoadMode, selectedItemKeys, selectionMode, (onContentReady), (onItemClick), (onOptionChanged), (onSelectionChanged)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=9490-10538",
+        "notes": "Figma component page for dx-list"
+      }
     },
     {
       "id": "dx-load-indicator",
@@ -32772,7 +32838,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: height, visible, width"
+      "notes": "DS template bindings: height, visible, width",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1312-9523",
+        "notes": "Figma component page for dx-load-indicator"
+      }
     },
     {
       "id": "dx-load-panel",
@@ -33062,7 +33134,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: closeOnOutsideClick, hideOnOutsideClick, position, shading, shadingColor, showIndicator, showPane, visible"
+      "notes": "DS template bindings: closeOnOutsideClick, hideOnOutsideClick, position, shading, shadingColor, showIndicator, showPane, visible",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4504-19068",
+        "notes": "Figma component page for dx-load-panel"
+      }
     },
     {
       "id": "dx-lookup",
@@ -33743,7 +33821,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: dataSource, displayExpr, fieldTemplate, grouped, hoverStateEnabled, itemTemplate, placeholder, (onValueChanged)"
+      "notes": "DS template bindings: dataSource, displayExpr, fieldTemplate, grouped, hoverStateEnabled, itemTemplate, placeholder, (onValueChanged)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1411-9854",
+        "notes": "Figma component page for dx-lookup"
+      }
     },
     {
       "id": "dx-notify",
@@ -34326,7 +34410,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: format, max, min, placeholder, showSpinButtons, step, value, width, (onValueChanged)"
+      "notes": "DS template bindings: format, max, min, placeholder, showSpinButtons, step, value, width, (onValueChanged)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4475-20328",
+        "notes": "Figma component page for dx-number-box"
+      }
     },
     {
       "id": "dx-pivot-grid",
@@ -34664,7 +34754,13 @@
       },
       "migrateHint": "keep",
       "confidence": "high",
-      "notes": "DS template bindings: allowFiltering, allowSortingBySummary, height, showBorders, width, (onCellClick), (onCellPrepared), (onContentReady), (onContextMenuPreparing), (onExporting)"
+      "notes": "DS template bindings: allowFiltering, allowSortingBySummary, height, showBorders, width, (onCellClick), (onCellPrepared), (onContentReady), (onContextMenuPreparing), (onExporting)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1523-9666",
+        "notes": "Figma component page for dx-pivot-grid"
+      }
     },
     {
       "id": "dx-popover",
@@ -35006,7 +35102,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: closeOnOutsideClick, hideOnOutsideClick, position, shading, showCloseButton, showEvent, showTitle, target, title, width"
+      "notes": "DS template bindings: closeOnOutsideClick, hideOnOutsideClick, position, shading, showCloseButton, showEvent, showTitle, target, title, width",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=7223-76726",
+        "notes": "Figma component page for dx-popover"
+      }
     },
     {
       "id": "dx-popup",
@@ -35526,7 +35628,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: elementAttr, max, min, showStatus, value, width"
+      "notes": "DS template bindings: elementAttr, max, min, showStatus, value, width",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1312-9523",
+        "notes": "Figma component page for dx-progress-bar"
+      }
     },
     {
       "id": "dx-scroll-view",
@@ -36771,7 +36879,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: max, min, step, value, width, (onValueChanged)"
+      "notes": "DS template bindings: max, min, step, value, width, (onValueChanged)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1067-9989",
+        "notes": "Figma component page for dx-slider"
+      }
     },
     {
       "id": "dx-sortable",
@@ -37715,7 +37829,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: animationEnabled, deferRendering, height, loop, selectedIndex, showNavButtons, swipeEnabled, width"
+      "notes": "DS template bindings: animationEnabled, deferRendering, height, loop, selectedIndex, showNavButtons, swipeEnabled, width",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=923-9311",
+        "notes": "Figma component page for dx-tab-panel"
+      }
     },
     {
       "id": "dx-tabs",
@@ -38827,7 +38947,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: acceptCustomValue, applyValueMode, dataSource, displayExpr, dropDownOptions, formControlName, height, hideSelectedItems, inputAttr, items, label, maxDisplayedTags, multiline, placeholder, searchEnabled, searchExpr, searchMode, selectAllMode, selectedRuleType, showDropDownButton, showSelectionControls, stylingMode, useItemTextAsTitle, value, valueExpr, visible, width, (onCustomItemCreating), (onSelectionChanged), (onValueChanged)"
+      "notes": "DS template bindings: acceptCustomValue, applyValueMode, dataSource, displayExpr, dropDownOptions, formControlName, height, hideSelectedItems, inputAttr, items, label, maxDisplayedTags, multiline, placeholder, searchEnabled, searchExpr, searchMode, selectAllMode, selectedRuleType, showDropDownButton, showSelectionControls, stylingMode, useItemTextAsTitle, value, valueExpr, visible, width, (onCustomItemCreating), (onSelectionChanged), (onValueChanged)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1312-9522",
+        "notes": "Figma component page for dx-tag-box"
+      }
     },
     {
       "id": "dx-text-area",
@@ -39221,7 +39347,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: autoResizeEnabled, formControlName, height, maxLength, minHeight, placeholder, (onEnterKey)"
+      "notes": "DS template bindings: autoResizeEnabled, formControlName, height, maxLength, minHeight, placeholder, (onEnterKey)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4467-16500",
+        "notes": "Figma component page for dx-text-area"
+      }
     },
     {
       "id": "dx-text-box",
@@ -39962,7 +40094,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": ""
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4727-1090",
+        "notes": "Figma component page for dx-toolbar"
+      }
     },
     {
       "id": "dx-tooltip",
@@ -40244,7 +40382,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": "DS template bindings: hideEvent, hideOnOutsideClick, position, showEvent, target"
+      "notes": "DS template bindings: hideEvent, hideOnOutsideClick, position, showEvent, target",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1312-9526",
+        "notes": "Figma component page for dx-tooltip"
+      }
     },
     {
       "id": "dx-tree-list",
@@ -41106,7 +41250,13 @@
       },
       "migrateHint": "keep",
       "confidence": "high",
-      "notes": "DS template bindings: allowColumnResizing, columnAutoWidth, columnResizingMode, dataSource, dataStructure, hasItemsExpr, height, keyExpr, parentIdExpr, remoteOperations, showBorders, width, wordWrapEnabled, (onCellClick), (onCellPrepared), (onContextMenuPreparing), (onEditCanceled), (onEditorPreparing), (onInitNewRow), (onRowInserted), (onRowRemoving), (onRowUpdated), (onSelectionChanged)"
+      "notes": "DS template bindings: allowColumnResizing, columnAutoWidth, columnResizingMode, dataSource, dataStructure, hasItemsExpr, height, keyExpr, parentIdExpr, remoteOperations, showBorders, width, wordWrapEnabled, (onCellClick), (onCellPrepared), (onContextMenuPreparing), (onEditCanceled), (onEditorPreparing), (onInitNewRow), (onRowInserted), (onRowRemoving), (onRowUpdated), (onSelectionChanged)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1523-9666",
+        "notes": "Figma component page for dx-tree-list"
+      }
     },
     {
       "id": "dx-tree-view",
@@ -41613,7 +41763,13 @@
       },
       "migrateHint": "keep",
       "confidence": "high",
-      "notes": "DS template bindings: dataSource, dataStructure, disabled, disabledExpr, displayExpr, expandAllEnabled, expandEvent, expandNodesRecursive, height, items, keyExpr, parentIdExpr, searchEnabled, searchExpr, searchMode, searchValue, selectByClick, selectNodesRecursive, selectedExpr, selectionMode, showCheckBoxesMode, (onContentReady), (onItemClick), (onItemCollapsed), (onItemContextMenu), (onItemExpanded), (onItemRendered), (onItemSelectionChanged), (onSelectionChanged)"
+      "notes": "DS template bindings: dataSource, dataStructure, disabled, disabledExpr, displayExpr, expandAllEnabled, expandEvent, expandNodesRecursive, height, items, keyExpr, parentIdExpr, searchEnabled, searchExpr, searchMode, searchValue, selectByClick, selectNodesRecursive, selectedExpr, selectionMode, showCheckBoxesMode, (onContentReady), (onItemClick), (onItemCollapsed), (onItemContextMenu), (onItemExpanded), (onItemRendered), (onItemSelectionChanged), (onSelectionChanged)",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=7168-85026",
+        "notes": "Figma component page for dx-tree-view"
+      }
     },
     {
       "id": "dx-validation-group",
@@ -41900,7 +42056,13 @@
       },
       "migrateHint": "swap",
       "confidence": "high",
-      "notes": ""
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations — component page",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=7171-87680",
+        "notes": "Figma component page for dx-validator"
+      }
     },
     {
       "id": "gravity-avatar",
