@@ -1,0 +1,66 @@
+<h1>Component Families</h1>
+<p class="lead">Cross-app inventory comparing ClearGov 1.0, Disclosure Studio, and Engagement Studio.</p>
+
+<div class="toolbar">
+  <input type="search" placeholder="Search families..." [(ngModel)]="search" (ngModelChange)="refreshFilters()" />
+  <select [(ngModel)]="categoryFilter" (ngModelChange)="refreshFilters()">
+    <option value="">All categories</option>
+    @for (cat of categories; track cat[0]) {
+      <option [value]="cat[0]">{{ cat[1] }}</option>
+    }
+  </select>
+  <fieldset class="presence-checks">
+    <legend>Present in</legend>
+    @for (app of apps; track app) {
+      <label class="presence-check">
+        <input type="checkbox" [(ngModel)]="presenceApps[app]" (ngModelChange)="refreshFilters()" />
+        {{ appLabels[app] }}
+      </label>
+    }
+  </fieldset>
+  <select [(ngModel)]="gapFilter" (ngModelChange)="refreshFilters()">
+    <option value="">All families</option>
+    <option value="any">Has gaps</option>
+    <option value="blocker">Has blockers</option>
+  </select>
+  <select [(ngModel)]="designFilter" (ngModelChange)="refreshFilters()">
+    <option value="">Any design coverage</option>
+    <option value="documented">Has design data</option>
+    <option value="missing">No design data</option>
+  </select>
+</div>
+
+@if (families$ | async; as families) {
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Family</th>
+        <th>Category</th>
+        <th>CG</th>
+        <th>DS</th>
+        <th>ES</th>
+        <th>Design</th>
+        <th>Gaps</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (f of families; track f.id) {
+        <tr>
+          <td><a [routerLink]="['/family', f.id]">{{ f.label }}</a><br /><code>{{ f.id }}</code></td>
+          <td>{{ categoryLabel(f.category) }}</td>
+          @for (app of apps; track app) {
+            <td><span class="badge" [class.present]="hasImpl(f, app)" [class.missing]="!hasImpl(f, app)">{{ hasImpl(f, app) ? 'yes' : '—' }}</span></td>
+          }
+          <td>
+            <span class="design-cov" [class.full]="designCoverageLabel(f) === '3/3'" [class.partial]="designCoverageLabel(f).includes('/') && designCoverageLabel(f) !== '3/3' && designCoverageLabel(f) !== '—'">
+              {{ designCoverageLabel(f) }}
+            </span>
+          </td>
+          <td>{{ f.gaps?.length ?? 0 }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+} @else {
+  <p>Loading catalog...</p>
+}

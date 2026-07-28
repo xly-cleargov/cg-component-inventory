@@ -1,0 +1,210 @@
+@if (familyView$ | async; as view) {
+  @if (view) {
+    @let family = view.family;
+    @let catalogMeta = view.meta;
+    <div class="header-row">
+      <div>
+        <a routerLink="/" class="back">← Families</a>
+        <h1>{{ family.label }}</h1>
+        <p class="meta"><code>{{ family.id }}</code> · {{ family.category }}</p>
+      </div>
+      <div class="actions">
+        <button type="button" (click)="exportJson()">Export JSON</button>
+        <button type="button" (click)="exportMarkdown()">Export Markdown</button>
+      </div>
+    </div>
+
+    <div class="presence">
+      @for (app of apps; track app) {
+        <div class="presence-card" [class.missing]="!family.implementations[app]">
+          <strong>{{ appLabels[app] }}</strong>
+          @if (family.implementations[app]; as impl) {
+            <div><code>{{ impl.selectorOrExport }}</code></div>
+            @if (figmaUrl(app, impl, catalogMeta); as url) {
+              <div class="presence-figma">
+                Design:
+                <a class="figma-url" [href]="url" target="_blank" rel="noopener"><code>{{ url }}</code></a>
+              </div>
+            }
+            <div class="hint">{{ impl.framework }} · {{ impl.migrateHint ?? 'unknown' }}</div>
+          } @else {
+            <div class="hint">Not present</div>
+          }
+        </div>
+      }
+    </div>
+
+    <div class="tabs">
+      <button type="button" [class.active]="activeTab === 'api'" (click)="activeTab = 'api'">API</button>
+      <button type="button" [class.active]="activeTab === 'design'" (click)="activeTab = 'design'">Design</button>
+      <button type="button" [class.active]="activeTab === 'gaps'" (click)="activeTab = 'gaps'">Gaps ({{ family.gaps?.length ?? 0 }})</button>
+    </div>
+
+    @if (activeTab === 'api') {
+      <h2>Props comparison</h2>
+      @if (propMatrix$ | async; as rows) {
+        <table class="table">
+          <thead><tr><th>Prop</th><th>CG</th><th>DS</th><th>ES</th></tr></thead>
+          <tbody>
+            @for (row of rows; track row.name) {
+              <tr [class.diff]="!(row.apps['cg'] === row.apps['ds'] && row.apps['ds'] === row.apps['es'])">
+                <td><code>{{ row.name }}</code></td>
+                @for (app of apps; track app) {
+                  <td><span [class.yes]="row.apps[app]" [class.no]="!row.apps[app]">{{ row.apps[app] ? '✓' : '—' }}</span></td>
+                }
+              </tr>
+            }
+          </tbody>
+        </table>
+      }
+
+      <div class="columns">
+        @for (app of apps; track app) {
+          @if (family.implementations[app]; as impl) {
+            <section class="panel">
+              <h3>{{ appLabels[app] }} — full API</h3>
+              <h4>Props</h4>
+              <ul>
+                @for (p of impl.api?.props ?? []; track p.name) {
+                  <li><code>{{ p.name }}</code> <span class="type">{{ p.type }}</span> @if (p.values?.length) { <span class="values">[{{ p.values?.join(', ') }}]</span> }</li>
+                }
+              </ul>
+              @if (impl.api?.events?.length) {
+                <h4>Events</h4>
+                <ul>@for (e of impl.api!.events!; track e.name) { <li><code>{{ e.name }}</code></li> }</ul>
+              }
+              @if (impl.api?.services?.length) {
+                <h4>Services</h4>
+                <ul>@for (s of impl.api!.services!; track s.name) { <li><code>{{ s.name }}</code></li> }</ul>
+              }
+            </section>
+          }
+        }
+      </div>
+    }
+
+    @if (activeTab === 'design') {
+      @if (designMatrix$ | async; as designRows) {
+        @if (designRows.length) {
+          <h2>Design token comparison</h2>
+          <table class="table design-table">
+            <thead>
+              <tr>
+                <th>Group</th>
+                <th>Token</th>
+                @for (app of apps; track app) {
+                  <th>{{ appLabels[app] }}</th>
+                }
+              </tr>
+            </thead>
+            <tbody>
+              @for (row of designRows; track row.group + row.name) {
+                <tr [class.diff]="row.diff">
+                  <td><code>{{ row.group }}</code></td>
+                  <td><code>{{ row.name }}</code></td>
+                  @for (app of apps; track app) {
+                    <td>
+                      @if (row.apps[app]; as token) {
+                        <div class="design-cell">
+                          @if (catalog.isHexColor(token.value)) {
+                            <span class="swatch" [style.background]="token.value"></span>
+                          }
+                          <span>{{ token.value }}</span>
+                          @if (token.tokenRef) {
+                            <div class="token">{{ token.tokenRef }}</div>
+                          }
+                        </div>
+                      } @else {
+                        <span class="no">—</span>
+                      }
+                    </td>
+                  }
+                </tr>
+              }
+            </tbody>
+          </table>
+        }
+      }
+
+      <div class="columns">
+        @for (app of apps; track app) {
+          @if (family.implementations[app]; as impl) {
+            <section class="panel">
+              <div class="panel-head">
+                <h3>{{ appLabels[app] }}</h3>
+                @if (impl.designMeta; as meta) {
+                  <span class="source-badge" [class]="'source-' + meta.source">{{ designSourceLabel(meta.source) }}</span>
+                }
+              </div>
+              @if (figmaUrl(app, impl, catalogMeta); as url) {
+                <p class="figma-link">
+                  Design:
+                  <a class="figma-url" [href]="url" target="_blank" rel="noopener"><code>{{ url }}</code></a>
+                </p>
+              }
+              @if (impl.designMeta?.library) {
+                <p class="library-note">{{ impl.designMeta!.library }}</p>
+              }
+              @if (impl.design?.colors?.length) {
+                <h4>colors</h4>
+                <ul>@for (v of impl.design!.colors!; track v.name) {
+                  <li>
+                    @if (catalog.isHexColor(v.value)) {
+                      <span class="swatch inline" [style.background]="v.value"></span>
+                    }
+                    <code>{{ v.name }}</code>: {{ v.value }}
+                    @if (v.tokenRef) { <span class="token">{{ v.tokenRef }}</span> }
+                  </li>
+                }</ul>
+              }
+              @if (impl.design?.spacing?.length) {
+                <h4>spacing</h4>
+                <ul>@for (v of impl.design!.spacing!; track v.name) { <li><code>{{ v.name }}</code>: {{ v.value }} @if (v.tokenRef) { <span class="token">{{ v.tokenRef }}</span> }</li> }</ul>
+              }
+              @if (impl.design?.radius?.length) {
+                <h4>radius</h4>
+                <ul>@for (v of impl.design!.radius!; track v.name) { <li><code>{{ v.name }}</code>: {{ v.value }} @if (v.tokenRef) { <span class="token">{{ v.tokenRef }}</span> }</li> }</ul>
+              }
+              @if (impl.design?.typography?.length) {
+                <h4>typography</h4>
+                <ul>@for (v of impl.design!.typography!; track v.name) { <li><code>{{ v.name }}</code>: {{ v.value }} @if (v.tokenRef) { <span class="token">{{ v.tokenRef }}</span> }</li> }</ul>
+              }
+              @if (impl.design?.elevation?.length) {
+                <h4>elevation</h4>
+                <ul>@for (v of impl.design!.elevation!; track v.name) { <li><code>{{ v.name }}</code>: {{ v.value }} @if (v.tokenRef) { <span class="token">{{ v.tokenRef }}</span> }</li> }</ul>
+              }
+              @if (impl.design?.states?.length) {
+                <h4>States</h4>
+                <ul>@for (s of impl.design!.states!; track s.name) { <li>{{ s.name }} — {{ s.notes }}</li> }</ul>
+              }
+              @if (!catalog.hasTangibleDesign(impl.design, impl.designMeta)) {
+                <p class="empty-design">No design values recorded yet.</p>
+              }
+            </section>
+          }
+        }
+      </div>
+    }
+
+    @if (activeTab === 'gaps') {
+      @if (family.gaps?.length) {
+        <ul class="gap-list">
+          @for (g of family.gaps; track g.id) {
+            <li [class]="'sev-' + g.severity">
+              <span class="tag">{{ g.kind }}</span>
+              <span class="tag sev">{{ g.severity }}</span>
+              <strong>{{ g.summary }}</strong>
+              @if (g.details) { <p>{{ g.details }}</p> }
+            </li>
+          }
+        </ul>
+      } @else {
+        <p>No gaps recorded for this family.</p>
+      }
+    }
+  } @else {
+    <p>Family not found. <a routerLink="/">Back to list</a></p>
+  }
+} @else {
+  <p>Loading...</p>
+}

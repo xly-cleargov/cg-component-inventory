@@ -1,0 +1,54 @@
+<h1>Gap Registry</h1>
+<p class="lead">All cross-app gaps across component families.</p>
+
+<div class="toolbar">
+  <select [(ngModel)]="severityFilter" (ngModelChange)="refresh()">
+    <option value="">All severities</option>
+    <option value="blocker">Blocker</option>
+    <option value="high">High</option>
+    <option value="medium">Medium</option>
+    <option value="low">Low</option>
+  </select>
+  <select [(ngModel)]="kindFilter" (ngModelChange)="refresh()">
+    <option value="">All kinds</option>
+    <option value="presence">Presence</option>
+    <option value="api">API</option>
+    <option value="design">Design</option>
+    <option value="a11y">A11y</option>
+    <option value="service">Service</option>
+  </select>
+</div>
+
+@if (gaps$ | async; as gaps) {
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Family</th>
+        <th>Kind</th>
+        <th>Severity</th>
+        <th>Summary</th>
+        <th>CG</th>
+        <th>DS</th>
+        <th>ES</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (g of gaps; track g.id) {
+        <tr [class]="'sev-' + g.severity">
+          <td><a [routerLink]="['/family', g.familyId]">{{ g.familyLabel }}</a></td>
+          <td><span class="tag">{{ g.kind }}</span></td>
+          <td><span class="tag sev">{{ g.severity }}</span></td>
+          <td>{{ g.summary }}</td>
+          @for (app of apps; track app) {
+            <td>{{ g.apps?.[app] ?? '—' }}</td>
+          }
+        </tr>
+      }
+    </tbody>
+  </table>
+  @if (!gaps.length) {
+    <p>No gaps match the current filters.</p>
+  }
+} @else {
+  <p>Loading...</p>
+}

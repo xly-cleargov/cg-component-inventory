@@ -1,0 +1,291 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cleargov.com/schemas/component-catalog.json",
+  "title": "ClearGov Component Catalog",
+  "description": "Cross-app component inventory schema for ES, DS, and CG",
+  "type": "object",
+  "required": ["meta", "families"],
+  "properties": {
+    "meta": { "$ref": "#/$defs/meta" },
+    "families": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/family" }
+    },
+    "unresolvedMappings": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/unresolvedMapping" }
+    }
+  },
+  "$defs": {
+    "meta": {
+      "type": "object",
+      "required": ["version", "generatedAt", "sources"],
+      "properties": {
+        "version": { "type": "string" },
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "sources": {
+          "type": "object",
+          "properties": {
+            "cg": { "$ref": "#/$defs/sourceRef" },
+            "ds": { "$ref": "#/$defs/sourceRef" },
+            "es": { "$ref": "#/$defs/sourceRef" }
+          }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "sourceRef": {
+      "type": "object",
+      "properties": {
+        "repoOrPackage": { "type": "string" },
+        "ref": { "type": "string" },
+        "status": { "enum": ["pending", "extracted", "placeholder"] },
+        "notes": { "type": "string" }
+      }
+    },
+    "family": {
+      "type": "object",
+      "required": ["id", "label", "category", "implementations"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "label": { "type": "string" },
+        "category": {
+          "enum": [
+            "action",
+            "form",
+            "feedback",
+            "navigation",
+            "layout",
+            "data",
+            "overlay",
+            "media",
+            "typography",
+            "other"
+          ]
+        },
+        "description": { "type": "string" },
+        "implementations": {
+          "type": "object",
+          "properties": {
+            "cg": { "$ref": "#/$defs/implementation" },
+            "ds": { "$ref": "#/$defs/implementation" },
+            "es": { "$ref": "#/$defs/implementation" }
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/gap" }
+        }
+      }
+    },
+    "implementation": {
+      "type": "object",
+      "required": ["id", "displayName", "framework"],
+      "properties": {
+        "id": { "type": "string" },
+        "displayName": { "type": "string" },
+        "framework": {
+          "enum": ["angular", "react", "web-component", "devextreme", "design-system", "other"]
+        },
+        "packageOrPath": { "type": "string" },
+        "selectorOrExport": { "type": "string" },
+        "usage": { "$ref": "#/$defs/usage" },
+        "api": { "$ref": "#/$defs/api" },
+        "design": { "$ref": "#/$defs/design" },
+        "designMeta": { "$ref": "#/$defs/designMeta" },
+        "a11y": { "$ref": "#/$defs/a11y" },
+        "migrateHint": {
+          "enum": ["swap", "adapt", "rewrite", "keep", "new-needed", "unknown"]
+        },
+        "confidence": { "enum": ["high", "medium", "low"] },
+        "notes": { "type": "string" }
+      }
+    },
+    "usage": {
+      "type": "object",
+      "properties": {
+        "instanceCount": { "type": ["integer", "null"] },
+        "fileCount": { "type": ["integer", "null"] },
+        "samplePaths": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "api": {
+      "type": "object",
+      "properties": {
+        "props": { "type": "array", "items": { "$ref": "#/$defs/prop" } },
+        "events": { "type": "array", "items": { "$ref": "#/$defs/event" } },
+        "slots": { "type": "array", "items": { "$ref": "#/$defs/slot" } },
+        "methods": { "type": "array", "items": { "$ref": "#/$defs/method" } },
+        "services": { "type": "array", "items": { "$ref": "#/$defs/service" } }
+      }
+    },
+    "prop": {
+      "type": "object",
+      "required": ["name", "type"],
+      "properties": {
+        "name": { "type": "string" },
+        "type": { "type": "string" },
+        "default": {},
+        "required": { "type": "boolean" },
+        "values": { "type": "array", "items": { "type": "string" } },
+        "description": { "type": "string" }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "payloadType": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    },
+    "slot": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    },
+    "method": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "signature": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    },
+    "service": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "methods": { "type": "array", "items": { "type": "string" } },
+        "description": { "type": "string" }
+      }
+    },
+    "design": {
+      "type": "object",
+      "properties": {
+        "colors": { "type": "array", "items": { "$ref": "#/$defs/designValue" } },
+        "spacing": { "type": "array", "items": { "$ref": "#/$defs/designValue" } },
+        "radius": { "type": "array", "items": { "$ref": "#/$defs/designValue" } },
+        "typography": { "type": "array", "items": { "$ref": "#/$defs/designValue" } },
+        "elevation": { "type": "array", "items": { "$ref": "#/$defs/designValue" } },
+        "states": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "notes": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "designMeta": {
+      "type": "object",
+      "properties": {
+        "source": { "enum": ["figma", "code", "mixed"] },
+        "library": { "type": "string" },
+        "figmaUrl": { "type": "string" },
+        "enrichedAt": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "designValue": {
+      "type": "object",
+      "required": ["name", "value"],
+      "properties": {
+        "name": { "type": "string" },
+        "value": { "type": "string" },
+        "tokenRef": { "type": ["string", "null"] }
+      }
+    },
+    "a11y": {
+      "type": "object",
+      "properties": {
+        "role": { "type": ["string", "null"] },
+        "labelProps": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "gap": {
+      "type": "object",
+      "required": ["id", "kind", "severity", "summary"],
+      "properties": {
+        "id": { "type": "string" },
+        "kind": { "enum": ["presence", "api", "design", "a11y", "service", "taxonomy"] },
+        "severity": { "enum": ["low", "medium", "high", "blocker"] },
+        "summary": { "type": "string" },
+        "apps": {
+          "type": "object",
+          "properties": {
+            "cg": { "enum": ["present", "missing", "partial", "n/a"] },
+            "ds": { "enum": ["present", "missing", "partial", "n/a"] },
+            "es": { "enum": ["present", "missing", "partial", "n/a"] }
+          }
+        },
+        "details": { "type": "string" }
+      }
+    },
+    "unresolvedMapping": {
+      "type": "object",
+      "required": ["source", "sourceId", "reason"],
+      "properties": {
+        "source": { "enum": ["cg", "ds", "es"] },
+        "sourceId": { "type": "string" },
+        "reason": { "type": "string" }
+      }
+    },
+    "rawInventory": {
+      "type": "object",
+      "required": ["source", "extractedAt", "origin", "components"],
+      "properties": {
+        "source": { "enum": ["cg", "ds", "es"] },
+        "extractedAt": { "type": "string", "format": "date-time" },
+        "origin": {
+          "type": "object",
+          "properties": {
+            "repoOrPackage": { "type": "string" },
+            "ref": { "type": "string" },
+            "notes": { "type": "string" }
+          }
+        },
+        "components": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/implementation" }
+        },
+        "familiesGuess": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        }
+      }
+    },
+    "crosswalk": {
+      "type": "object",
+      "required": ["version", "mappings"],
+      "properties": {
+        "version": { "type": "string" },
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "mappings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["familyId", "source", "sourceId"],
+            "properties": {
+              "familyId": { "type": "string" },
+              "source": { "enum": ["cg", "ds", "es"] },
+              "sourceId": { "type": "string" },
+              "confidence": { "enum": ["high", "medium", "low"] },
+              "notes": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

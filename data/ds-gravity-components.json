@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0",
+  "notes": "Gravity design-system components documented in Figma but not DevExtreme dx-* widgets. DS app repo scan alone misses these.",
+  "figmaFile": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations",
+  "components": [
+    {
+      "id": "gravity-avatar",
+      "familyId": "avatar",
+      "displayName": "Avatar",
+      "category": "media",
+      "selectorOrExport": "Avatar",
+      "packageOrPath": "Gravity design foundations → @cleargov/components cg-avatar",
+      "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1100-9354",
+      "figmaNodeId": "1100:9354",
+      "migrateHint": "swap",
+      "confidence": "high",
+      "notes": "Figma Avatar component set (1100:9354). Target implementation: cg-avatar web component. Not dx-avatar.",
+      "api": {
+        "props": [
+          { "name": "size", "type": "CgAvatarSize", "values": ["2xs", "xs", "sm", "md", "lg", "xl", "2xl"], "description": "Seven circular sizes per Figma set" },
+          { "name": "color", "type": "CgAvatarColor", "values": ["blue", "orange", "teal", "purple", "pink", "red", "green", "yellow", "unassigned"], "description": "Initials background color family" },
+          { "name": "initials", "type": "string", "description": "Initials text when no image" },
+          { "name": "src", "type": "string", "description": "Image URL" },
+          { "name": "alt", "type": "string", "description": "Image alt text" },
+          { "name": "status", "type": "CgAvatarStatus", "values": ["online", "offline", "busy", "away"], "description": "Optional presence dot" }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      }
+    }
+  ]
+}

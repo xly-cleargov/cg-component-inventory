@@ -1,0 +1,54 @@
+.back { color: #64748b; text-decoration: none; font-size: 0.875rem; }
+.header-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; }
+h1 { margin: 0.25rem 0; }
+.meta { color: #64748b; margin: 0; }
+.actions { display: flex; gap: 0.5rem; }
+.actions button { padding: 0.4rem 0.75rem; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; cursor: pointer; font: inherit; }
+.presence { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 1.25rem; }
+.presence-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 0.75rem; background: #f8fafc; }
+.presence-card.missing { opacity: 0.6; }
+.hint { font-size: 0.8rem; color: #64748b; margin-top: 0.25rem; }
+.presence-figma { font-size: 0.75rem; color: #64748b; margin-top: 0.35rem; line-height: 1.45; }
+.presence-figma .figma-hint { margin-top: 0.15rem; }
+.tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+.tabs button { padding: 0.4rem 0.75rem; border: none; background: transparent; cursor: pointer; font: inherit; color: #64748b; border-radius: 6px; }
+.tabs button.active { background: #e0e7ff; color: #3730a3; font-weight: 600; }
+.table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; font-size: 0.875rem; }
+.table th, .table td { border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0.75rem; text-align: left; }
+.table tr.diff { background: #fffbeb; }
+.yes { color: #166534; font-weight: 700; }
+.no { color: #94a3b8; }
+.columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+.panel { border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem; background: #fff; }
+.panel h3 { margin-top: 0; font-size: 1rem; }
+.panel h4 { margin: 0.75rem 0 0.35rem; font-size: 0.8rem; text-transform: uppercase; color: #64748b; }
+.panel ul { margin: 0; padding-left: 1.1rem; font-size: 0.875rem; }
+.type { color: #64748b; font-size: 0.8rem; }
+.values { color: #7c3aed; font-size: 0.75rem; }
+.token { color: #0369a1; font-size: 0.75rem; }
+.design-table { font-size: 0.8rem; }
+.design-cell { display: flex; flex-direction: column; gap: 0.15rem; }
+.swatch { display: inline-block; width: 14px; height: 14px; border-radius: 3px; border: 1px solid rgba(0,0,0,0.12); vertical-align: middle; margin-right: 0.35rem; flex-shrink: 0; }
+.swatch.inline { margin-right: 0.35rem; }
+.panel-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.panel-head h3 { margin: 0; }
+.source-badge { font-size: 0.65rem; padding: 0.15rem 0.45rem; border-radius: 999px; text-transform: uppercase; font-weight: 700; letter-spacing: 0.03em; }
+.source-figma { background: #ede9fe; color: #5b21b6; }
+.source-code { background: #dcfce7; color: #166534; }
+.source-mixed { background: #fef3c7; color: #92400e; }
+.figma-link { margin: 0 0 0.35rem; font-size: 0.8rem; line-height: 1.45; }
+.figma-url { color: inherit; text-decoration: none; word-break: break-all; }
+.figma-url:hover code { text-decoration: underline; }
+.figma-url code { color: #5b21b6; font-size: 0.75rem; }
+.figma-hint { display: block; margin-top: 0.2rem; font-size: 0.7rem; color: #94a3b8; font-style: italic; }
+.library-note { margin: 0 0 0.5rem; font-size: 0.75rem; color: #64748b; }
+.empty-design { color: #94a3b8; font-size: 0.875rem; font-style: italic; }
+.gap-list { list-style: none; padding: 0; margin: 0; }
+.gap-list li { border: 1px solid #e2e8f0; border-radius: 8px; padding: 0.75rem 1rem; margin-bottom: 0.5rem; }
+.gap-list p { margin: 0.35rem 0 0; color: #64748b; font-size: 0.875rem; }
+.tag { display: inline-block; font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px; background: #f1f5f9; margin-right: 0.35rem; text-transform: uppercase; }
+.tag.sev { background: #fee2e2; color: #991b1b; }
+.sev-blocker { border-left: 4px solid #dc2626; }
+.sev-high { border-left: 4px solid #ea580c; }
+.sev-medium { border-left: 4px solid #ca8a04; }
+.sev-low { border-left: 4px solid #94a3b8; }

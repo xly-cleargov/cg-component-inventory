@@ -1,0 +1,5702 @@
+{
+  "source": "cg",
+  "extractedAt": "2026-07-28T17:29:01.424Z",
+  "origin": {
+    "repoOrPackage": "https://github.com/ClearGovInc/cleargov-shared",
+    "ref": "c5439cf5",
+    "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=5344-1363&p=f&t=kdMedCVWjFszF8po-0",
+    "notes": "Extracted from libs/shared-ui. Figma read-only reference."
+  },
+  "components": [
+    {
+      "id": "cg-accordion",
+      "displayName": "Accordion",
+      "category": "layout",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/accordion",
+      "selectorOrExport": "cg-accordion",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/accordion/src/lib/cg-accordion/cg-accordion.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "activeIds",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "closeOthers",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "panelChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "shown",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "hidden",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "header-label",
+            "value": "#0463b7",
+            "tokenRef": "colors.primary.primary"
+          },
+          {
+            "name": "header-label-hover",
+            "value": "primary-light",
+            "tokenRef": "$primary-light"
+          },
+          {
+            "name": "border-top",
+            "value": "#cbcecf",
+            "tokenRef": "Neutral/neutral-light"
+          },
+          {
+            "name": "badge-bg",
+            "value": "#fdecbb",
+            "tokenRef": "functional/warning/warning-light"
+          },
+          {
+            "name": "badge-fg",
+            "value": "#2c2c2c",
+            "tokenRef": "functional/neutrals/neutral-darkest"
+          },
+          {
+            "name": "panel-bg",
+            "value": "transparent",
+            "tokenRef": "$accordion-bg"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "header-padding-y",
+            "value": "12px",
+            "tokenRef": "$accordion-button-padding-y"
+          },
+          {
+            "name": "body-padding-y",
+            "value": "12px",
+            "tokenRef": "$accordion-body-padding-y"
+          },
+          {
+            "name": "label-gap",
+            "value": "8px",
+            "tokenRef": null
+          },
+          {
+            "name": "badge-margin-left",
+            "value": "8px",
+            "tokenRef": null
+          },
+          {
+            "name": "chevron-margin-left",
+            "value": "8px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [
+          {
+            "name": "badge",
+            "value": "25px",
+            "tokenRef": null
+          }
+        ],
+        "typography": [
+          {
+            "name": "header-label",
+            "value": "15px semibold",
+            "tokenRef": "Admin Typography/Sub Header/Subheading 2"
+          },
+          {
+            "name": "header-line-height",
+            "value": "20px",
+            "tokenRef": "Size/20px"
+          },
+          {
+            "name": "badge-count",
+            "value": "10px medium",
+            "tokenRef": null
+          },
+          {
+            "name": "chevron",
+            "value": "12px",
+            "tokenRef": "$font-size-sm"
+          }
+        ],
+        "elevation": [],
+        "states": [
+          {
+            "name": "closed",
+            "notes": "Chevron down (fa-chevron-down); top border only"
+          },
+          {
+            "name": "open",
+            "notes": "Chevron up (fa-chevron-up); body panel visible"
+          },
+          {
+            "name": "hover",
+            "notes": "Label and chevron shift to primary-light"
+          },
+          {
+            "name": "badge",
+            "notes": "Optional count badge — warning-light medium"
+          }
+        ]
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=2651-10349&p=f&t=kdMedCVWjFszF8po-0",
+        "notes": "Figma Accordion spec; CG styles in libs/shared-ui/styles/src/_accordion.scss",
+        "enrichedAt": "2026-07-28T16:45:00.000Z"
+      }
+    },
+    {
+      "id": "cg-actions-button-group",
+      "displayName": "Actions Button Group",
+      "category": "action",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/actions-button-group",
+      "selectorOrExport": "cg-actions-button-group",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/actions-button-group/src/lib/cg-actions-button-group/cg-actions-button-group.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "actions",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "visibleCount",
+            "type": "unknown",
+            "default": "2",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "menuAlign",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "disabled",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "tooltipPlacement",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "hasDynamicDropdown",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "parentElementRef",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=17-776",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-avatar",
+      "displayName": "Avatar",
+      "category": "media",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/avatar",
+      "selectorOrExport": "cg-avatar",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/avatar/src/lib/cg-avatar/cg-avatar.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "size",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "value",
+            "type": "unknown",
+            "default": "'fa-solid fa-user'",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=17-766",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-badge",
+      "displayName": "Badge",
+      "category": "feedback",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/badge",
+      "selectorOrExport": "cg-badge",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/badge/src/lib/cg-badge/cg-badge.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "size",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "theme",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "icon",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "iconClass",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "label",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=2197-6974",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-banner-slider",
+      "displayName": "Banner",
+      "category": "feedback",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/banner",
+      "selectorOrExport": "cg-banner-slider",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/banner/src/lib/cg-banner/cg-banner-slider/cg-banner-slider.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "items",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "minHeight",
+            "type": "unknown",
+            "default": "32",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "size",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "closable",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "filterImageColor",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "closeClicked",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "buttonClicked",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "activeBannerChanged",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=3773-12145",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-breadcrumbs",
+      "displayName": "Breadcrumbs",
+      "category": "navigation",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/breadcrumbs",
+      "selectorOrExport": "cg-breadcrumbs",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/breadcrumbs/src/lib/cg-breadcrumbs/cg-breadcrumbs.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "dropdownMenuMaxHeight",
+            "type": "unknown",
+            "default": "330",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "dropdownMenuMaxWidth",
+            "type": "unknown",
+            "default": "300",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "isReadonly",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "itemMaxWidth",
+            "type": "unknown",
+            "default": "150",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "id",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=2715-10795",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-button",
+      "displayName": "Button",
+      "category": "action",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/button",
+      "selectorOrExport": "cg-button",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/button/src/lib/cg-button/cg-button.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "id",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "size",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "vertical",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "icon",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "iconEnd",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "label",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "ariaLabel",
+            "type": "unknown",
+            "default": "this.label",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "preventClick",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "disabled",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "active",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "badgeLabel",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "stopPropagate",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "clickChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "clicked",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "primary-bg",
+            "value": "#2f5cb6",
+            "tokenRef": "colors.primary.primary"
+          },
+          {
+            "name": "primary-fg",
+            "value": "#ffffff",
+            "tokenRef": null
+          },
+          {
+            "name": "primary-hover-bg",
+            "value": "#9cc6fb",
+            "tokenRef": "colors.primary.primary-lightest"
+          },
+          {
+            "name": "primary-hover-fg",
+            "value": "#2f5cb6",
+            "tokenRef": "colors.primary.primary"
+          },
+          {
+            "name": "primary-active-bg",
+            "value": "#013183",
+            "tokenRef": "colors.primary.primary-dark"
+          },
+          {
+            "name": "secondary-border",
+            "value": "#2f5cb6",
+            "tokenRef": "colors.primary.primary"
+          },
+          {
+            "name": "danger-bg",
+            "value": "theme-button-colors.danger",
+            "tokenRef": "$danger-dark"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "padding-x-md",
+            "value": "16px",
+            "tokenRef": "inputs.buttons.medium.padding-x"
+          },
+          {
+            "name": "padding-y-md",
+            "value": "4px",
+            "tokenRef": "inputs.buttons.medium.padding-y"
+          },
+          {
+            "name": "padding-x-lg",
+            "value": "24px",
+            "tokenRef": "inputs.buttons.large.padding-x"
+          },
+          {
+            "name": "padding-y-lg",
+            "value": "8px",
+            "tokenRef": "inputs.buttons.large.padding-y"
+          }
+        ],
+        "radius": [
+          {
+            "name": "md",
+            "value": "4px",
+            "tokenRef": "inputs.buttons.medium.border-radius"
+          },
+          {
+            "name": "sm",
+            "value": "4px",
+            "tokenRef": "inputs.buttons.small.border-radius"
+          }
+        ],
+        "typography": [
+          {
+            "name": "font-weight",
+            "value": "500",
+            "tokenRef": "$btn-font-weight"
+          },
+          {
+            "name": "font-size-md",
+            "value": "12px",
+            "tokenRef": "inputs.buttons.medium.font-size"
+          },
+          {
+            "name": "line-height-md",
+            "value": "18px",
+            "tokenRef": "inputs.buttons.medium.line-height"
+          }
+        ],
+        "elevation": [],
+        "states": [
+          {
+            "name": "hover",
+            "notes": "Lightest primary background, primary text (secondary variant inverts)"
+          },
+          {
+            "name": "active",
+            "notes": "primary-dark background"
+          },
+          {
+            "name": "disabled",
+            "notes": "opacity 0.9; neutral-lightest bg"
+          }
+        ]
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "code",
+        "library": "cleargov-shared/libs/shared-ui/styles",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=2-3076",
+        "notes": "Bootstrap btn-* classes; SCSS from variables-tokens-generated.scss",
+        "enrichedAt": "2026-07-28T16:45:00.000Z"
+      }
+    },
+    {
+      "id": "cg-button-dropdown",
+      "displayName": "Button Dropdown",
+      "category": "action",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/button-dropdown",
+      "selectorOrExport": "cg-button-dropdown",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/button-dropdown/src/lib/cg-button-dropdown/cg-button-dropdown.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "id",
+            "type": "unknown",
+            "default": "`cg-dropdown-${nextDropdownId++}`",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "size",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "icon",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "label",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "menuAlign",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "dropdownItems",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "container",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "ariaLabel",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "disabled",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "openChanged",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=638-4371",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-button-group",
+      "displayName": "Button Group",
+      "category": "action",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/button-group",
+      "selectorOrExport": "cg-button-group",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/button-group/src/lib/cg-button-group.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "items",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "size",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "activeIndex",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "value",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "ariaLabel",
+            "type": "unknown",
+            "default": "'Button Group'",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "selectChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=17-776",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-card",
+      "displayName": "Card",
+      "category": "layout",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/card",
+      "selectorOrExport": "cg-card",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/card/src/lib/cg-card/cg-card.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "titleText",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "actionItems",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "actionItemsAlignment",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "disableHighlight",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "disabled",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "tooltipText",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "height",
+            "type": "unknown",
+            "default": "'auto'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "set",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "surface-bg",
+            "value": "#ffffff",
+            "tokenRef": "$card-bg"
+          },
+          {
+            "name": "border",
+            "value": "#e9eaf1",
+            "tokenRef": "$card-border-color"
+          },
+          {
+            "name": "header-bg",
+            "value": "transparent",
+            "tokenRef": "$card-cap-bg"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "body-padding",
+            "value": "16px",
+            "tokenRef": "$card-spacer-y"
+          },
+          {
+            "name": "header-padding",
+            "value": "12px 16px",
+            "tokenRef": "$card-cap-padding-y"
+          }
+        ],
+        "radius": [
+          {
+            "name": "card",
+            "value": "4px",
+            "tokenRef": "$card-border-radius"
+          }
+        ],
+        "typography": [
+          {
+            "name": "title",
+            "value": "16px semibold",
+            "tokenRef": "$card-title-spacer-y"
+          }
+        ],
+        "elevation": [
+          {
+            "name": "shadow",
+            "value": "none",
+            "tokenRef": "$card-box-shadow"
+          }
+        ],
+        "states": [
+          {
+            "name": "highlight",
+            "notes": "Optional highlight border when not disableHighlight"
+          },
+          {
+            "name": "disabled",
+            "notes": "Reduced interactivity"
+          }
+        ]
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "code",
+        "library": "cleargov-shared Bootstrap card",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=17-777",
+        "notes": "Bootstrap card variants: secondary, tertiary, horizontal, dashboard",
+        "enrichedAt": "2026-07-28T16:45:00.000Z"
+      }
+    },
+    {
+      "id": "cg-carousel-image",
+      "displayName": "Carousel",
+      "category": "media",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/carousel",
+      "selectorOrExport": "cg-carousel-image",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/carousel/src/lib/cg-carousel/cg-carousel-image/cg-carousel-image.component.ts"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=5601-4690",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-cg-table",
+      "displayName": "Table",
+      "category": "data",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/table",
+      "selectorOrExport": "cg-cg-table",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/table/src/lib/cg-table/cg-table.component.ts"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=6191-9489",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-checkbox-group",
+      "displayName": "Checkbox",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/checkbox",
+      "selectorOrExport": "cg-checkbox-group",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/checkbox/src/lib/cg-checkbox/cg-checkbox-group.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "value",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "valueChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=2-3622",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-color-picker",
+      "displayName": "Color Picker",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/color-picker",
+      "selectorOrExport": "cg-color-picker",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/color-picker/src/lib/cg-color-picker/cg-color-picker.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "color",
+            "type": "unknown",
+            "default": "DEFAULT_COLOR",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "placement",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "displayType",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "colorPresets",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "colorChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=3488-12223",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-color-select",
+      "displayName": "Color Select",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/color-select",
+      "selectorOrExport": "cg-color-select",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/color-select/src/lib/cg-color-select/cg-color-select.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "override",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=3488-12223",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-combo-box",
+      "displayName": "Combo Box",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/combo-box",
+      "selectorOrExport": "cg-combo-box",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/combo-box/src/lib/cg-combo-box/cg-combo-box.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "multiContent",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "multiSelect",
+            "type": "unknown",
+            "default": "true",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "panelHeight",
+            "type": "unknown",
+            "default": "'300px'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "size",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "showPanel",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "placeholder",
+            "type": "unknown",
+            "default": "'---'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "statusPanels",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "multiContentChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=1304-6743",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-confirm-modal",
+      "displayName": "Modal",
+      "category": "overlay",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/modal",
+      "selectorOrExport": "cg-confirm-modal",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/modal/src/lib/cg-confirm-modal/cg-confirm-modal.component.ts"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "surface-bg",
+            "value": "#ffffff",
+            "tokenRef": "$white"
+          },
+          {
+            "name": "header-border",
+            "value": "#e9eaf1",
+            "tokenRef": "colors.neutral.primary-200"
+          },
+          {
+            "name": "overlay-scrim",
+            "value": "rgba(0,0,0,0.5)",
+            "tokenRef": "$modal-backdrop-bg"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "header-padding",
+            "value": "16px",
+            "tokenRef": "$modal-header-padding"
+          },
+          {
+            "name": "body-padding",
+            "value": "16px",
+            "tokenRef": "$modal-inner-padding"
+          }
+        ],
+        "radius": [
+          {
+            "name": "dialog",
+            "value": "4px",
+            "tokenRef": "$border-radius"
+          }
+        ],
+        "typography": [],
+        "elevation": [
+          {
+            "name": "dialog-shadow",
+            "value": "0 0.5rem 1rem rgba(0,0,0,0.15)",
+            "tokenRef": "$box-shadow"
+          }
+        ],
+        "states": [
+          {
+            "name": "open",
+            "notes": "Bootstrap modal fade show"
+          },
+          {
+            "name": "confirm",
+            "notes": "Primary + secondary cg-button actions"
+          }
+        ]
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "",
+      "designMeta": {
+        "source": "code",
+        "library": "cleargov-shared modal + Bootstrap modal",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=21-750",
+        "notes": "Programmatic modal via modal service; Bootstrap modal chrome",
+        "enrichedAt": "2026-07-28T16:45:00.000Z"
+      }
+    },
+    {
+      "id": "cg-content-box",
+      "displayName": "Content Box",
+      "category": "layout",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/content-box",
+      "selectorOrExport": "cg-content-box",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/content-box/src/lib/cg-content-box/cg-content-box.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "isLoading",
+            "type": "unknown",
+            "default": "true",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "loadingTitle",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "color-1",
+            "value": "var(--gray, gray)",
+            "tokenRef": "--gray"
+          },
+          {
+            "name": "color-2",
+            "value": "var(--white, white)",
+            "tokenRef": "--white"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "gap",
+            "value": "16px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=9672-11176"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": "cg-csv-file-upload",
+      "displayName": "Csv File Upload",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/csv-file-upload",
+      "selectorOrExport": "cg-csv-file-upload",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/csv-file-upload/src/lib/cg-csv-file-upload/cg-csv-file-upload.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "id",
+            "type": "unknown",
+            "default": "`cg-csv-file-upload-${nextFileUploadId++}`",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "componentSize",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "ariaLabel",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "layout",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "disabled",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "chooseFileLabel",
+            "type": "unknown",
+            "default": "'Choose File'",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "parseFile",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=8931-57925",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-document-click-service",
+      "displayName": "document-click Service",
+      "category": "overlay",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/services/document-click",
+      "selectorOrExport": "document-click",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/services/src/lib/document-click.service.ts"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": [
+          {
+            "name": "document-click",
+            "methods": [],
+            "description": ""
+          }
+        ]
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "medium",
+      "notes": "Angular injectable service"
+    },
+    {
+      "id": "cg-drawer",
+      "displayName": "Drawer",
+      "category": "overlay",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/drawer",
+      "selectorOrExport": "cg-drawer",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/drawer/src/lib/cg-drawer/cg-drawer.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "titleText",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "buttons",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "useHeaderButtons",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "options",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "hasRequiredField",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "hideClose",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=455-2830",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-grid",
+      "displayName": "Grid",
+      "category": "data",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/grid",
+      "selectorOrExport": "cg-grid",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/grid/src/lib/cg-grid/cg-grid.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "columnDefs",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "fitToWindowHeight",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "gridHeight",
+            "type": "unknown",
+            "default": "'300px'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "gridMinHeight",
+            "type": "unknown",
+            "default": "300",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "gridBottomOffset",
+            "type": "unknown",
+            "default": "270",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "primaryHeader",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "loading",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "showDefaultStatusBar",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "totalRows",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "statusPanels",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "footerItemName",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "localStorageKey",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "selectionChanged",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "keep",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=6191-9489",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-grouped-bar",
+      "displayName": "Grouped Bar",
+      "category": "data",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/grouped-bar",
+      "selectorOrExport": "cg-grouped-bar",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/grouped-bar/src/lib/cg-grouped-bar/cg-grouped-bar.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "items",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "orientation",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "valueAsPercentage",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "noDataMessage",
+            "type": "unknown",
+            "default": "'No data available'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "ariaLabel",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=3317-12209",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-header",
+      "displayName": "Header",
+      "category": "navigation",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/header",
+      "selectorOrExport": "cg-header",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/header/src/lib/cg-header/cg-header.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "titleText",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "icon",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=810-5528",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-link",
+      "displayName": "Link",
+      "category": "action",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/link",
+      "selectorOrExport": "cg-link",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/link/src/lib/cg-link/cg-link.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "href",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "target",
+            "type": "unknown",
+            "default": "'_self'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "isExternal",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "ariaLabel",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "linkClick",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=713-6305",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-loader",
+      "displayName": "Loader",
+      "category": "feedback",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/loader",
+      "selectorOrExport": "cg-loader",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/loader/src/lib/cg-loader/cg-loader.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "size",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "headerText",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "subheaderText",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "loading",
+            "type": "unknown",
+            "default": "true",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "minHeight",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=17-779",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-map-box",
+      "displayName": "Map Box",
+      "category": "media",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/map-box",
+      "selectorOrExport": "cg-map-box",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/map-box/src/lib/map-box/cg-map-box.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "location",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "options",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "useUrl",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "isGeocoderMode",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "isAddMarkerMode",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "isDrawAreaMode",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "drawMode",
+            "type": "unknown",
+            "default": "'simple_select'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "editMode",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "centerOnDefaultCenter",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "activeParentId",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "setAddressAndLocation",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "polygonModified",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "markerModified",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "markerHovered",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": "cg-navbar-item",
+      "displayName": "Navbar",
+      "category": "navigation",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/navbar",
+      "selectorOrExport": "cg-navbar-item",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/navbar/src/lib/cg-navbar/cg-navbar-item/cg-navbar-item.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "navItem",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "collapsed",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "itemClass",
+            "type": "unknown",
+            "default": "'nav-link'",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=9518-64839",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-notification",
+      "displayName": "Notification",
+      "category": "feedback",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/notification",
+      "selectorOrExport": "cg-notification",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/notification/src/lib/cg-notification/cg-notification.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "icon",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "message",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "closable",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "closeClicked",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=2-3510",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-page-layout",
+      "displayName": "Layout",
+      "category": "layout",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/layout",
+      "selectorOrExport": "cg-page-layout",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/layout/src/lib/cg-page-layout/cg-page-layout.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": "cg-pagination",
+      "displayName": "Pagination",
+      "category": "data",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/pagination",
+      "selectorOrExport": "cg-pagination",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/pagination/src/lib/cg-pagination/cg-pagination.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "totalPages",
+            "type": "unknown",
+            "default": "1",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "currentPage",
+            "type": "unknown",
+            "default": "1",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "pageChanged",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=8502-7724",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-panel",
+      "displayName": "Panel",
+      "category": "layout",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/panel",
+      "selectorOrExport": "cg-panel",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/panel/src/lib/cg-panel/cg-panel.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "titleText",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "hideHeader",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "hideFooter",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "titleClass",
+            "type": "unknown",
+            "default": "'h5 text-primary-dark fw-bold'",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=9672-11176",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-radio-group",
+      "displayName": "Radio",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/radio",
+      "selectorOrExport": "cg-radio-group",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/radio/src/lib/cg-radio/cg-radio-group.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "get",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "get",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "get",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "valueChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=2-3611",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-resize-service",
+      "displayName": "resize Service",
+      "category": "overlay",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/services/resize",
+      "selectorOrExport": "resize",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/services/src/lib/resize.service.ts"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": [
+          {
+            "name": "resize",
+            "methods": [],
+            "description": ""
+          }
+        ]
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "adapt",
+      "confidence": "medium",
+      "notes": "Angular injectable service"
+    },
+    {
+      "id": "cg-search-select",
+      "displayName": "Search Select",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/search-select",
+      "selectorOrExport": "cg-search-select",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/search-select/src/lib/cg-search-select/cg-search-select.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "multiContent",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "minChars",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "placeholder",
+            "type": "unknown",
+            "default": "'Search'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "gridHeight",
+            "type": "unknown",
+            "default": "'300px'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "isTreeData",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "statusPanels",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "disabled",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "selectText",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "multiSelect",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "showHeaderCheckbox",
+            "type": "unknown",
+            "default": "true",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "rowChanged",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "height",
+            "value": "auto !important",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": [
+          {
+            "name": "disabled",
+            "notes": "Detected in stylesheet"
+          }
+        ]
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=1194-6235",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-slide-up",
+      "displayName": "Slide Up",
+      "category": "overlay",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/slide-up",
+      "selectorOrExport": "cg-slide-up",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/slide-up/src/lib/cg-slide-up/cg-slide-up.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "switchLabel",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "isExpanded",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "startHeight",
+            "type": "unknown",
+            "default": "44",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "slideDown",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "maxHeight",
+            "type": "unknown",
+            "default": "300",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "bottomOffset",
+            "type": "unknown",
+            "default": "0",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "expandChanged",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=455-2830",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-step",
+      "displayName": "Stepper",
+      "category": "layout",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/stepper",
+      "selectorOrExport": "cg-step",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/stepper/src/lib/cg-stepper/cg-step.component/cg-step.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "step",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "status",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "orientation",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "isLast",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "linkClicked",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=4578-818",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-switch",
+      "displayName": "Switch",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/switch",
+      "selectorOrExport": "cg-switch",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/switch/src/lib/cg-switch/cg-switch.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "id",
+            "type": "unknown",
+            "default": "`cg-switch-${nextSwitchId++}`",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "label",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "checked",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "disabled",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "ariaLabel",
+            "type": "unknown",
+            "default": "this.label",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "inline",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "reverse",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "customLabel",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "stopPropagation",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "beforeChange",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "checkedChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "track-off",
+            "value": "#d4d5e3",
+            "tokenRef": "colors.neutral.primary-300"
+          },
+          {
+            "name": "track-on",
+            "value": "#2f5cb6",
+            "tokenRef": "colors.primary.primary"
+          },
+          {
+            "name": "thumb",
+            "value": "#ffffff",
+            "tokenRef": "$white"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "track-width",
+            "value": "36px",
+            "tokenRef": null
+          },
+          {
+            "name": "track-height",
+            "value": "20px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [
+          {
+            "name": "track",
+            "value": "9999px",
+            "tokenRef": "form-switch border-radius"
+          }
+        ],
+        "typography": [
+          {
+            "name": "label",
+            "value": "14px",
+            "tokenRef": "$font-size-base"
+          }
+        ],
+        "elevation": [],
+        "states": [
+          {
+            "name": "checked",
+            "notes": "Primary fill track"
+          },
+          {
+            "name": "disabled",
+            "notes": "Reduced opacity"
+          }
+        ]
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "code",
+        "library": "cleargov-shared Bootstrap form-switch",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=2-3552",
+        "notes": "Bootstrap form-check form-switch variants (yesno, lock, showhide)",
+        "enrichedAt": "2026-07-28T16:45:00.000Z"
+      }
+    },
+    {
+      "id": "cg-tab",
+      "displayName": "Tabs",
+      "category": "navigation",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/tabs",
+      "selectorOrExport": "cg-tab",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/tabs/src/lib/cg-tabs/cg-tab/cg-tab.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "isActive",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "tab",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "parent",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "tabClicked",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=17-786",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-table-header-toolbar",
+      "displayName": "Table Header Toolbar",
+      "category": "data",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/table-header-toolbar",
+      "selectorOrExport": "cg-table-header-toolbar",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/table-header-toolbar/src/lib/cg-table-header-toolbar/cg-table-header-toolbar.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "type",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "titleText",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "buttons",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "bulkActions",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "bulkActionsHidden",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "bulkActionsPlacement",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "squareTopStartCorner",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "squareTopEndCorner",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "bulkActionsLabel",
+            "type": "unknown",
+            "default": "'Bulk Actions'",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=17-768",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-tag",
+      "displayName": "Tag",
+      "category": "action",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/tag",
+      "selectorOrExport": "cg-tag",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/tag/src/lib/cg-tag/cg-tag.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "tag",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "size",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "color",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=2309-8343",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-timeline",
+      "displayName": "Timeline",
+      "category": "data",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/timeline",
+      "selectorOrExport": "cg-timeline",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/timeline/src/lib/cg-timeline/cg-timeline.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "sortByDate",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=4638-18",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-timeline-chart",
+      "displayName": "Timeline Chart",
+      "category": "data",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/timeline-chart",
+      "selectorOrExport": "cg-timeline-chart",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/timeline-chart/src/lib/cg-timeline-chart/cg-timeline-chart.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "items",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "periodicity",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "allowMultipleItemsInRow",
+            "type": "unknown",
+            "default": "true",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "timelineMonthWidth",
+            "type": "unknown",
+            "default": "70",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "height",
+            "type": "unknown",
+            "default": "500",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "cardTheme",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "minimumMonths",
+            "type": "unknown",
+            "default": "12",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "startEndDatePadding",
+            "type": "unknown",
+            "default": "0",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "minimumCardWidth",
+            "type": "unknown",
+            "default": "130",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "template",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=8478-968",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-toast-content",
+      "displayName": "Toast",
+      "category": "feedback",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/toast",
+      "selectorOrExport": "cg-toast-content",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/toast/src/lib/cg-toast/cg-toast-element/cg-toast-content.component.ts"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [
+          {
+            "name": "closed",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "gap",
+            "value": "20px",
+            "tokenRef": null
+          },
+          {
+            "name": "margin-top",
+            "value": "8px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=17-773",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-tooltip-help",
+      "displayName": "Tooltip",
+      "category": "overlay",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/tooltip",
+      "selectorOrExport": "cg-tooltip-help",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/tooltip/src/lib/cg-tooltip-help/cg-tooltip-help.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "tooltipText",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "placement",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=17-774",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-tree-select",
+      "displayName": "Tree Select",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/tree-select",
+      "selectorOrExport": "cg-tree-select",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/tree-select/src/lib/tree-select/cg-tree-select.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "items",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "currentSelection",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "selectionMode",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "quickFilter",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "hideToggles",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "actions",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "titleTooltipDisabled",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "actionClicked",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "changed",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "expandChanged",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "displayNodesChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "color-1",
+            "value": "var(--cg-neutral)",
+            "tokenRef": "--cg-neutral"
+          },
+          {
+            "name": "color-2",
+            "value": "var(--cg-primary-lightest)",
+            "tokenRef": "--cg-primary-lightest"
+          },
+          {
+            "name": "color-3",
+            "value": "var(--cg-body)",
+            "tokenRef": "--cg-body"
+          },
+          {
+            "name": "color-4",
+            "value": "var(--cg-body)",
+            "tokenRef": "--cg-body"
+          },
+          {
+            "name": "color-5",
+            "value": "var(--cg-primary-accent)",
+            "tokenRef": "--cg-primary-accent"
+          },
+          {
+            "name": "color-6",
+            "value": "white",
+            "tokenRef": null
+          },
+          {
+            "name": "color-7",
+            "value": "white",
+            "tokenRef": null
+          },
+          {
+            "name": "color-8",
+            "value": "$disabled-selection-color",
+            "tokenRef": "$disabled-selection-color"
+          },
+          {
+            "name": "color-9",
+            "value": "black",
+            "tokenRef": null
+          },
+          {
+            "name": "color-10",
+            "value": "var(--cg-primary)",
+            "tokenRef": "--cg-primary"
+          },
+          {
+            "name": "color-11",
+            "value": "var(--cg-primary)",
+            "tokenRef": "--cg-primary"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "gap",
+            "value": "6px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "12px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "24px",
+            "tokenRef": null
+          },
+          {
+            "name": "margin",
+            "value": "0",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "$outer-padding 0",
+            "tokenRef": "$outer-padding"
+          },
+          {
+            "name": "min-height",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "height",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "min-height",
+            "value": "150px",
+            "tokenRef": null
+          },
+          {
+            "name": "gap",
+            "value": "$item-gap",
+            "tokenRef": "$item-gap"
+          },
+          {
+            "name": "padding-right",
+            "value": "8px",
+            "tokenRef": null
+          },
+          {
+            "name": "height",
+            "value": "30px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "3px 0",
+            "tokenRef": null
+          },
+          {
+            "name": "padding-left",
+            "value": "calc(($i * $level-padding) + $outer-padding)",
+            "tokenRef": "$i"
+          },
+          {
+            "name": "padding-right",
+            "value": "$outer-padding",
+            "tokenRef": "$outer-padding"
+          },
+          {
+            "name": "width",
+            "value": "$container-size",
+            "tokenRef": "$container-size"
+          },
+          {
+            "name": "height",
+            "value": "$container-size",
+            "tokenRef": "$container-size"
+          },
+          {
+            "name": "width",
+            "value": "40px",
+            "tokenRef": null
+          },
+          {
+            "name": "margin-left",
+            "value": "auto",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [
+          {
+            "name": "font-size",
+            "value": "20px",
+            "tokenRef": null
+          }
+        ],
+        "elevation": [],
+        "states": [
+          {
+            "name": "hover",
+            "notes": "Detected in stylesheet"
+          }
+        ]
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=4460-12407"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": "cg-tree-select-dropdown",
+      "displayName": "Tree Select Dropdown",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/tree-select-dropdown",
+      "selectorOrExport": "cg-tree-select-dropdown",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/tree-select-dropdown/src/lib/tree-select-dropdown/cg-tree-select-dropdown.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "items",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "value",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "selectionMode",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "placeholder",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "canClearSelection",
+            "type": "unknown",
+            "default": "true",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "truncateChips",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "maxDisplayedChips",
+            "type": "unknown",
+            "default": "10",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "removeOrphanedIds",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "hideSelectAll",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "showClearButton",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "displayAllChip",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "maxChipWidth",
+            "type": "unknown",
+            "default": "'none'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "chipsTruncateMode",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "changed",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "openChanged",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "color-1",
+            "value": "white",
+            "tokenRef": null
+          },
+          {
+            "name": "color-2",
+            "value": "$gray-03",
+            "tokenRef": "$gray-03"
+          },
+          {
+            "name": "color-3",
+            "value": "var(--cg-primary)",
+            "tokenRef": "--cg-primary"
+          },
+          {
+            "name": "color-4",
+            "value": "var(--cg-neutral)",
+            "tokenRef": "--cg-neutral"
+          },
+          {
+            "name": "color-5",
+            "value": "var(--cg-primary)",
+            "tokenRef": "--cg-primary"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "min-height",
+            "value": "28px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "3px",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "padding-right",
+            "value": "4px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "0 10px",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "calc(100% - 22px)",
+            "tokenRef": null
+          },
+          {
+            "name": "height",
+            "value": "16px",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "22px",
+            "tokenRef": null
+          },
+          {
+            "name": "margin-top",
+            "value": "4px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "0",
+            "tokenRef": null
+          },
+          {
+            "name": "height",
+            "value": "300px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [
+          {
+            "name": "border-radius",
+            "value": "4px",
+            "tokenRef": null
+          }
+        ],
+        "typography": [
+          {
+            "name": "font-size",
+            "value": "12px",
+            "tokenRef": null
+          }
+        ],
+        "elevation": [],
+        "states": [
+          {
+            "name": "disabled",
+            "notes": "Detected in stylesheet"
+          }
+        ]
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=638-4371"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": "cg-tree-select-panel",
+      "displayName": "Tree Select Panel",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/tree-select-panel",
+      "selectorOrExport": "cg-tree-select-panel",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/tree-select-panel/src/lib/cg-tree-select-panel/cg-tree-select-panel.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "items",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "currentSelection",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "selectionMode",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "searchPlaceholder",
+            "type": "unknown",
+            "default": "'Search'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "showExpandAll",
+            "type": "unknown",
+            "default": "true",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "hideSelectAll",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "changed",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "color-1",
+            "value": "$white",
+            "tokenRef": "$white"
+          },
+          {
+            "name": "color-2",
+            "value": "$gray-05",
+            "tokenRef": "$gray-05"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "margin",
+            "value": "0.5rem",
+            "tokenRef": null
+          },
+          {
+            "name": "height",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "400px",
+            "tokenRef": null
+          },
+          {
+            "name": "gap",
+            "value": "16px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "8px",
+            "tokenRef": null
+          },
+          {
+            "name": "gap",
+            "value": "24px",
+            "tokenRef": null
+          },
+          {
+            "name": "margin-left",
+            "value": "0.5rem",
+            "tokenRef": null
+          },
+          {
+            "name": "gap",
+            "value": "8px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "1em",
+            "tokenRef": null
+          },
+          {
+            "name": "margin-right",
+            "value": "8px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "0",
+            "tokenRef": null
+          },
+          {
+            "name": "height",
+            "value": "0",
+            "tokenRef": null
+          }
+        ],
+        "radius": [
+          {
+            "name": "border-radius",
+            "value": "4px",
+            "tokenRef": null
+          }
+        ],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=4460-12407"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": "cg-tree-settings",
+      "displayName": "Tree Settings",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/tree-settings",
+      "selectorOrExport": "cg-tree-settings",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/tree-settings/src/lib/cg-tree-settings/cg-tree-settings.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "items",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "quickFilter",
+            "type": "unknown",
+            "default": "''",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "uniqueSettingIcon",
+            "type": "unknown",
+            "default": "'fa-solid fa-tag'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "uniqueSettingIconClass",
+            "type": "unknown",
+            "default": "'text-category-04'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "uniqueSettingMessage",
+            "type": "unknown",
+            "default": "'unique setting for this project'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "allFieldsHiddenMessage",
+            "type": "unknown",
+            "default": "'All fields are hidden. This section will not display.'",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "displayNodesChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "expandChange",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=5148-565",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-type-ahead",
+      "displayName": "Type Ahead",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/type-ahead",
+      "selectorOrExport": "cg-type-ahead",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/type-ahead/src/lib/cg-type-ahead/cg-type-ahead.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "id",
+            "type": "unknown",
+            "default": "`type-ahead-${count++}`",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "minChars",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "searchResults",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "placeholder",
+            "type": "unknown",
+            "default": "'Search'",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "hasError",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "hasWarning",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "hasInfo",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "showSuccess",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "ariaLabel",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "searchChange",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "itemSelected",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": "",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=197-1587",
+        "notes": "Figma COMPONENTS page for this cg-* primitive"
+      }
+    },
+    {
+      "id": "cg-vertical-menu-item",
+      "displayName": "Vertical Menu",
+      "category": "navigation",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/vertical-menu",
+      "selectorOrExport": "cg-vertical-menu-item",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/vertical-menu/src/lib/cg-vertical-menu/cg-vertical-menu-item/cg-vertical-menu-item.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "isActive",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "allowCollapsing",
+            "type": "unknown",
+            "default": "true",
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [
+          {
+            "name": "selected",
+            "payloadType": "unknown",
+            "description": ""
+          },
+          {
+            "name": "toggleClick",
+            "payloadType": "unknown",
+            "description": ""
+          }
+        ],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "color-1",
+            "value": "#C6C6C6",
+            "tokenRef": null
+          },
+          {
+            "name": "color-2",
+            "value": "$nav-link-disabled-color",
+            "tokenRef": "$nav-link-disabled-color"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "padding",
+            "value": "20px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding-left",
+            "value": "calc($normal-multiplier * $level-padding)",
+            "tokenRef": "$normal-multiplier"
+          },
+          {
+            "name": "padding-left",
+            "value": "calc($grouped-multiplier * $level-padding)",
+            "tokenRef": "$grouped-multiplier"
+          },
+          {
+            "name": "gap",
+            "value": "4px",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "16px",
+            "tokenRef": null
+          },
+          {
+            "name": "min-height",
+            "value": "18px",
+            "tokenRef": null
+          },
+          {
+            "name": "max-height",
+            "value": "60px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": [
+          {
+            "name": "disabled",
+            "notes": "Detected in stylesheet"
+          }
+        ]
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=9518-64840"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": "cg-year-select-dropdown",
+      "displayName": "Year Select",
+      "category": "form",
+      "framework": "angular",
+      "packageOrPath": "@cleargov/shared-ui/year-select",
+      "selectorOrExport": "cg-year-select-dropdown",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "c:/Work/cleargov-shared/libs/shared-ui/year-select/src/lib/cg-year-select-dropdown.component.ts"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "placeholder",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "mode",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "hideClearButton",
+            "type": "unknown",
+            "default": "false",
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "minYear",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "maxYear",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "disabledYears",
+            "type": "unknown",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "color-1",
+            "value": "var(--cg-primary-accent)",
+            "tokenRef": "--cg-primary-accent"
+          },
+          {
+            "name": "color-2",
+            "value": "var(--cg-primary-accent-lightest)",
+            "tokenRef": "--cg-primary-accent-lightest"
+          },
+          {
+            "name": "color-3",
+            "value": "white",
+            "tokenRef": null
+          },
+          {
+            "name": "color-4",
+            "value": "$gray-03",
+            "tokenRef": "$gray-03"
+          },
+          {
+            "name": "color-5",
+            "value": "var(--cg-primary)",
+            "tokenRef": "--cg-primary"
+          },
+          {
+            "name": "color-6",
+            "value": "var(--cg-primary-light)",
+            "tokenRef": "--cg-primary-light"
+          },
+          {
+            "name": "color-7",
+            "value": "var(--cg-neutral)",
+            "tokenRef": "--cg-neutral"
+          },
+          {
+            "name": "color-8",
+            "value": "$white",
+            "tokenRef": "$white"
+          },
+          {
+            "name": "color-9",
+            "value": "var(--cg-neutral-darkest)",
+            "tokenRef": "--cg-neutral-darkest"
+          },
+          {
+            "name": "color-10",
+            "value": "$highlighted-color",
+            "tokenRef": "$highlighted-color"
+          },
+          {
+            "name": "color-11",
+            "value": "$highlighted-color",
+            "tokenRef": "$highlighted-color"
+          },
+          {
+            "name": "color-12",
+            "value": "var(--cg-neutral)",
+            "tokenRef": "--cg-neutral"
+          },
+          {
+            "name": "color-13",
+            "value": "var(--cg-neutral-lightest)",
+            "tokenRef": "--cg-neutral-lightest"
+          },
+          {
+            "name": "color-14",
+            "value": "$white",
+            "tokenRef": "$white"
+          },
+          {
+            "name": "color-15",
+            "value": "$selected-color",
+            "tokenRef": "$selected-color"
+          },
+          {
+            "name": "color-16",
+            "value": "var(--cg-danger-lightest)",
+            "tokenRef": "--cg-danger-lightest"
+          },
+          {
+            "name": "color-17",
+            "value": "var(--cg-danger-lightest)",
+            "tokenRef": "--cg-danger-lightest"
+          },
+          {
+            "name": "color-18",
+            "value": "var(--cg-neutral-dark)",
+            "tokenRef": "--cg-neutral-dark"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "min-height",
+            "value": "28px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "3px",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "gap",
+            "value": "10px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "0 8px",
+            "tokenRef": null
+          },
+          {
+            "name": "height",
+            "value": "14px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "2px 0 2px 6px",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "calc(100% - 22px)",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "0",
+            "tokenRef": null
+          },
+          {
+            "name": "height",
+            "value": "100%",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "200px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "8px 8px",
+            "tokenRef": null
+          },
+          {
+            "name": "margin-bottom",
+            "value": "8px",
+            "tokenRef": null
+          },
+          {
+            "name": "padding",
+            "value": "6px 20px",
+            "tokenRef": null
+          },
+          {
+            "name": "width",
+            "value": "80px",
+            "tokenRef": null
+          },
+          {
+            "name": "height",
+            "value": "32px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [
+          {
+            "name": "border-radius",
+            "value": "4px",
+            "tokenRef": null
+          }
+        ],
+        "typography": [
+          {
+            "name": "line-height",
+            "value": "14px",
+            "tokenRef": null
+          },
+          {
+            "name": "font-size",
+            "value": "14px",
+            "tokenRef": null
+          },
+          {
+            "name": "font-size",
+            "value": "12px",
+            "tokenRef": null
+          },
+          {
+            "name": "font-weight",
+            "value": "700",
+            "tokenRef": null
+          },
+          {
+            "name": "font-weight",
+            "value": "400",
+            "tokenRef": null
+          }
+        ],
+        "elevation": [],
+        "states": [
+          {
+            "name": "hover",
+            "notes": "Detected in stylesheet"
+          },
+          {
+            "name": "disabled",
+            "notes": "Detected in stylesheet"
+          }
+        ]
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from component stylesheet",
+        "library": "ClearGov Design System — COMPONENTS",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=8236-12"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": ""
+    }
+  ],
+  "familiesGuess": {
+    "cg-accordion": "accordion",
+    "cg-actions-button-group": "actions-button-group",
+    "cg-avatar": "avatar",
+    "cg-badge": "badge",
+    "cg-banner-slider": "banner-slider",
+    "cg-breadcrumbs": "breadcrumbs",
+    "cg-button": "button",
+    "cg-button-dropdown": "button-dropdown",
+    "cg-button-group": "button-group",
+    "cg-card": "card",
+    "cg-carousel-image": "carousel-image",
+    "cg-cg-table": "cg-table",
+    "cg-checkbox-group": "checkbox-group",
+    "cg-color-picker": "color-picker",
+    "cg-color-select": "color-select",
+    "cg-combo-box": "combo-box",
+    "cg-confirm-modal": "confirm-modal",
+    "cg-content-box": "content-box",
+    "cg-csv-file-upload": "csv-file-upload",
+    "cg-document-click-service": "document-click",
+    "cg-drawer": "drawer",
+    "cg-grid": "grid",
+    "cg-grouped-bar": "grouped-bar",
+    "cg-header": "header",
+    "cg-link": "link",
+    "cg-loader": "loader",
+    "cg-map-box": "map-box",
+    "cg-navbar-item": "navbar-item",
+    "cg-notification": "notification",
+    "cg-page-layout": "page-layout",
+    "cg-pagination": "pagination",
+    "cg-panel": "panel",
+    "cg-radio-group": "radio-group",
+    "cg-resize-service": "resize",
+    "cg-search-select": "search-select",
+    "cg-slide-up": "slide-up",
+    "cg-step": "step",
+    "cg-switch": "switch",
+    "cg-tab": "tab",
+    "cg-table-header-toolbar": "table-header-toolbar",
+    "cg-tag": "tag",
+    "cg-timeline": "timeline",
+    "cg-timeline-chart": "timeline-chart",
+    "cg-toast-content": "toast-content",
+    "cg-tooltip-help": "tooltip-help",
+    "cg-tree-select": "tree-select",
+    "cg-tree-select-dropdown": "tree-select-dropdown",
+    "cg-tree-select-panel": "tree-select-panel",
+    "cg-tree-settings": "tree-settings",
+    "cg-type-ahead": "type-ahead",
+    "cg-vertical-menu-item": "vertical-menu-item",
+    "cg-year-select-dropdown": "year-select-dropdown"
+  }
+}

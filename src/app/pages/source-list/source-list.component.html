@@ -1,0 +1,43 @@
+@if (inventory$ | async; as data) {
+  <h1>{{ appLabels[data.app] }} — Raw Inventory</h1>
+  <p class="lead">
+    Source: <code>{{ data.inv.origin.repoOrPackage }}</code>
+    · Extracted {{ data.inv.extractedAt }}
+  </p>
+  @if (data.inv.origin.figmaUrl) {
+    <p class="design-row">
+      Design:
+      <a class="figma-link" [href]="data.inv.origin.figmaUrl" target="_blank" rel="noopener"><code>{{ data.inv.origin.figmaUrl }}</code></a>
+    </p>
+  }
+  <p class="count">{{ data.inv.components.length }} components</p>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Framework</th>
+        <th>Selector</th>
+        <th>Props</th>
+        <th>Migrate</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (c of data.inv.components; track c.id) {
+        <tr>
+          <td><code>{{ c.id }}</code></td>
+          <td>{{ c.displayName }}</td>
+          <td>{{ c.category }}</td>
+          <td>{{ c.framework }}</td>
+          <td><code>{{ c.selectorOrExport }}</code></td>
+          <td>{{ c.api?.props?.length ?? 0 }}</td>
+          <td>{{ c.migrateHint ?? '—' }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+} @else {
+  <p>Loading source inventory...</p>
+}

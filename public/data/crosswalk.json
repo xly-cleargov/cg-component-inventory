@@ -1,0 +1,1999 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-07-28T17:29:59.194Z",
+  "figma": {
+    "cg": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=5344-1363&p=f&t=kdMedCVWjFszF8po-0",
+    "ds": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+    "es": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2"
+  },
+  "mappings": [
+    {
+      "familyId": "accordion",
+      "source": "cg",
+      "sourceId": "cg-accordion",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "actions-button-group",
+      "source": "cg",
+      "sourceId": "cg-actions-button-group",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "avatar",
+      "source": "cg",
+      "sourceId": "cg-avatar",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "badge",
+      "source": "cg",
+      "sourceId": "cg-badge",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "banner-slider",
+      "source": "cg",
+      "sourceId": "cg-banner-slider",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "breadcrumb",
+      "source": "cg",
+      "sourceId": "cg-breadcrumbs",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "button",
+      "source": "cg",
+      "sourceId": "cg-button",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "button-dropdown",
+      "source": "cg",
+      "sourceId": "cg-button-dropdown",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "button-group",
+      "source": "cg",
+      "sourceId": "cg-button-group",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "card",
+      "source": "cg",
+      "sourceId": "cg-card",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "carousel-image",
+      "source": "cg",
+      "sourceId": "cg-carousel-image",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "cg-table",
+      "source": "cg",
+      "sourceId": "cg-cg-table",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "checkbox-group",
+      "source": "cg",
+      "sourceId": "cg-checkbox-group",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "color-picker",
+      "source": "cg",
+      "sourceId": "cg-color-picker",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "color-select",
+      "source": "cg",
+      "sourceId": "cg-color-select",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "combo-box",
+      "source": "cg",
+      "sourceId": "cg-combo-box",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "confirm-modal",
+      "source": "cg",
+      "sourceId": "cg-confirm-modal",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "content-box",
+      "source": "cg",
+      "sourceId": "cg-content-box",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "csv-file-upload",
+      "source": "cg",
+      "sourceId": "cg-csv-file-upload",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "document-click",
+      "source": "cg",
+      "sourceId": "cg-document-click-service",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "drawer",
+      "source": "cg",
+      "sourceId": "cg-drawer",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "grid",
+      "source": "cg",
+      "sourceId": "cg-grid",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "grouped-bar",
+      "source": "cg",
+      "sourceId": "cg-grouped-bar",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "header",
+      "source": "cg",
+      "sourceId": "cg-header",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "link",
+      "source": "cg",
+      "sourceId": "cg-link",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "loader",
+      "source": "cg",
+      "sourceId": "cg-loader",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "map-box",
+      "source": "cg",
+      "sourceId": "cg-map-box",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "navbar",
+      "source": "cg",
+      "sourceId": "cg-navbar-item",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "notification",
+      "source": "cg",
+      "sourceId": "cg-notification",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "page-layout",
+      "source": "cg",
+      "sourceId": "cg-page-layout",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "pagination",
+      "source": "cg",
+      "sourceId": "cg-pagination",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "panel",
+      "source": "cg",
+      "sourceId": "cg-panel",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "radio-group",
+      "source": "cg",
+      "sourceId": "cg-radio-group",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "resize",
+      "source": "cg",
+      "sourceId": "cg-resize-service",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "search-select",
+      "source": "cg",
+      "sourceId": "cg-search-select",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "slide-up",
+      "source": "cg",
+      "sourceId": "cg-slide-up",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "step",
+      "source": "cg",
+      "sourceId": "cg-step",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "switch",
+      "source": "cg",
+      "sourceId": "cg-switch",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "tabs",
+      "source": "cg",
+      "sourceId": "cg-tab",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "table-header-toolbar",
+      "source": "cg",
+      "sourceId": "cg-table-header-toolbar",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "tag",
+      "source": "cg",
+      "sourceId": "cg-tag",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "timeline",
+      "source": "cg",
+      "sourceId": "cg-timeline",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "timeline-chart",
+      "source": "cg",
+      "sourceId": "cg-timeline-chart",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "toast",
+      "source": "cg",
+      "sourceId": "cg-toast-content",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "tooltip",
+      "source": "cg",
+      "sourceId": "cg-tooltip-help",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "tree-select",
+      "source": "cg",
+      "sourceId": "cg-tree-select",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "tree-select-dropdown",
+      "source": "cg",
+      "sourceId": "cg-tree-select-dropdown",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "tree-select-panel",
+      "source": "cg",
+      "sourceId": "cg-tree-select-panel",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "tree-settings",
+      "source": "cg",
+      "sourceId": "cg-tree-settings",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "type-ahead",
+      "source": "cg",
+      "sourceId": "cg-type-ahead",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "vertical-menu-item",
+      "source": "cg",
+      "sourceId": "cg-vertical-menu-item",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "year-select-dropdown",
+      "source": "cg",
+      "sourceId": "cg-year-select-dropdown",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "alt-text-popup",
+      "source": "ds",
+      "sourceId": "ds-alt-text-popup",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "empty-state",
+      "source": "ds",
+      "sourceId": "ds-app-access-denied",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "app-activity-log",
+      "source": "ds",
+      "sourceId": "ds-app-activity-log",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-add-status-rules",
+      "source": "ds",
+      "sourceId": "ds-app-add-status-rules",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "familyId": "app-add-status-workflow",
+      "source": "ds",
+      "sourceId": "ds-app-add-status-workflow",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "familyId": "app-add-transition-workflow",
+      "source": "ds",
+      "sourceId": "ds-app-add-transition-workflow",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "familyId": "app-adjustment-upload",
+      "source": "ds",
+      "sourceId": "ds-app-adjustment-upload",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "app-adjustments",
+      "source": "ds",
+      "sourceId": "ds-app-adjustments",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "app-admin-overview",
+      "source": "ds",
+      "sourceId": "ds-app-admin-overview",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "app-block-settings",
+      "source": "ds",
+      "sourceId": "ds-app-block-settings",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "color-picker",
+      "source": "ds",
+      "sourceId": "ds-app-border-picker",
+      "confidence": "high",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-chart",
+      "source": "ds",
+      "sourceId": "ds-app-chart",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "confirm-modal",
+      "source": "ds",
+      "sourceId": "ds-app-confirm-dialog",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "confirm-modal",
+      "source": "ds",
+      "sourceId": "ds-app-confirm-dialog-container",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "modal",
+      "source": "ds",
+      "sourceId": "ds-app-create-group-popup",
+      "confidence": "high",
+      "notes": "Settings / admin page shell"
+    },
+    {
+      "familyId": "app-create-report",
+      "source": "ds",
+      "sourceId": "ds-app-create-report",
+      "confidence": "low",
+      "notes": "Reporting feature page shell"
+    },
+    {
+      "familyId": "modal",
+      "source": "ds",
+      "sourceId": "ds-app-create-user-popup",
+      "confidence": "high",
+      "notes": "Settings / admin page shell"
+    },
+    {
+      "familyId": "app-dashboard",
+      "source": "ds",
+      "sourceId": "ds-app-dashboard",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "app-data-group-hypercube",
+      "source": "ds",
+      "sourceId": "ds-app-data-group-hypercube",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "app-data-integration",
+      "source": "ds",
+      "sourceId": "ds-app-data-integration",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "app-data-sets-pivots",
+      "source": "ds",
+      "sourceId": "ds-app-data-sets-pivots",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "modal",
+      "source": "ds",
+      "sourceId": "ds-app-edit-permissions-popup",
+      "confidence": "high",
+      "notes": "Settings / admin page shell"
+    },
+    {
+      "familyId": "app-etl-parameter-field",
+      "source": "ds",
+      "sourceId": "ds-app-etl-parameter-field",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "file-manager",
+      "source": "ds",
+      "sourceId": "ds-app-file-vault",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "dropdown",
+      "source": "ds",
+      "sourceId": "ds-app-format-picker",
+      "confidence": "high",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "type-ahead",
+      "source": "ds",
+      "sourceId": "ds-app-formula-autocomplete",
+      "confidence": "high",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "modal",
+      "source": "ds",
+      "sourceId": "ds-app-generate-pdf-popup",
+      "confidence": "high",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-groups",
+      "source": "ds",
+      "sourceId": "ds-app-groups",
+      "confidence": "low",
+      "notes": "Settings / admin page shell"
+    },
+    {
+      "familyId": "app-import-content",
+      "source": "ds",
+      "sourceId": "ds-app-import-content",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-import-table",
+      "source": "ds",
+      "sourceId": "ds-app-import-table",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-import-type",
+      "source": "ds",
+      "sourceId": "ds-app-import-type",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "app-log-details",
+      "source": "ds",
+      "sourceId": "ds-app-log-details",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-logs",
+      "source": "ds",
+      "sourceId": "ds-app-logs",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "empty-state",
+      "source": "ds",
+      "sourceId": "ds-app-maintenance",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "app-module-management",
+      "source": "ds",
+      "sourceId": "ds-app-module-management",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "app-navigation-sidebar",
+      "source": "ds",
+      "sourceId": "ds-app-navigation-sidebar",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "app-nested-object",
+      "source": "ds",
+      "sourceId": "ds-app-nested-object",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "app-overview",
+      "source": "ds",
+      "sourceId": "ds-app-overview",
+      "confidence": "low",
+      "notes": "Settings / admin page shell"
+    },
+    {
+      "familyId": "empty-state",
+      "source": "ds",
+      "sourceId": "ds-app-page-not-found",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "modal",
+      "source": "ds",
+      "sourceId": "ds-app-popup-host",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "app-profile",
+      "source": "ds",
+      "sourceId": "ds-app-profile",
+      "confidence": "low",
+      "notes": "Settings / admin page shell"
+    },
+    {
+      "familyId": "app-quad-connector-node",
+      "source": "ds",
+      "sourceId": "ds-app-quad-connector-node",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "familyId": "app-relationship",
+      "source": "ds",
+      "sourceId": "ds-app-relationship",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "app-report-branding",
+      "source": "ds",
+      "sourceId": "ds-app-report-branding",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-report-settings",
+      "source": "ds",
+      "sourceId": "ds-app-report-settings",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-report-theme",
+      "source": "ds",
+      "sourceId": "ds-app-report-theme",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-report-variable",
+      "source": "ds",
+      "sourceId": "ds-app-report-variable",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-rollover-manager",
+      "source": "ds",
+      "sourceId": "ds-app-rollover-manager",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-rollover-overlay",
+      "source": "ds",
+      "sourceId": "ds-app-rollover-overlay",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-run-details",
+      "source": "ds",
+      "sourceId": "ds-app-run-details",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "app-run-history",
+      "source": "ds",
+      "sourceId": "ds-app-run-history",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "app-run-notifications",
+      "source": "ds",
+      "sourceId": "ds-app-run-notifications",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "app-running-task",
+      "source": "ds",
+      "sourceId": "ds-app-running-task",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-security",
+      "source": "ds",
+      "sourceId": "ds-app-security",
+      "confidence": "low",
+      "notes": "Settings / admin page shell"
+    },
+    {
+      "familyId": "app-settings",
+      "source": "ds",
+      "sourceId": "ds-app-settings",
+      "confidence": "low",
+      "notes": "Settings / admin page shell"
+    },
+    {
+      "familyId": "table",
+      "source": "ds",
+      "sourceId": "ds-app-table-edit",
+      "confidence": "high",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "table-header-toolbar",
+      "source": "ds",
+      "sourceId": "ds-app-table-toolbar",
+      "confidence": "high",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "dropdown",
+      "source": "ds",
+      "sourceId": "ds-app-tenant-switcher",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "color-picker",
+      "source": "ds",
+      "sourceId": "ds-app-theme-color-picker",
+      "confidence": "high",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "modal",
+      "source": "ds",
+      "sourceId": "ds-app-upload-dialog",
+      "confidence": "high",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "app-user-management",
+      "source": "ds",
+      "sourceId": "ds-app-user-management",
+      "confidence": "low",
+      "notes": "Settings / admin page shell"
+    },
+    {
+      "familyId": "app-users",
+      "source": "ds",
+      "sourceId": "ds-app-users",
+      "confidence": "low",
+      "notes": "Settings / admin page shell"
+    },
+    {
+      "familyId": "app-workflow-builder",
+      "source": "ds",
+      "sourceId": "ds-app-workflow-builder",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "familyId": "app-workflow-dashboard",
+      "source": "ds",
+      "sourceId": "ds-app-workflow-dashboard",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "app-workflow-step-delete-stepper",
+      "source": "ds",
+      "sourceId": "ds-app-workflow-step-delete-stepper",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "familyId": "app-workflow-template-edit-dialog",
+      "source": "ds",
+      "sourceId": "ds-app-workflow-template-edit-dialog",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "familyId": "app-workflow-templates",
+      "source": "ds",
+      "sourceId": "ds-app-workflow-templates",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "familyId": "stepper",
+      "source": "ds",
+      "sourceId": "ds-chart-import-wizard",
+      "confidence": "high",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "rich-text-editor",
+      "source": "ds",
+      "sourceId": "ds-ck-text-editor",
+      "confidence": "high",
+      "notes": "Reusable DS UI primitive"
+    },
+    {
+      "familyId": "dimensions-selector",
+      "source": "ds",
+      "sourceId": "ds-dimensions-selector",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "edit-block-chart",
+      "source": "ds",
+      "sourceId": "ds-edit-block-chart",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "edit-block-group-container",
+      "source": "ds",
+      "sourceId": "ds-edit-block-group-container",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "edit-block-image",
+      "source": "ds",
+      "sourceId": "ds-edit-block-image",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "edit-block-paragraph",
+      "source": "ds",
+      "sourceId": "ds-edit-block-paragraph",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "edit-block-table",
+      "source": "ds",
+      "sourceId": "ds-edit-block-table",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "edit-content-blocks",
+      "source": "ds",
+      "sourceId": "ds-edit-content-blocks",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "edit-cover-page",
+      "source": "ds",
+      "sourceId": "ds-edit-cover-page",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "edit-divider-page",
+      "source": "ds",
+      "sourceId": "ds-edit-divider-page",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "edit-field-mdfm",
+      "source": "ds",
+      "sourceId": "ds-edit-field-mdfm",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "edit-field-table",
+      "source": "ds",
+      "sourceId": "ds-edit-field-table",
+      "confidence": "low",
+      "notes": "Report section block (domain-specific editor/preview pair)"
+    },
+    {
+      "familyId": "edit-general-page",
+      "source": "ds",
+      "sourceId": "ds-edit-general-page",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "edit-toc",
+      "source": "ds",
+      "sourceId": "ds-edit-toc",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "drop-uploader",
+      "source": "ds",
+      "sourceId": "ds-file",
+      "confidence": "high",
+      "notes": "Reusable DS UI primitive"
+    },
+    {
+      "familyId": "toolbar",
+      "source": "ds",
+      "sourceId": "ds-graphics-toolbar",
+      "confidence": "high",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "rich-text-editor",
+      "source": "ds",
+      "sourceId": "ds-html-editor",
+      "confidence": "high",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "label-meta",
+      "source": "ds",
+      "sourceId": "ds-label-meta",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "link-navigation",
+      "source": "ds",
+      "sourceId": "ds-link-navigation",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "loader",
+      "source": "ds",
+      "sourceId": "ds-loading",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "mdds-adj-data-set-viewer",
+      "source": "ds",
+      "sourceId": "ds-mdds-adj-data-set-viewer",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-adjustments-grid",
+      "source": "ds",
+      "sourceId": "ds-mdds-adjustments-grid",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "type-ahead",
+      "source": "ds",
+      "sourceId": "ds-mdds-autocomplete",
+      "confidence": "high",
+      "notes": "Reusable DS UI primitive"
+    },
+    {
+      "familyId": "typography",
+      "source": "ds",
+      "sourceId": "ds-mdds-caption",
+      "confidence": "high",
+      "notes": "Reusable DS UI primitive"
+    },
+    {
+      "familyId": "mdds-data-set-embed",
+      "source": "ds",
+      "sourceId": "ds-mdds-data-set-embed",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-data-set-pivot",
+      "source": "ds",
+      "sourceId": "ds-mdds-data-set-pivot",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-data-set-viewer",
+      "source": "ds",
+      "sourceId": "ds-mdds-data-set-viewer",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-dimension-type",
+      "source": "ds",
+      "sourceId": "ds-mdds-dimension-type",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-embed",
+      "source": "ds",
+      "sourceId": "ds-mdds-embed",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "data-grid",
+      "source": "ds",
+      "sourceId": "ds-mdds-grid",
+      "confidence": "high",
+      "notes": "Reusable DS UI primitive"
+    },
+    {
+      "familyId": "mdds-history",
+      "source": "ds",
+      "sourceId": "ds-mdds-history",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-hypercube-navigation",
+      "source": "ds",
+      "sourceId": "ds-mdds-hypercube-navigation",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-hypercubes",
+      "source": "ds",
+      "sourceId": "ds-mdds-hypercubes",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-import-config",
+      "source": "ds",
+      "sourceId": "ds-mdds-import-config",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-import-environment",
+      "source": "ds",
+      "sourceId": "ds-mdds-import-environment",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-import-preview",
+      "source": "ds",
+      "sourceId": "ds-mdds-import-preview",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-intersection",
+      "source": "ds",
+      "sourceId": "ds-mdds-intersection",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-item-editor",
+      "source": "ds",
+      "sourceId": "ds-mdds-item-editor",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-meta",
+      "source": "ds",
+      "sourceId": "ds-mdds-meta",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-pivot",
+      "source": "ds",
+      "sourceId": "ds-mdds-pivot",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-relationships",
+      "source": "ds",
+      "sourceId": "ds-mdds-relationships",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-rule-conflict",
+      "source": "ds",
+      "sourceId": "ds-mdds-rule-conflict",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "mdds-rules",
+      "source": "ds",
+      "sourceId": "ds-mdds-rules",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "input",
+      "source": "ds",
+      "sourceId": "ds-mdds-search-input",
+      "confidence": "high",
+      "notes": "Reusable DS UI primitive"
+    },
+    {
+      "familyId": "mdds-table-items",
+      "source": "ds",
+      "sourceId": "ds-mdds-table-items",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "tree",
+      "source": "ds",
+      "sourceId": "ds-mdds-tree",
+      "confidence": "high",
+      "notes": "Reusable DS UI primitive"
+    },
+    {
+      "familyId": "mdds-workflow",
+      "source": "ds",
+      "sourceId": "ds-mdds-workflow",
+      "confidence": "low",
+      "notes": "Workflow builder domain sub-dialog (not a reusable UI primitive)"
+    },
+    {
+      "familyId": "banner",
+      "source": "ds",
+      "sourceId": "ds-mdfm-variable-notice",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "navbar",
+      "source": "ds",
+      "sourceId": "ds-navbar",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "vertical-menu",
+      "source": "ds",
+      "sourceId": "ds-navigation-rail",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "position",
+      "source": "ds",
+      "sourceId": "ds-position",
+      "confidence": "medium",
+      "notes": "MDDS domain component"
+    },
+    {
+      "familyId": "preview",
+      "source": "ds",
+      "sourceId": "ds-preview",
+      "confidence": "low",
+      "notes": "Reporting feature page shell"
+    },
+    {
+      "familyId": "preview-content-blocks-standard",
+      "source": "ds",
+      "sourceId": "ds-preview-content-blocks-standard",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "preview-cover-page-standard",
+      "source": "ds",
+      "sourceId": "ds-preview-cover-page-standard",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "preview-divider-page-standard",
+      "source": "ds",
+      "sourceId": "ds-preview-divider-page-standard",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "preview-pdf",
+      "source": "ds",
+      "sourceId": "ds-preview-pdf",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "report",
+      "source": "ds",
+      "sourceId": "ds-report",
+      "confidence": "low",
+      "notes": "Reporting feature page shell"
+    },
+    {
+      "familyId": "report-preview",
+      "source": "ds",
+      "sourceId": "ds-report-preview",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "tag",
+      "source": "ds",
+      "sourceId": "ds-report-type",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "reports",
+      "source": "ds",
+      "sourceId": "ds-reports",
+      "confidence": "low",
+      "notes": "Reporting feature page shell"
+    },
+    {
+      "familyId": "roll-forward",
+      "source": "ds",
+      "sourceId": "ds-roll-forward",
+      "confidence": "low",
+      "notes": "Settings / admin page shell"
+    },
+    {
+      "familyId": "section",
+      "source": "ds",
+      "sourceId": "ds-section",
+      "confidence": "low",
+      "notes": "Reporting feature page shell"
+    },
+    {
+      "familyId": "section-fields",
+      "source": "ds",
+      "sourceId": "ds-section-fields",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "section-properties",
+      "source": "ds",
+      "sourceId": "ds-section-properties",
+      "confidence": "medium",
+      "notes": "Reporting domain component"
+    },
+    {
+      "familyId": "dropdown",
+      "source": "ds",
+      "sourceId": "ds-select-input",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "spreadsheet",
+      "source": "ds",
+      "sourceId": "ds-spreadsheet",
+      "confidence": "high",
+      "notes": "Reusable DS UI primitive"
+    },
+    {
+      "familyId": "feedback",
+      "source": "ds",
+      "sourceId": "ds-support",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "templates",
+      "source": "ds",
+      "sourceId": "ds-templates",
+      "confidence": "low",
+      "notes": "Reporting feature page shell"
+    },
+    {
+      "familyId": "banner",
+      "source": "ds",
+      "sourceId": "ds-warning",
+      "confidence": "high",
+      "notes": "Shared app shell / common UI component"
+    },
+    {
+      "familyId": "accordion",
+      "source": "ds",
+      "sourceId": "dx-accordion",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "box",
+      "source": "ds",
+      "sourceId": "dx-box",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "button",
+      "source": "ds",
+      "sourceId": "dx-button",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "button-group",
+      "source": "ds",
+      "sourceId": "dx-button-group",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "checkbox",
+      "source": "ds",
+      "sourceId": "dx-check-box",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "color-picker",
+      "source": "ds",
+      "sourceId": "dx-color-box",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "menu",
+      "source": "ds",
+      "sourceId": "dx-context-menu",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "data-grid",
+      "source": "ds",
+      "sourceId": "dx-data-grid",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "date-picker",
+      "source": "ds",
+      "sourceId": "dx-date-box",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "drawer",
+      "source": "ds",
+      "sourceId": "dx-drawer",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "drop-down-box",
+      "source": "ds",
+      "sourceId": "dx-drop-down-box",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "drop-down-button",
+      "source": "ds",
+      "sourceId": "dx-drop-down-button",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "file-manager",
+      "source": "ds",
+      "sourceId": "dx-file-manager",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "drop-uploader",
+      "source": "ds",
+      "sourceId": "dx-file-uploader",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "form",
+      "source": "ds",
+      "sourceId": "dx-form",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "list",
+      "source": "ds",
+      "sourceId": "dx-list",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "progress",
+      "source": "ds",
+      "sourceId": "dx-load-indicator",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "progress",
+      "source": "ds",
+      "sourceId": "dx-load-panel",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "lookup",
+      "source": "ds",
+      "sourceId": "dx-lookup",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "toast",
+      "source": "ds",
+      "sourceId": "dx-notify",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "input-number",
+      "source": "ds",
+      "sourceId": "dx-number-box",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "data-grid",
+      "source": "ds",
+      "sourceId": "dx-pivot-grid",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "popover",
+      "source": "ds",
+      "sourceId": "dx-popover",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "modal",
+      "source": "ds",
+      "sourceId": "dx-popup",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "progress",
+      "source": "ds",
+      "sourceId": "dx-progress-bar",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "scroll-view",
+      "source": "ds",
+      "sourceId": "dx-scroll-view",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "dropdown",
+      "source": "ds",
+      "sourceId": "dx-select-box",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "slider",
+      "source": "ds",
+      "sourceId": "dx-slider",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "sortable",
+      "source": "ds",
+      "sourceId": "dx-sortable",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "switch",
+      "source": "ds",
+      "sourceId": "dx-switch",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "tabs",
+      "source": "ds",
+      "sourceId": "dx-tab-panel",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "tabs",
+      "source": "ds",
+      "sourceId": "dx-tabs",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "tag-input",
+      "source": "ds",
+      "sourceId": "dx-tag-box",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "textarea",
+      "source": "ds",
+      "sourceId": "dx-text-area",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "input",
+      "source": "ds",
+      "sourceId": "dx-text-box",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "toolbar",
+      "source": "ds",
+      "sourceId": "dx-toolbar",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "tooltip",
+      "source": "ds",
+      "sourceId": "dx-tooltip",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "data-grid",
+      "source": "ds",
+      "sourceId": "dx-tree-list",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "tree",
+      "source": "ds",
+      "sourceId": "dx-tree-view",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "validation-group",
+      "source": "ds",
+      "sourceId": "dx-validation-group",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "validator",
+      "source": "ds",
+      "sourceId": "dx-validator",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "avatar",
+      "source": "ds",
+      "sourceId": "gravity-avatar",
+      "confidence": "high",
+      "notes": "Gravity Figma design-system component"
+    },
+    {
+      "familyId": "breadcrumb",
+      "source": "es",
+      "sourceId": "es-breadcrumb-navigation",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "date-picker",
+      "source": "es",
+      "sourceId": "es-date-picker",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "drag-drop-container",
+      "source": "es",
+      "sourceId": "es-drag-drop-container",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "dropdown",
+      "source": "es",
+      "sourceId": "es-drop-down",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "empty-state",
+      "source": "es",
+      "sourceId": "es-empty-state",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "event",
+      "source": "es",
+      "sourceId": "es-event",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "application-icon",
+      "source": "es",
+      "sourceId": "es-icon-application",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "approved-icon",
+      "source": "es",
+      "sourceId": "es-icon-approved",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "arrow-down-icon",
+      "source": "es",
+      "sourceId": "es-icon-arrowdown",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "arrow-up-icon",
+      "source": "es",
+      "sourceId": "es-icon-arrowup",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "attachment-icon",
+      "source": "es",
+      "sourceId": "es-icon-attachment",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "calendar-icon",
+      "source": "es",
+      "sourceId": "es-icon-calendar",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "chevron-left-icon",
+      "source": "es",
+      "sourceId": "es-icon-chevronleft",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "close-icon",
+      "source": "es",
+      "sourceId": "es-icon-close",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "complete-icon",
+      "source": "es",
+      "sourceId": "es-icon-complete",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "construction-icon",
+      "source": "es",
+      "sourceId": "es-icon-construction",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "copy-icon",
+      "source": "es",
+      "sourceId": "es-icon-copy",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "co-u-logo",
+      "source": "es",
+      "sourceId": "es-icon-coulogo",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "drag-indicator-icon",
+      "source": "es",
+      "sourceId": "es-icon-dragindicator",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "drop-down-icon",
+      "source": "es",
+      "sourceId": "es-icon-dropdown",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "facebook-icon",
+      "source": "es",
+      "sourceId": "es-icon-facebook",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "file-icon",
+      "source": "es",
+      "sourceId": "es-icon-file",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "flag-icon",
+      "source": "es",
+      "sourceId": "es-icon-flag",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "knob-line",
+      "source": "es",
+      "sourceId": "es-icon-knobline",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "left-arrow-icon",
+      "source": "es",
+      "sourceId": "es-icon-leftarrow",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "linkedin-icon",
+      "source": "es",
+      "sourceId": "es-icon-linkedin",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "location-icon",
+      "source": "es",
+      "sourceId": "es-icon-location",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "meeting-icon",
+      "source": "es",
+      "sourceId": "es-icon-meeting",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "menu-icon",
+      "source": "es",
+      "sourceId": "es-icon-menu",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "message-icon",
+      "source": "es",
+      "sourceId": "es-icon-message",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "milestone-icon",
+      "source": "es",
+      "sourceId": "es-icon-milestone",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "more-vert-icon",
+      "source": "es",
+      "sourceId": "es-icon-morevert",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "phone-icon",
+      "source": "es",
+      "sourceId": "es-icon-phone",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "placeholder-icon",
+      "source": "es",
+      "sourceId": "es-icon-placeholder",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "reply-icon",
+      "source": "es",
+      "sourceId": "es-icon-reply",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "right-arrow-icon",
+      "source": "es",
+      "sourceId": "es-icon-rightarrow",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "right-arrow-outlined-icon",
+      "source": "es",
+      "sourceId": "es-icon-rightarrowoutlined",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "selected-bulb-icon",
+      "source": "es",
+      "sourceId": "es-icon-selectedbulb",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "sucess-tick-icon",
+      "source": "es",
+      "sourceId": "es-icon-sucesstick",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "thumb-up-icon",
+      "source": "es",
+      "sourceId": "es-icon-thumbup",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "tick-icon",
+      "source": "es",
+      "sourceId": "es-icon-tick",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "warning-triangle-icon",
+      "source": "es",
+      "sourceId": "es-icon-warningtriangle",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "x-icon",
+      "source": "es",
+      "sourceId": "es-icon-x",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "image",
+      "source": "es",
+      "sourceId": "es-image",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "modal",
+      "source": "es",
+      "sourceId": "es-login-popup",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "toast",
+      "source": "es",
+      "sourceId": "es-notification-snackbar",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "button",
+      "source": "es",
+      "sourceId": "es-pill-button",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "read-only-editor",
+      "source": "es",
+      "sourceId": "es-read-only-editor",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "input",
+      "source": "es",
+      "sourceId": "es-regular-text-input",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "familyId": "share-update",
+      "source": "es",
+      "sourceId": "es-share-update",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "social-share",
+      "source": "es",
+      "sourceId": "es-social-share",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "update-card",
+      "source": "es",
+      "sourceId": "es-update-card",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "familyId": "dropdown",
+      "source": "es",
+      "sourceId": "es-year-selector",
+      "confidence": "high",
+      "notes": ""
+    }
+  ]
+}

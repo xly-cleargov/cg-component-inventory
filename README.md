@@ -1,59 +1,54 @@
-# CgComponentInventory
+# CG Component Inventory
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.27.
+Standalone Angular app for comparing UI components across ClearGov applications:
 
-## Development server
+- **CG** — ClearGov 1.0 (npm design system)
+- **DS** — Disclosure Studio (DevExtreme)
+- **ES** — Engagement Studio (in-app components)
 
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Quick start
 
 ```bash
-ng generate component component-name
+npm install
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Open [http://localhost:4400](http://localhost:4400)
+
+## Data workflow
+
+Catalog data lives in `data/`:
+
+| File | Purpose |
+| --- | --- |
+| `data/sources/*.raw.json` | Per-app extraction output |
+| `data/crosswalk.json` | Maps source ids → family ids |
+| `data/catalog.json` | Normalized catalog loaded by the app |
+
+After updating raw inventories:
 
 ```bash
-ng generate --help
+npm run build:catalog   # regenerate catalog from raw + crosswalk
+npm run sync:data       # copy data/ → public/data/ (no regen)
+npm run validate:data   # JSON schema check
 ```
 
-## Building
+Extraction prompts are documented in [`data/README.md`](data/README.md).
 
-To build the project run:
+## Routes
 
-```bash
-ng build
-```
+| Path | View |
+| --- | --- |
+| `/` | Searchable family list with presence matrix |
+| `/family/:id` | Side-by-side API, design, and gaps |
+| `/gaps` | Flat gap registry with filters |
+| `/sources/:app` | Raw per-app component list (`cg`, `ds`, `es`) |
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Replacing placeholder data
 
-## Running unit tests
+Current raw JSON files contain **placeholder fixture data**. To load real inventories:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Run the extraction prompts in `data/README.md` against each source repo
+2. Save outputs to `data/sources/cg.raw.json`, `ds.raw.json`, `es.raw.json`
+3. Update `data/crosswalk.json` with family mappings
+4. Run `npm run build:catalog && npm run validate:data`

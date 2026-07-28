@@ -1,0 +1,2734 @@
+{
+  "source": "es",
+  "extractedAt": "2026-07-28T17:29:58.799Z",
+  "origin": {
+    "repoOrPackage": "https://github.com/coUrbanize/community-modules",
+    "ref": "5eb0791",
+    "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+    "notes": "In-app React components under src/components. Figma read-only reference."
+  },
+  "components": [
+    {
+      "id": "es-breadcrumb-navigation",
+      "displayName": "BreadcrumbNavigation",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/BreadcrumbNavigation.tsx",
+      "selectorOrExport": "BreadcrumbNavigation",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/BreadcrumbNavigation.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-date-picker",
+      "displayName": "DatePicker",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/DatePicker.tsx",
+      "selectorOrExport": "DatePicker",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/DatePicker.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "border-slate-300",
+            "value": "border-slate-300",
+            "tokenRef": null
+          },
+          {
+            "name": "border-sky-500",
+            "value": "border-sky-500",
+            "tokenRef": null
+          },
+          {
+            "name": "ring-1",
+            "value": "ring-1",
+            "tokenRef": null
+          },
+          {
+            "name": "ring-sky-500",
+            "value": "ring-sky-500",
+            "tokenRef": null
+          },
+          {
+            "name": "bg-slate-50",
+            "value": "bg-slate-50",
+            "tokenRef": null
+          },
+          {
+            "name": "text-slate-500",
+            "value": "text-slate-500",
+            "tokenRef": null
+          },
+          {
+            "name": "border-slate-200",
+            "value": "border-slate-200",
+            "tokenRef": null
+          },
+          {
+            "name": "border-pink-500",
+            "value": "border-pink-500",
+            "tokenRef": null
+          },
+          {
+            "name": "text-pink-600",
+            "value": "text-pink-600",
+            "tokenRef": null
+          },
+          {
+            "name": "ring-pink-500",
+            "value": "ring-pink-500",
+            "tokenRef": null
+          }
+        ],
+        "spacing": [
+          {
+            "name": "w-6/12",
+            "value": "w-6/12",
+            "tokenRef": null
+          },
+          {
+            "name": "px-3",
+            "value": "px-3",
+            "tokenRef": null
+          },
+          {
+            "name": "py-1",
+            "value": "py-1",
+            "tokenRef": null
+          }
+        ],
+        "radius": [
+          {
+            "name": "rounded-md",
+            "value": "rounded-md",
+            "tokenRef": null
+          }
+        ],
+        "typography": [],
+        "elevation": [
+          {
+            "name": "shadow-sm",
+            "value": "shadow-sm",
+            "tokenRef": null
+          },
+          {
+            "name": "shadow-none",
+            "value": "shadow-none",
+            "tokenRef": null
+          }
+        ],
+        "states": [
+          {
+            "name": "focus",
+            "notes": "Tailwind focus: utilities"
+          },
+          {
+            "name": "disabled",
+            "notes": "Disabled prop or utility"
+          }
+        ]
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from Tailwind className utilities"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-drag-drop-container",
+      "displayName": "DragDropContainer",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/DragDropContainer.tsx",
+      "selectorOrExport": "DragDropContainer",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/DragDropContainer.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-drop-down",
+      "displayName": "DropDown",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/DropDown.tsx",
+      "selectorOrExport": "DropDown",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/DropDown.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "border",
+            "value": "#cbd5e1",
+            "tokenRef": "border-slate-300"
+          },
+          {
+            "name": "bg",
+            "value": "#ffffff",
+            "tokenRef": "bg-white"
+          },
+          {
+            "name": "item-hover",
+            "value": "#f1f5f9",
+            "tokenRef": "hover:bg-slate-100"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "padding-x",
+            "value": "12px",
+            "tokenRef": "px-3"
+          },
+          {
+            "name": "padding-y",
+            "value": "8px",
+            "tokenRef": "py-2"
+          }
+        ],
+        "radius": [
+          {
+            "name": "field",
+            "value": "6px",
+            "tokenRef": "rounded-md"
+          }
+        ],
+        "typography": [
+          {
+            "name": "font-size",
+            "value": "14px",
+            "tokenRef": "text-sm"
+          }
+        ],
+        "elevation": [
+          {
+            "name": "menu-shadow",
+            "value": "md",
+            "tokenRef": "shadow-md"
+          }
+        ],
+        "states": [
+          {
+            "name": "open",
+            "notes": "Absolute positioned menu"
+          }
+        ]
+      },
+      "designMeta": {
+        "source": "code",
+        "library": "Community modules (Tailwind)",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "notes": "Custom React dropdown — Tailwind utilities",
+        "enrichedAt": "2026-07-28T16:45:00.000Z"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-empty-state",
+      "displayName": "EmptyState",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/EmptyState.tsx",
+      "selectorOrExport": "EmptyState",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/EmptyState.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "bg-gray-50",
+            "value": "bg-gray-50",
+            "tokenRef": null
+          },
+          {
+            "name": "text-center",
+            "value": "text-center",
+            "tokenRef": null
+          },
+          {
+            "name": "text-gray-400",
+            "value": "text-gray-400",
+            "tokenRef": null
+          },
+          {
+            "name": "text-gray-500",
+            "value": "text-gray-500",
+            "tokenRef": null
+          },
+          {
+            "name": "text-base",
+            "value": "text-base",
+            "tokenRef": null
+          }
+        ],
+        "spacing": [
+          {
+            "name": "w-full",
+            "value": "w-full",
+            "tokenRef": null
+          },
+          {
+            "name": "p-8",
+            "value": "p-8",
+            "tokenRef": null
+          },
+          {
+            "name": "p-12",
+            "value": "p-12",
+            "tokenRef": null
+          },
+          {
+            "name": "mx-auto",
+            "value": "mx-auto",
+            "tokenRef": null
+          },
+          {
+            "name": "h-12",
+            "value": "h-12",
+            "tokenRef": null
+          },
+          {
+            "name": "w-12",
+            "value": "w-12",
+            "tokenRef": null
+          }
+        ],
+        "radius": [
+          {
+            "name": "rounded-lg",
+            "value": "rounded-lg",
+            "tokenRef": null
+          }
+        ],
+        "typography": [
+          {
+            "name": "text-base",
+            "value": "text-base",
+            "tokenRef": null
+          },
+          {
+            "name": "font-medium",
+            "value": "font-medium",
+            "tokenRef": null
+          }
+        ],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from Tailwind className utilities"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-event",
+      "displayName": "Event",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/Event.tsx",
+      "selectorOrExport": "Event",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/Event.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "border-b-2",
+            "value": "border-b-2",
+            "tokenRef": null
+          },
+          {
+            "name": "text-md",
+            "value": "text-md",
+            "tokenRef": null
+          },
+          {
+            "name": "text-dusk-3",
+            "value": "text-dusk-3",
+            "tokenRef": null
+          },
+          {
+            "name": "text-xs",
+            "value": "text-xs",
+            "tokenRef": null
+          }
+        ],
+        "spacing": [
+          {
+            "name": "py-6",
+            "value": "py-6",
+            "tokenRef": null
+          },
+          {
+            "name": "gap-2",
+            "value": "gap-2",
+            "tokenRef": null
+          },
+          {
+            "name": "m-1",
+            "value": "m-1",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [
+          {
+            "name": "text-xs",
+            "value": "text-xs",
+            "tokenRef": null
+          }
+        ],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from Tailwind className utilities"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-icon-application",
+      "displayName": "ApplicationIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/ApplicationIcon.tsx",
+      "selectorOrExport": "ApplicationIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-approved",
+      "displayName": "ApprovedIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/ApprovedIcon.tsx",
+      "selectorOrExport": "ApprovedIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-arrowdown",
+      "displayName": "ArrowDownIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/ArrowDownIcon.tsx",
+      "selectorOrExport": "ArrowDownIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-arrowup",
+      "displayName": "ArrowUpIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/ArrowUpIcon.tsx",
+      "selectorOrExport": "ArrowUpIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-attachment",
+      "displayName": "AttachmentIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/AttachmentIcon.tsx",
+      "selectorOrExport": "AttachmentIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-calendar",
+      "displayName": "CalendarIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/CalendarIcon.tsx",
+      "selectorOrExport": "CalendarIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-chevronleft",
+      "displayName": "ChevronLeftIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/ChevronLeftIcon.tsx",
+      "selectorOrExport": "ChevronLeftIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-close",
+      "displayName": "CloseIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/CloseIcon.tsx",
+      "selectorOrExport": "CloseIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-complete",
+      "displayName": "CompleteIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/CompleteIcon.tsx",
+      "selectorOrExport": "CompleteIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-construction",
+      "displayName": "ConstructionIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/ConstructionIcon.tsx",
+      "selectorOrExport": "ConstructionIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-copy",
+      "displayName": "CopyIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/CopyIcon.tsx",
+      "selectorOrExport": "CopyIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-coulogo",
+      "displayName": "CoULogo",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/CoULogo.tsx",
+      "selectorOrExport": "CoULogo",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-dragindicator",
+      "displayName": "DragIndicatorIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/DragIndicatorIcon.tsx",
+      "selectorOrExport": "DragIndicatorIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-dropdown",
+      "displayName": "DropDownIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/DropDownIcon.tsx",
+      "selectorOrExport": "DropDownIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-facebook",
+      "displayName": "FacebookIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/FacebookIcon.tsx",
+      "selectorOrExport": "FacebookIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-file",
+      "displayName": "FileIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/FileIcon.tsx",
+      "selectorOrExport": "FileIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-flag",
+      "displayName": "FlagIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/FlagIcon.tsx",
+      "selectorOrExport": "FlagIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-knobline",
+      "displayName": "KnobLine",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/KnobLine.tsx",
+      "selectorOrExport": "KnobLine",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-leftarrow",
+      "displayName": "LeftArrowIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/LeftArrowIcon.tsx",
+      "selectorOrExport": "LeftArrowIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-linkedin",
+      "displayName": "LinkedinIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/LinkedinIcon.tsx",
+      "selectorOrExport": "LinkedinIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-location",
+      "displayName": "LocationIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/LocationIcon.tsx",
+      "selectorOrExport": "LocationIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-meeting",
+      "displayName": "MeetingIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/MeetingIcon.tsx",
+      "selectorOrExport": "MeetingIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-menu",
+      "displayName": "MenuIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/MenuIcon.tsx",
+      "selectorOrExport": "MenuIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-message",
+      "displayName": "MessageIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/MessageIcon.tsx",
+      "selectorOrExport": "MessageIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-milestone",
+      "displayName": "MilestoneIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/MilestoneIcon.tsx",
+      "selectorOrExport": "MilestoneIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-morevert",
+      "displayName": "MoreVertIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/MoreVertIcon.tsx",
+      "selectorOrExport": "MoreVertIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-phone",
+      "displayName": "PhoneIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/PhoneIcon.tsx",
+      "selectorOrExport": "PhoneIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-placeholder",
+      "displayName": "PlaceholderIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/PlaceholderIcon.tsx",
+      "selectorOrExport": "PlaceholderIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-reply",
+      "displayName": "ReplyIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/ReplyIcon.tsx",
+      "selectorOrExport": "ReplyIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-rightarrow",
+      "displayName": "RightArrowIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/RightArrowIcon.tsx",
+      "selectorOrExport": "RightArrowIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-rightarrowoutlined",
+      "displayName": "RightArrowOutlinedIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/RightArrowOutlinedIcon.tsx",
+      "selectorOrExport": "RightArrowOutlinedIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-selectedbulb",
+      "displayName": "SelectedBulbIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/SelectedBulbIcon.tsx",
+      "selectorOrExport": "SelectedBulbIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-sucesstick",
+      "displayName": "SucessTickIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/SucessTickIcon.tsx",
+      "selectorOrExport": "SucessTickIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-thumbup",
+      "displayName": "ThumbUpIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/ThumbUpIcon.tsx",
+      "selectorOrExport": "ThumbUpIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-tick",
+      "displayName": "TickIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/TickIcon.tsx",
+      "selectorOrExport": "TickIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-warningtriangle",
+      "displayName": "WarningTriangleIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/WarningTriangleIcon.tsx",
+      "selectorOrExport": "WarningTriangleIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-icon-x",
+      "displayName": "XIcon",
+      "category": "media",
+      "framework": "react",
+      "packageOrPath": "src/components/icons/XIcon.tsx",
+      "selectorOrExport": "XIcon",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": []
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": "Icon component"
+    },
+    {
+      "id": "es-image",
+      "displayName": "Image",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/Image.tsx",
+      "selectorOrExport": "Image",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/Image.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-login-popup",
+      "displayName": "LoginPopup",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/LoginPopup.tsx",
+      "selectorOrExport": "LoginPopup",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/LoginPopup.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "surface-bg",
+            "value": "#ffffff",
+            "tokenRef": "bg-white"
+          },
+          {
+            "name": "overlay-scrim",
+            "value": "#000000",
+            "tokenRef": "bg-black opacity-25"
+          },
+          {
+            "name": "header-border",
+            "value": "#e2e8f0",
+            "tokenRef": "border-slate-200"
+          },
+          {
+            "name": "primary-action-bg",
+            "value": "sky-1",
+            "tokenRef": "bg-sky-1"
+          },
+          {
+            "name": "body-text",
+            "value": "#475569",
+            "tokenRef": "text-slate-600"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "header-padding",
+            "value": "20px",
+            "tokenRef": "p-5"
+          },
+          {
+            "name": "body-padding",
+            "value": "24px",
+            "tokenRef": "p-6"
+          },
+          {
+            "name": "max-width",
+            "value": "768px",
+            "tokenRef": "max-w-3xl"
+          }
+        ],
+        "radius": [
+          {
+            "name": "dialog",
+            "value": "8px",
+            "tokenRef": "rounded-lg"
+          }
+        ],
+        "typography": [
+          {
+            "name": "title",
+            "value": "24px semibold",
+            "tokenRef": "text-2xl font-semibold"
+          },
+          {
+            "name": "body",
+            "value": "18px",
+            "tokenRef": "text-lg"
+          }
+        ],
+        "elevation": [
+          {
+            "name": "dialog-shadow",
+            "value": "shadow-lg",
+            "tokenRef": "shadow-lg"
+          }
+        ],
+        "states": [
+          {
+            "name": "open",
+            "notes": "z-50 panel + z-40 scrim"
+          },
+          {
+            "name": "close",
+            "notes": "× button in header + Close footer button"
+          }
+        ]
+      },
+      "designMeta": {
+        "source": "code",
+        "library": "Community modules (Tailwind)",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "notes": "Fixed-position modal with manual overlay div",
+        "enrichedAt": "2026-07-28T16:45:00.000Z"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-notification-snackbar",
+      "displayName": "NotificationSnackbar",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/NotificationSnackbar.tsx",
+      "selectorOrExport": "NotificationSnackbar",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/NotificationSnackbar.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "bg",
+            "value": "#1e293b",
+            "tokenRef": "bg-slate-800"
+          },
+          {
+            "name": "text",
+            "value": "#ffffff",
+            "tokenRef": "text-white"
+          },
+          {
+            "name": "action",
+            "value": "sky-1",
+            "tokenRef": "text-sky-1"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "padding",
+            "value": "16px",
+            "tokenRef": "p-4"
+          }
+        ],
+        "radius": [
+          {
+            "name": "toast",
+            "value": "8px",
+            "tokenRef": "rounded-lg"
+          }
+        ],
+        "typography": [
+          {
+            "name": "message",
+            "value": "14px",
+            "tokenRef": "text-sm"
+          }
+        ],
+        "elevation": [
+          {
+            "name": "shadow",
+            "value": "lg",
+            "tokenRef": "shadow-lg"
+          }
+        ],
+        "states": [
+          {
+            "name": "dismiss",
+            "notes": "Auto-hide timer"
+          }
+        ]
+      },
+      "designMeta": {
+        "source": "code",
+        "library": "Community modules (Tailwind)",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "notes": "Fixed bottom snackbar notification",
+        "enrichedAt": "2026-07-28T16:45:00.000Z"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-pill-button",
+      "displayName": "PillButton",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/PillButton.tsx",
+      "selectorOrExport": "PillButton",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/PillButton.tsx"
+        ]
+      },
+      "api": {
+        "props": [
+          {
+            "name": "children",
+            "type": "React.ReactNode",
+            "default": null,
+            "required": true,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "onClick",
+            "type": "() => void",
+            "default": null,
+            "required": true,
+            "values": [],
+            "description": ""
+          },
+          {
+            "name": "selected",
+            "type": "boolean",
+            "default": null,
+            "required": false,
+            "values": [],
+            "description": ""
+          }
+        ],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "default-bg",
+            "value": "bg-gray-200",
+            "tokenRef": null
+          },
+          {
+            "name": "default-fg",
+            "value": "text-dusk-3",
+            "tokenRef": null
+          },
+          {
+            "name": "hover-bg",
+            "value": "hover:bg-sky-1",
+            "tokenRef": null
+          },
+          {
+            "name": "selected-bg",
+            "value": "bg-sky-1",
+            "tokenRef": null
+          },
+          {
+            "name": "selected-fg",
+            "value": "text-white",
+            "tokenRef": null
+          }
+        ],
+        "spacing": [
+          {
+            "name": "padding-x",
+            "value": "24px",
+            "tokenRef": "px-6"
+          }
+        ],
+        "radius": [
+          {
+            "name": "pill",
+            "value": "9999px",
+            "tokenRef": "rounded-full"
+          }
+        ],
+        "typography": [
+          {
+            "name": "font-size",
+            "value": "14px",
+            "tokenRef": "text-sm"
+          },
+          {
+            "name": "selected-weight",
+            "value": "700",
+            "tokenRef": "font-bold"
+          }
+        ],
+        "elevation": [],
+        "states": [
+          {
+            "name": "hover",
+            "notes": "sky-1 bg at 50% opacity, white bold text"
+          },
+          {
+            "name": "selected",
+            "notes": "sky-1 solid bg, white bold text"
+          }
+        ]
+      },
+      "designMeta": {
+        "source": "code",
+        "library": "Community Design System (Tailwind)",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "notes": "Tailwind utility classes in PillButton.tsx — not token-driven",
+        "enrichedAt": "2026-07-28T16:45:00.000Z"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": "es-read-only-editor",
+      "displayName": "ReadOnlyEditor",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/ReadOnlyEditor.tsx",
+      "selectorOrExport": "ReadOnlyEditor",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/ReadOnlyEditor.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-regular-text-input",
+      "displayName": "RegularTextInput",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/RegularTextInput.tsx",
+      "selectorOrExport": "RegularTextInput",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/RegularTextInput.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "border",
+            "value": "#cbd5e1",
+            "tokenRef": "border-slate-300"
+          },
+          {
+            "name": "bg",
+            "value": "#ffffff",
+            "tokenRef": "bg-white"
+          },
+          {
+            "name": "placeholder",
+            "value": "#94a3b8",
+            "tokenRef": "placeholder-slate-400"
+          }
+        ],
+        "spacing": [
+          {
+            "name": "padding-x",
+            "value": "12px",
+            "tokenRef": "px-3"
+          },
+          {
+            "name": "padding-y",
+            "value": "8px",
+            "tokenRef": "py-2"
+          },
+          {
+            "name": "min-height",
+            "value": "36px",
+            "tokenRef": null
+          }
+        ],
+        "radius": [
+          {
+            "name": "default",
+            "value": "6px",
+            "tokenRef": "rounded-md"
+          }
+        ],
+        "typography": [
+          {
+            "name": "font-size",
+            "value": "14px",
+            "tokenRef": "text-sm"
+          }
+        ],
+        "elevation": [
+          {
+            "name": "shadow",
+            "value": "sm",
+            "tokenRef": "shadow-sm"
+          }
+        ],
+        "states": [
+          {
+            "name": "focus",
+            "notes": "focus:outline-none (no visible ring in source)"
+          },
+          {
+            "name": "disabled",
+            "notes": "disabled prop passthrough"
+          }
+        ]
+      },
+      "designMeta": {
+        "source": "code",
+        "library": "Community modules (Tailwind)",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "notes": "Auto-growing textarea with Tailwind form classes",
+        "enrichedAt": "2026-07-28T16:45:00.000Z"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-share-update",
+      "displayName": "ShareUpdate",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/ShareUpdate.tsx",
+      "selectorOrExport": "ShareUpdate",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/ShareUpdate.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "text-sm",
+            "value": "text-sm",
+            "tokenRef": null
+          },
+          {
+            "name": "text-gray-400",
+            "value": "text-gray-400",
+            "tokenRef": null
+          },
+          {
+            "name": "text-left",
+            "value": "text-left",
+            "tokenRef": null
+          },
+          {
+            "name": "text-center",
+            "value": "text-center",
+            "tokenRef": null
+          }
+        ],
+        "spacing": [
+          {
+            "name": "gap-4",
+            "value": "gap-4",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [
+          {
+            "name": "text-sm",
+            "value": "text-sm",
+            "tokenRef": null
+          }
+        ],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from Tailwind className utilities"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-social-share",
+      "displayName": "SocialShare",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/SocialShare.tsx",
+      "selectorOrExport": "SocialShare",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/SocialShare.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [],
+        "spacing": [
+          {
+            "name": "gap-4",
+            "value": "gap-4",
+            "tokenRef": null
+          }
+        ],
+        "radius": [],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-update-card",
+      "displayName": "UpdateCard",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/UpdateCard.tsx",
+      "selectorOrExport": "UpdateCard",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/UpdateCard.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "text-system-static",
+            "value": "text-system-static",
+            "tokenRef": null
+          },
+          {
+            "name": "text-base",
+            "value": "text-base",
+            "tokenRef": null
+          },
+          {
+            "name": "text-dark",
+            "value": "text-dark",
+            "tokenRef": null
+          },
+          {
+            "name": "text-xl",
+            "value": "text-xl",
+            "tokenRef": null
+          }
+        ],
+        "spacing": [
+          {
+            "name": "p-5",
+            "value": "p-5",
+            "tokenRef": null
+          },
+          {
+            "name": "w-7xl",
+            "value": "w-7xl",
+            "tokenRef": null
+          },
+          {
+            "name": "w-full",
+            "value": "w-full",
+            "tokenRef": null
+          },
+          {
+            "name": "mx-auto",
+            "value": "mx-auto",
+            "tokenRef": null
+          },
+          {
+            "name": "pl-2",
+            "value": "pl-2",
+            "tokenRef": null
+          }
+        ],
+        "radius": [
+          {
+            "name": "rounded-xl",
+            "value": "rounded-xl",
+            "tokenRef": null
+          }
+        ],
+        "typography": [
+          {
+            "name": "font-black",
+            "value": "font-black",
+            "tokenRef": null
+          },
+          {
+            "name": "text-base",
+            "value": "text-base",
+            "tokenRef": null
+          },
+          {
+            "name": "text-xl",
+            "value": "text-xl",
+            "tokenRef": null
+          }
+        ],
+        "elevation": [
+          {
+            "name": "shadow-md",
+            "value": "shadow-md",
+            "tokenRef": null
+          },
+          {
+            "name": "shadow-gray",
+            "value": "shadow-gray",
+            "tokenRef": null
+          }
+        ],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from Tailwind className utilities"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    },
+    {
+      "id": "es-year-selector",
+      "displayName": "YearSelector",
+      "category": "other",
+      "framework": "react",
+      "packageOrPath": "src/components/common/YearSelector.tsx",
+      "selectorOrExport": "YearSelector",
+      "usage": {
+        "instanceCount": null,
+        "fileCount": null,
+        "samplePaths": [
+          "C:/Work/cg-component-inventory/repos/community-modules/src/components/common/YearSelector.tsx"
+        ]
+      },
+      "api": {
+        "props": [],
+        "events": [],
+        "slots": [],
+        "methods": [],
+        "services": []
+      },
+      "design": {
+        "colors": [
+          {
+            "name": "bg-gray-200",
+            "value": "bg-gray-200",
+            "tokenRef": null
+          }
+        ],
+        "spacing": [
+          {
+            "name": "w-fit",
+            "value": "w-fit",
+            "tokenRef": null
+          },
+          {
+            "name": "p-0.5",
+            "value": "p-0.5",
+            "tokenRef": null
+          }
+        ],
+        "radius": [
+          {
+            "name": "rounded-full",
+            "value": "rounded-full",
+            "tokenRef": null
+          },
+          {
+            "name": "rounded-lg",
+            "value": "rounded-lg",
+            "tokenRef": null
+          }
+        ],
+        "typography": [],
+        "elevation": [],
+        "states": []
+      },
+      "designMeta": {
+        "source": "code",
+        "notes": "Auto-extracted from Tailwind className utilities"
+      },
+      "a11y": {
+        "role": null,
+        "labelProps": [],
+        "notes": ""
+      },
+      "migrateHint": "unknown",
+      "confidence": "low",
+      "notes": ""
+    }
+  ],
+  "familiesGuess": {
+    "es-breadcrumb-navigation": "breadcrumb-navigation",
+    "es-date-picker": "date-picker",
+    "es-drag-drop-container": "drag-drop-container",
+    "es-drop-down": "drop-down",
+    "es-empty-state": "empty-state",
+    "es-event": "event",
+    "es-icon-application": "application-icon",
+    "es-icon-approved": "approved-icon",
+    "es-icon-arrowdown": "arrow-down-icon",
+    "es-icon-arrowup": "arrow-up-icon",
+    "es-icon-attachment": "attachment-icon",
+    "es-icon-calendar": "calendar-icon",
+    "es-icon-chevronleft": "chevron-left-icon",
+    "es-icon-close": "close-icon",
+    "es-icon-complete": "complete-icon",
+    "es-icon-construction": "construction-icon",
+    "es-icon-copy": "copy-icon",
+    "es-icon-coulogo": "co-u-logo",
+    "es-icon-dragindicator": "drag-indicator-icon",
+    "es-icon-dropdown": "drop-down-icon",
+    "es-icon-facebook": "facebook-icon",
+    "es-icon-file": "file-icon",
+    "es-icon-flag": "flag-icon",
+    "es-icon-knobline": "knob-line",
+    "es-icon-leftarrow": "left-arrow-icon",
+    "es-icon-linkedin": "linkedin-icon",
+    "es-icon-location": "location-icon",
+    "es-icon-meeting": "meeting-icon",
+    "es-icon-menu": "menu-icon",
+    "es-icon-message": "message-icon",
+    "es-icon-milestone": "milestone-icon",
+    "es-icon-morevert": "more-vert-icon",
+    "es-icon-phone": "phone-icon",
+    "es-icon-placeholder": "placeholder-icon",
+    "es-icon-reply": "reply-icon",
+    "es-icon-rightarrow": "right-arrow-icon",
+    "es-icon-rightarrowoutlined": "right-arrow-outlined-icon",
+    "es-icon-selectedbulb": "selected-bulb-icon",
+    "es-icon-sucesstick": "sucess-tick-icon",
+    "es-icon-thumbup": "thumb-up-icon",
+    "es-icon-tick": "tick-icon",
+    "es-icon-warningtriangle": "warning-triangle-icon",
+    "es-icon-x": "x-icon",
+    "es-image": "image",
+    "es-login-popup": "login-popup",
+    "es-notification-snackbar": "notification-snackbar",
+    "es-pill-button": "pill-button",
+    "es-read-only-editor": "read-only-editor",
+    "es-regular-text-input": "regular-text-input",
+    "es-share-update": "share-update",
+    "es-social-share": "social-share",
+    "es-update-card": "update-card",
+    "es-year-selector": "year-selector"
+  }
+}

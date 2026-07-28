@@ -1,0 +1,710 @@
+{
+  "version": "1.0.0",
+  "enrichedAt": "2026-07-28T16:45:00.000Z",
+  "notes": "Curated Figma/code design specs. Pilot: button, input, modal. Batch 2: confirm-modal, checkbox, dropdown, tabs, toast, switch, card. Batch 3: accordion.",
+  "entries": [
+    {
+      "source": "cg",
+      "sourceId": "cg-button",
+      "designMeta": {
+        "source": "code",
+        "library": "cleargov-shared/libs/shared-ui/styles",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=2-3076",
+        "notes": "Bootstrap btn-* classes; SCSS from variables-tokens-generated.scss"
+      },
+      "design": {
+        "colors": [
+          { "name": "primary-bg", "value": "#2f5cb6", "tokenRef": "colors.primary.primary" },
+          { "name": "primary-fg", "value": "#ffffff", "tokenRef": null },
+          { "name": "primary-hover-bg", "value": "#9cc6fb", "tokenRef": "colors.primary.primary-lightest" },
+          { "name": "primary-hover-fg", "value": "#2f5cb6", "tokenRef": "colors.primary.primary" },
+          { "name": "primary-active-bg", "value": "#013183", "tokenRef": "colors.primary.primary-dark" },
+          { "name": "secondary-border", "value": "#2f5cb6", "tokenRef": "colors.primary.primary" },
+          { "name": "danger-bg", "value": "theme-button-colors.danger", "tokenRef": "$danger-dark" }
+        ],
+        "spacing": [
+          { "name": "padding-x-md", "value": "16px", "tokenRef": "inputs.buttons.medium.padding-x" },
+          { "name": "padding-y-md", "value": "4px", "tokenRef": "inputs.buttons.medium.padding-y" },
+          { "name": "padding-x-lg", "value": "24px", "tokenRef": "inputs.buttons.large.padding-x" },
+          { "name": "padding-y-lg", "value": "8px", "tokenRef": "inputs.buttons.large.padding-y" }
+        ],
+        "radius": [
+          { "name": "md", "value": "4px", "tokenRef": "inputs.buttons.medium.border-radius" },
+          { "name": "sm", "value": "4px", "tokenRef": "inputs.buttons.small.border-radius" }
+        ],
+        "typography": [
+          { "name": "font-weight", "value": "500", "tokenRef": "$btn-font-weight" },
+          { "name": "font-size-md", "value": "12px", "tokenRef": "inputs.buttons.medium.font-size" },
+          { "name": "line-height-md", "value": "18px", "tokenRef": "inputs.buttons.medium.line-height" }
+        ],
+        "elevation": [],
+        "states": [
+          { "name": "hover", "notes": "Lightest primary background, primary text (secondary variant inverts)" },
+          { "name": "active", "notes": "primary-dark background" },
+          { "name": "disabled", "notes": "opacity 0.9; neutral-lightest bg" }
+        ]
+      }
+    },
+    {
+      "source": "ds",
+      "sourceId": "dx-button",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "notes": "Semantic tokens from Gravity Figma library; DevExtreme dx-button applies theme"
+      },
+      "design": {
+        "colors": [
+          { "name": "primary-bg", "value": "#436bf4", "tokenRef": "components/button/default/primary" },
+          { "name": "primary-hover-bg", "value": "#234ac7", "tokenRef": "components/button/default/primary-hover" },
+          { "name": "primary-pressed-bg", "value": "#1d3da5", "tokenRef": "components/button/default/primary-pressed" },
+          { "name": "primary-fg", "value": "#ffffff", "tokenRef": "text/button" },
+          { "name": "positive-bg", "value": "#4fc482", "tokenRef": "components/button/positive/primary" },
+          { "name": "negative-bg", "value": "#e10430", "tokenRef": "components/button/negative/primary" },
+          { "name": "secondary-bg", "value": "#ffffff", "tokenRef": "components/button/default/secondary" }
+        ],
+        "spacing": [
+          { "name": "padding-md", "value": "12px", "tokenRef": "spacing/md" },
+          { "name": "gap-icon", "value": "8px", "tokenRef": "spacing/sm" }
+        ],
+        "radius": [
+          { "name": "md", "value": "8px", "tokenRef": "radius/md" }
+        ],
+        "typography": [
+          { "name": "font-family", "value": "Nunito", "tokenRef": "font/family/button" },
+          { "name": "style-md", "value": "Edit/Button/md", "tokenRef": "Edit/Button/md" },
+          { "name": "style-sm", "value": "Edit/Button/sm", "tokenRef": "Edit/Button/sm" }
+        ],
+        "elevation": [],
+        "states": [
+          { "name": "hover", "notes": "Figma variants: Button/{size}/primary/blue/hover/{theme}" },
+          { "name": "pressed", "notes": "Figma variants: Button/{size}/primary/blue/pressed/{theme}" },
+          { "name": "disabled", "notes": "DevExtreme theme disabled opacity" }
+        ]
+      }
+    },
+    {
+      "source": "es",
+      "sourceId": "es-pill-button",
+      "designMeta": {
+        "source": "code",
+        "library": "Community Design System (Tailwind)",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "notes": "Tailwind utility classes in PillButton.tsx — not token-driven"
+      },
+      "design": {
+        "colors": [
+          { "name": "default-bg", "value": "bg-gray-200", "tokenRef": null },
+          { "name": "default-fg", "value": "text-dusk-3", "tokenRef": null },
+          { "name": "hover-bg", "value": "hover:bg-sky-1", "tokenRef": null },
+          { "name": "selected-bg", "value": "bg-sky-1", "tokenRef": null },
+          { "name": "selected-fg", "value": "text-white", "tokenRef": null }
+        ],
+        "spacing": [
+          { "name": "padding-x", "value": "24px", "tokenRef": "px-6" }
+        ],
+        "radius": [
+          { "name": "pill", "value": "9999px", "tokenRef": "rounded-full" }
+        ],
+        "typography": [
+          { "name": "font-size", "value": "14px", "tokenRef": "text-sm" },
+          { "name": "selected-weight", "value": "700", "tokenRef": "font-bold" }
+        ],
+        "elevation": [],
+        "states": [
+          { "name": "hover", "notes": "sky-1 bg at 50% opacity, white bold text" },
+          { "name": "selected", "notes": "sky-1 solid bg, white bold text" }
+        ]
+      }
+    },
+    {
+      "source": "ds",
+      "sourceId": "dx-text-box",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "notes": "DevExtreme dx-text-box with Gravity semantic input tokens"
+      },
+      "design": {
+        "colors": [
+          { "name": "border-default", "value": "#e9eaf1", "tokenRef": "input/default" },
+          { "name": "bg", "value": "#ffffff", "tokenRef": "surface/default" },
+          { "name": "text", "value": "#1d203f", "tokenRef": "text/primary" },
+          { "name": "placeholder", "value": "#646876", "tokenRef": "text/secondary" }
+        ],
+        "spacing": [
+          { "name": "padding-x", "value": "12px", "tokenRef": "spacing/md" },
+          { "name": "padding-y", "value": "8px", "tokenRef": "spacing/sm" },
+          { "name": "height-md", "value": "36px", "tokenRef": null }
+        ],
+        "radius": [
+          { "name": "default", "value": "8px", "tokenRef": "radius/md" }
+        ],
+        "typography": [
+          { "name": "font-family", "value": "Nunito", "tokenRef": "font/family/body" },
+          { "name": "font-size", "value": "14px", "tokenRef": "font/size/md" }
+        ],
+        "elevation": [],
+        "states": [
+          { "name": "focus", "notes": "Focus ring from Gravity input component set" },
+          { "name": "error", "notes": "border-negative semantic token" },
+          { "name": "disabled", "notes": "Reduced opacity + neutral fill" }
+        ]
+      }
+    },
+    {
+      "source": "es",
+      "sourceId": "es-regular-text-input",
+      "designMeta": {
+        "source": "code",
+        "library": "Community modules (Tailwind)",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "notes": "Auto-growing textarea with Tailwind form classes"
+      },
+      "design": {
+        "colors": [
+          { "name": "border", "value": "#cbd5e1", "tokenRef": "border-slate-300" },
+          { "name": "bg", "value": "#ffffff", "tokenRef": "bg-white" },
+          { "name": "placeholder", "value": "#94a3b8", "tokenRef": "placeholder-slate-400" }
+        ],
+        "spacing": [
+          { "name": "padding-x", "value": "12px", "tokenRef": "px-3" },
+          { "name": "padding-y", "value": "8px", "tokenRef": "py-2" },
+          { "name": "min-height", "value": "36px", "tokenRef": null }
+        ],
+        "radius": [
+          { "name": "default", "value": "6px", "tokenRef": "rounded-md" }
+        ],
+        "typography": [
+          { "name": "font-size", "value": "14px", "tokenRef": "text-sm" }
+        ],
+        "elevation": [
+          { "name": "shadow", "value": "sm", "tokenRef": "shadow-sm" }
+        ],
+        "states": [
+          { "name": "focus", "notes": "focus:outline-none (no visible ring in source)" },
+          { "name": "disabled", "notes": "disabled prop passthrough" }
+        ]
+      }
+    },
+    {
+      "source": "ds",
+      "sourceId": "dx-popup",
+      "designMeta": {
+        "source": "mixed",
+        "library": "DevExtreme + Gravity design foundations",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "notes": "dx-popup overlay; Gravity surface/overlay tokens for scrim"
+      },
+      "design": {
+        "colors": [
+          { "name": "surface-bg", "value": "#ffffff", "tokenRef": "surface/default" },
+          { "name": "overlay-scrim", "value": "#00000099", "tokenRef": "surface/overlay/color" },
+          { "name": "border", "value": "#e9eaf1", "tokenRef": "border/default" }
+        ],
+        "spacing": [
+          { "name": "padding", "value": "24px", "tokenRef": "spacing/2xl" },
+          { "name": "max-width", "value": "768px", "tokenRef": null }
+        ],
+        "radius": [
+          { "name": "dialog", "value": "8px", "tokenRef": "radius/md" }
+        ],
+        "typography": [
+          { "name": "title", "value": "Edit/Header/md", "tokenRef": "Edit/Header/md" }
+        ],
+        "elevation": [
+          { "name": "dialog-shadow", "value": "shadow-lg", "tokenRef": "elevation/lg" }
+        ],
+        "states": [
+          { "name": "open", "notes": "Scrim + centered panel" },
+          { "name": "close", "notes": "DevExtreme close button in title bar" }
+        ]
+      }
+    },
+    {
+      "source": "es",
+      "sourceId": "es-login-popup",
+      "designMeta": {
+        "source": "code",
+        "library": "Community modules (Tailwind)",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "notes": "Fixed-position modal with manual overlay div"
+      },
+      "design": {
+        "colors": [
+          { "name": "surface-bg", "value": "#ffffff", "tokenRef": "bg-white" },
+          { "name": "overlay-scrim", "value": "#000000", "tokenRef": "bg-black opacity-25" },
+          { "name": "header-border", "value": "#e2e8f0", "tokenRef": "border-slate-200" },
+          { "name": "primary-action-bg", "value": "sky-1", "tokenRef": "bg-sky-1" },
+          { "name": "body-text", "value": "#475569", "tokenRef": "text-slate-600" }
+        ],
+        "spacing": [
+          { "name": "header-padding", "value": "20px", "tokenRef": "p-5" },
+          { "name": "body-padding", "value": "24px", "tokenRef": "p-6" },
+          { "name": "max-width", "value": "768px", "tokenRef": "max-w-3xl" }
+        ],
+        "radius": [
+          { "name": "dialog", "value": "8px", "tokenRef": "rounded-lg" }
+        ],
+        "typography": [
+          { "name": "title", "value": "24px semibold", "tokenRef": "text-2xl font-semibold" },
+          { "name": "body", "value": "18px", "tokenRef": "text-lg" }
+        ],
+        "elevation": [
+          { "name": "dialog-shadow", "value": "shadow-lg", "tokenRef": "shadow-lg" }
+        ],
+        "states": [
+          { "name": "open", "notes": "z-50 panel + z-40 scrim" },
+          { "name": "close", "notes": "× button in header + Close footer button" }
+        ]
+      }
+    },
+    {
+      "source": "cg",
+      "sourceId": "cg-confirm-modal",
+      "designMeta": {
+        "source": "code",
+        "library": "cleargov-shared modal + Bootstrap modal",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=21-750",
+        "notes": "Programmatic modal via modal service; Bootstrap modal chrome"
+      },
+      "design": {
+        "colors": [
+          { "name": "surface-bg", "value": "#ffffff", "tokenRef": "$white" },
+          { "name": "header-border", "value": "#e9eaf1", "tokenRef": "colors.neutral.primary-200" },
+          { "name": "overlay-scrim", "value": "rgba(0,0,0,0.5)", "tokenRef": "$modal-backdrop-bg" }
+        ],
+        "spacing": [
+          { "name": "header-padding", "value": "16px", "tokenRef": "$modal-header-padding" },
+          { "name": "body-padding", "value": "16px", "tokenRef": "$modal-inner-padding" }
+        ],
+        "radius": [
+          { "name": "dialog", "value": "4px", "tokenRef": "$border-radius" }
+        ],
+        "typography": [],
+        "elevation": [
+          { "name": "dialog-shadow", "value": "0 0.5rem 1rem rgba(0,0,0,0.15)", "tokenRef": "$box-shadow" }
+        ],
+        "states": [
+          { "name": "open", "notes": "Bootstrap modal fade show" },
+          { "name": "confirm", "notes": "Primary + secondary cg-button actions" }
+        ]
+      }
+    },
+    {
+      "source": "ds",
+      "sourceId": "dx-check-box",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "notes": "DevExtreme dx-check-box with Gravity checkbox tokens"
+      },
+      "design": {
+        "colors": [
+          { "name": "border-default", "value": "#8487ae", "tokenRef": "border/default" },
+          { "name": "fill-checked", "value": "#436bf4", "tokenRef": "components/checkbox/checked" },
+          { "name": "icon-checked", "value": "#ffffff", "tokenRef": "icon/inverted" }
+        ],
+        "spacing": [
+          { "name": "size", "value": "16px", "tokenRef": "spacing/md" },
+          { "name": "label-gap", "value": "8px", "tokenRef": "spacing/sm" }
+        ],
+        "radius": [
+          { "name": "box", "value": "4px", "tokenRef": "radius/sm" }
+        ],
+        "typography": [
+          { "name": "label", "value": "14px", "tokenRef": "font/size/md" }
+        ],
+        "elevation": [],
+        "states": [
+          { "name": "checked", "notes": "Filled primary semantic color" },
+          { "name": "indeterminate", "notes": "DevExtreme tri-state support" },
+          { "name": "disabled", "notes": "Reduced opacity" }
+        ]
+      }
+    },
+    {
+      "source": "ds",
+      "sourceId": "dx-select-box",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "notes": "DevExtreme select/dropdown with Gravity input tokens"
+      },
+      "design": {
+        "colors": [
+          { "name": "border-default", "value": "#e9eaf1", "tokenRef": "input/default" },
+          { "name": "bg", "value": "#ffffff", "tokenRef": "surface/default" },
+          { "name": "menu-bg", "value": "#ffffff", "tokenRef": "surface/elevated" },
+          { "name": "item-hover", "value": "#436bf40a", "tokenRef": "surface/hover" }
+        ],
+        "spacing": [
+          { "name": "height-md", "value": "36px", "tokenRef": null },
+          { "name": "padding-x", "value": "12px", "tokenRef": "spacing/md" }
+        ],
+        "radius": [
+          { "name": "field", "value": "8px", "tokenRef": "radius/md" },
+          { "name": "menu", "value": "8px", "tokenRef": "radius/md" }
+        ],
+        "typography": [
+          { "name": "font-size", "value": "14px", "tokenRef": "font/size/md" }
+        ],
+        "elevation": [
+          { "name": "menu-shadow", "value": "0 4px 16px rgba(0,0,0,0.12)", "tokenRef": "elevation/md" }
+        ],
+        "states": [
+          { "name": "open", "notes": "Dropdown panel with elevation" },
+          { "name": "focus", "notes": "Focus ring on field" }
+        ]
+      }
+    },
+    {
+      "source": "es",
+      "sourceId": "es-drop-down",
+      "designMeta": {
+        "source": "code",
+        "library": "Community modules (Tailwind)",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "notes": "Custom React dropdown — Tailwind utilities"
+      },
+      "design": {
+        "colors": [
+          { "name": "border", "value": "#cbd5e1", "tokenRef": "border-slate-300" },
+          { "name": "bg", "value": "#ffffff", "tokenRef": "bg-white" },
+          { "name": "item-hover", "value": "#f1f5f9", "tokenRef": "hover:bg-slate-100" }
+        ],
+        "spacing": [
+          { "name": "padding-x", "value": "12px", "tokenRef": "px-3" },
+          { "name": "padding-y", "value": "8px", "tokenRef": "py-2" }
+        ],
+        "radius": [
+          { "name": "field", "value": "6px", "tokenRef": "rounded-md" }
+        ],
+        "typography": [
+          { "name": "font-size", "value": "14px", "tokenRef": "text-sm" }
+        ],
+        "elevation": [
+          { "name": "menu-shadow", "value": "md", "tokenRef": "shadow-md" }
+        ],
+        "states": [
+          { "name": "open", "notes": "Absolute positioned menu" }
+        ]
+      }
+    },
+    {
+      "source": "ds",
+      "sourceId": "dx-tabs",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "notes": "DevExtreme dx-tabs with Gravity tab tokens"
+      },
+      "design": {
+        "colors": [
+          { "name": "tab-fg", "value": "#646890", "tokenRef": "text/secondary" },
+          { "name": "tab-active-fg", "value": "#436bf4", "tokenRef": "text/link" },
+          { "name": "indicator", "value": "#436bf4", "tokenRef": "border/brand" },
+          { "name": "tab-bg", "value": "transparent", "tokenRef": null }
+        ],
+        "spacing": [
+          { "name": "tab-padding-x", "value": "16px", "tokenRef": "spacing/lg" },
+          { "name": "tab-padding-y", "value": "12px", "tokenRef": "spacing/md" }
+        ],
+        "radius": [],
+        "typography": [
+          { "name": "tab-label", "value": "14px semibold", "tokenRef": "Edit/Header/sm" }
+        ],
+        "elevation": [],
+        "states": [
+          { "name": "active", "notes": "Bottom border indicator" },
+          { "name": "hover", "notes": "Secondary text color shift" }
+        ]
+      }
+    },
+    {
+      "source": "ds",
+      "sourceId": "dx-notify",
+      "designMeta": {
+        "source": "mixed",
+        "library": "DevExtreme notify + Gravity feedback tokens",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "notes": "DevExtreme toast/notify helper"
+      },
+      "design": {
+        "colors": [
+          { "name": "info-bg", "value": "#436bf4", "tokenRef": "surface/info" },
+          { "name": "success-bg", "value": "#4fc482", "tokenRef": "surface/positive" },
+          { "name": "error-bg", "value": "#e10430", "tokenRef": "surface/negative" },
+          { "name": "text", "value": "#ffffff", "tokenRef": "text/inverted" }
+        ],
+        "spacing": [
+          { "name": "padding", "value": "12px 16px", "tokenRef": "spacing/md spacing/lg" }
+        ],
+        "radius": [
+          { "name": "toast", "value": "8px", "tokenRef": "radius/md" }
+        ],
+        "typography": [
+          { "name": "message", "value": "14px", "tokenRef": "font/size/md" }
+        ],
+        "elevation": [
+          { "name": "shadow", "value": "0 4px 12px rgba(0,0,0,0.15)", "tokenRef": "elevation/md" }
+        ],
+        "states": [
+          { "name": "auto-dismiss", "notes": "displayTime option" }
+        ]
+      }
+    },
+    {
+      "source": "es",
+      "sourceId": "es-notification-snackbar",
+      "designMeta": {
+        "source": "code",
+        "library": "Community modules (Tailwind)",
+        "figmaUrl": "https://www.figma.com/design/lyDU3cSfPqsdONVBLi6f1T/Community-Design-System?node-id=1-2",
+        "notes": "Fixed bottom snackbar notification"
+      },
+      "design": {
+        "colors": [
+          { "name": "bg", "value": "#1e293b", "tokenRef": "bg-slate-800" },
+          { "name": "text", "value": "#ffffff", "tokenRef": "text-white" },
+          { "name": "action", "value": "sky-1", "tokenRef": "text-sky-1" }
+        ],
+        "spacing": [
+          { "name": "padding", "value": "16px", "tokenRef": "p-4" }
+        ],
+        "radius": [
+          { "name": "toast", "value": "8px", "tokenRef": "rounded-lg" }
+        ],
+        "typography": [
+          { "name": "message", "value": "14px", "tokenRef": "text-sm" }
+        ],
+        "elevation": [
+          { "name": "shadow", "value": "lg", "tokenRef": "shadow-lg" }
+        ],
+        "states": [
+          { "name": "dismiss", "notes": "Auto-hide timer" }
+        ]
+      }
+    },
+    {
+      "source": "cg",
+      "sourceId": "cg-switch",
+      "designMeta": {
+        "source": "code",
+        "library": "cleargov-shared Bootstrap form-switch",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=2-3552",
+        "notes": "Bootstrap form-check form-switch variants (yesno, lock, showhide)"
+      },
+      "design": {
+        "colors": [
+          { "name": "track-off", "value": "#d4d5e3", "tokenRef": "colors.neutral.primary-300" },
+          { "name": "track-on", "value": "#2f5cb6", "tokenRef": "colors.primary.primary" },
+          { "name": "thumb", "value": "#ffffff", "tokenRef": "$white" }
+        ],
+        "spacing": [
+          { "name": "track-width", "value": "36px", "tokenRef": null },
+          { "name": "track-height", "value": "20px", "tokenRef": null }
+        ],
+        "radius": [
+          { "name": "track", "value": "9999px", "tokenRef": "form-switch border-radius" }
+        ],
+        "typography": [
+          { "name": "label", "value": "14px", "tokenRef": "$font-size-base" }
+        ],
+        "elevation": [],
+        "states": [
+          { "name": "checked", "notes": "Primary fill track" },
+          { "name": "disabled", "notes": "Reduced opacity" }
+        ]
+      }
+    },
+    {
+      "source": "ds",
+      "sourceId": "dx-switch",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=4653-10511",
+        "notes": "DevExtreme dx-switch with Gravity toggle tokens"
+      },
+      "design": {
+        "colors": [
+          { "name": "track-off", "value": "#d4d5e3", "tokenRef": "components/switch/off" },
+          { "name": "track-on", "value": "#436bf4", "tokenRef": "components/switch/on" },
+          { "name": "thumb", "value": "#ffffff", "tokenRef": "icon/inverted" }
+        ],
+        "spacing": [
+          { "name": "width", "value": "40px", "tokenRef": null },
+          { "name": "height", "value": "24px", "tokenRef": null }
+        ],
+        "radius": [
+          { "name": "track", "value": "9999px", "tokenRef": "radius/full" }
+        ],
+        "typography": [],
+        "elevation": [],
+        "states": [
+          { "name": "on", "notes": "Primary semantic fill" },
+          { "name": "off", "notes": "Neutral track" }
+        ]
+      }
+    },
+    {
+      "source": "cg",
+      "sourceId": "cg-card",
+      "designMeta": {
+        "source": "code",
+        "library": "cleargov-shared Bootstrap card",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=17-777",
+        "notes": "Bootstrap card variants: secondary, tertiary, horizontal, dashboard"
+      },
+      "design": {
+        "colors": [
+          { "name": "surface-bg", "value": "#ffffff", "tokenRef": "$card-bg" },
+          { "name": "border", "value": "#e9eaf1", "tokenRef": "$card-border-color" },
+          { "name": "header-bg", "value": "transparent", "tokenRef": "$card-cap-bg" }
+        ],
+        "spacing": [
+          { "name": "body-padding", "value": "16px", "tokenRef": "$card-spacer-y" },
+          { "name": "header-padding", "value": "12px 16px", "tokenRef": "$card-cap-padding-y" }
+        ],
+        "radius": [
+          { "name": "card", "value": "4px", "tokenRef": "$card-border-radius" }
+        ],
+        "typography": [
+          { "name": "title", "value": "16px semibold", "tokenRef": "$card-title-spacer-y" }
+        ],
+        "elevation": [
+          { "name": "shadow", "value": "none", "tokenRef": "$card-box-shadow" }
+        ],
+        "states": [
+          { "name": "highlight", "notes": "Optional highlight border when not disableHighlight" },
+          { "name": "disabled", "notes": "Reduced interactivity" }
+        ]
+      }
+    },
+    {
+      "source": "ds",
+      "sourceId": "gravity-avatar",
+      "designMeta": {
+        "source": "figma",
+        "library": "Gravity design foundations",
+        "figmaUrl": "https://www.figma.com/design/cErW0lkFuaZarQkuRr6bS8/Gravity-design-foundations?node-id=1100-9354",
+        "notes": "Figma Avatar component set (1100:9354); tokens from DesignSystem-POC cg-avatar"
+      },
+      "design": {
+        "colors": [
+          { "name": "blue-bg", "value": "#cfd9fc", "tokenRef": "surface/user-blue/secondary" },
+          { "name": "blue-fg", "value": "#1d3da5", "tokenRef": "surface/user-blue/contrast" },
+          { "name": "unassigned-border", "value": "#e9eaf1", "tokenRef": "border/default" },
+          { "name": "status-online", "value": "#4fc482", "tokenRef": "surface/positive" }
+        ],
+        "spacing": [
+          { "name": "size-md", "value": "40px", "tokenRef": "size/3xl" },
+          { "name": "size-sm", "value": "32px", "tokenRef": "size/2xl" },
+          { "name": "size-lg", "value": "64px", "tokenRef": "size/6xl" }
+        ],
+        "radius": [
+          { "name": "avatar", "value": "50%", "tokenRef": null }
+        ],
+        "typography": [
+          { "name": "initials-md", "value": "14px semibold", "tokenRef": "Edit/Header/sm" },
+          { "name": "font-family", "value": "Nunito", "tokenRef": "font/family/body" }
+        ],
+        "elevation": [],
+        "states": [
+          { "name": "unassigned", "notes": "White circle with dashed border" },
+          { "name": "status", "notes": "online | offline | busy | away presence dot" }
+        ]
+      }
+    },
+    {
+      "source": "cg",
+      "sourceId": "cg-accordion",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=2651-10349&p=f&t=kdMedCVWjFszF8po-0",
+        "notes": "Figma Accordion spec; CG styles in libs/shared-ui/styles/src/_accordion.scss"
+      },
+      "design": {
+        "colors": [
+          { "name": "header-label", "value": "#0463b7", "tokenRef": "colors.primary.primary" },
+          { "name": "header-label-hover", "value": "primary-light", "tokenRef": "$primary-light" },
+          { "name": "border-top", "value": "#cbcecf", "tokenRef": "Neutral/neutral-light" },
+          { "name": "badge-bg", "value": "#fdecbb", "tokenRef": "functional/warning/warning-light" },
+          { "name": "badge-fg", "value": "#2c2c2c", "tokenRef": "functional/neutrals/neutral-darkest" },
+          { "name": "panel-bg", "value": "transparent", "tokenRef": "$accordion-bg" }
+        ],
+        "spacing": [
+          { "name": "header-padding-y", "value": "12px", "tokenRef": "$accordion-button-padding-y" },
+          { "name": "body-padding-y", "value": "12px", "tokenRef": "$accordion-body-padding-y" },
+          { "name": "label-gap", "value": "8px", "tokenRef": null },
+          { "name": "badge-margin-left", "value": "8px", "tokenRef": null },
+          { "name": "chevron-margin-left", "value": "8px", "tokenRef": null }
+        ],
+        "radius": [
+          { "name": "badge", "value": "25px", "tokenRef": null }
+        ],
+        "typography": [
+          { "name": "header-label", "value": "15px semibold", "tokenRef": "Admin Typography/Sub Header/Subheading 2" },
+          { "name": "header-line-height", "value": "20px", "tokenRef": "Size/20px" },
+          { "name": "badge-count", "value": "10px medium", "tokenRef": null },
+          { "name": "chevron", "value": "12px", "tokenRef": "$font-size-sm" }
+        ],
+        "elevation": [],
+        "states": [
+          { "name": "closed", "notes": "Chevron down (fa-chevron-down); top border only" },
+          { "name": "open", "notes": "Chevron up (fa-chevron-up); body panel visible" },
+          { "name": "hover", "notes": "Label and chevron shift to primary-light" },
+          { "name": "badge", "notes": "Optional count badge — warning-light medium" }
+        ]
+      }
+    },
+    {
+      "source": "ds",
+      "sourceId": "dx-accordion",
+      "designMeta": {
+        "source": "figma",
+        "library": "ClearGov Design System",
+        "figmaUrl": "https://www.figma.com/design/JdGC6oj27gAt2VGDauVH2G/ClearGov-Design-System?node-id=2651-10349&p=f&t=kdMedCVWjFszF8po-0",
+        "notes": "DevExtreme dx-accordion themed to ClearGov Accordion Figma spec"
+      },
+      "design": {
+        "colors": [
+          { "name": "header-label", "value": "#0463b7", "tokenRef": "colors.primary.primary" },
+          { "name": "border-top", "value": "#cbcecf", "tokenRef": "Neutral/neutral-light" },
+          { "name": "badge-bg", "value": "#fdecbb", "tokenRef": "functional/warning/warning-light" },
+          { "name": "badge-fg", "value": "#2c2c2c", "tokenRef": "functional/neutrals/neutral-darkest" },
+          { "name": "panel-bg", "value": "transparent", "tokenRef": null }
+        ],
+        "spacing": [
+          { "name": "header-padding-y", "value": "12px", "tokenRef": null },
+          { "name": "label-gap", "value": "8px", "tokenRef": null },
+          { "name": "badge-padding-x", "value": "8px", "tokenRef": null },
+          { "name": "badge-padding-y", "value": "4px", "tokenRef": null }
+        ],
+        "radius": [
+          { "name": "badge", "value": "25px", "tokenRef": null }
+        ],
+        "typography": [
+          { "name": "header-label", "value": "15px semibold Montserrat", "tokenRef": "Admin Typography/Sub Header/Subheading 2" },
+          { "name": "header-line-height", "value": "20px", "tokenRef": "Size/20px" },
+          { "name": "badge-count", "value": "10px medium", "tokenRef": null },
+          { "name": "chevron", "value": "12px Font Awesome", "tokenRef": null }
+        ],
+        "elevation": [],
+        "states": [
+          { "name": "closed", "notes": "Single top border; chevron-down icon" },
+          { "name": "open", "notes": "Expanded body; chevron-up icon" },
+          { "name": "hover", "notes": "Header label hover state per Figma accordian label variants" },
+          { "name": "collapsible", "notes": "DevExtreme collapsible option — all panels can close" }
+        ]
+      }
+    }
+  ]
+}
